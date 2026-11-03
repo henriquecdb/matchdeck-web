@@ -9,7 +9,9 @@ const destination = resolve(root, 'src/vendor/matchdeck');
 const files = new Map();
 async function copySource(path) {
   if (files.has(path)) return;
-  const contents = await readFile(resolve(app, path));
+  const contents = Buffer.from(
+    (await readFile(resolve(app, path), 'utf8')).replaceAll('\r\n', '\n'),
+  );
   files.set(path, createHash('sha256').update(contents).digest('hex'));
   const target = resolve(destination, path);
   await mkdir(dirname(target), { recursive: true });
