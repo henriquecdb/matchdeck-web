@@ -1,0 +1,97 @@
+---
+const players = [
+  {
+    name: 'Seu jogador',
+    civ: 'Francos',
+    rating: '1.482',
+    wins: '54%',
+    tone: 'blue',
+  },
+  {
+    name: 'Adversário',
+    civ: 'Mongóis',
+    rating: '1.506',
+    wins: '52%',
+    tone: 'red',
+  },
+];
+---
+
+<div class="demo-shell">
+  <div class="demo-top">
+    <span><span class="live-dot"></span> PRÉVIA DO OVERLAY</span><span
+      >AOE II · DE</span
+    >
+  </div>
+  <div class="demo-stage">
+    <div class="map-lines" aria-hidden="true"></div>
+    <div class="map-label" aria-hidden="true">ARABIA <span>— 1V1</span></div>
+    <div class="overlay" id="overlay-demo">
+      <div class="overlay-heading">
+        <span>PARTIDA RANQUEADA</span><span>1 × 1</span>
+      </div>
+      <div class="players">
+        {
+          players.map((player) => (
+            <div class={`player ${player.tone}`}>
+              <div class="player-name">
+                <span class="player-marker" />
+                {player.name}
+              </div>
+              <span class="civilization">{player.civ}</span>
+              <div class="player-stats">
+                <>
+                  <div>
+                    <>
+                      <strong>{player.rating}</strong>
+                      <span>RATING</span>
+                    </>
+                  </div>
+                  <div class="win-stat">
+                    <>
+                      <strong>{player.wins}</strong>
+                      <span>VITÓRIAS</span>
+                    </>
+                  </div>
+                </>
+              </div>
+            </div>
+          ))
+        }
+      </div>
+      <div class="overlay-bottom">
+        <span class="live-dot"></span> Dados ilustrativos <span class="sync"
+          >MatchDeck</span
+        >
+      </div>
+    </div>
+    <span class="stage-note">O contexto da partida. Sempre à vista.</span>
+  </div>
+  <div class="demo-controls">
+    <span>Encontre o seu jeito de jogar</span><div
+      role="group"
+      aria-label="Modo de exibição"
+    >
+      <button type="button" data-mode="full" aria-pressed="true"
+        >Completo</button
+      ><button type="button" data-mode="compact" aria-pressed="false"
+        >Compacto</button
+      >
+    </div>
+  </div>
+</div>
+<script>
+  const overlay = document.querySelector('#overlay-demo');
+  const buttons = document.querySelectorAll<HTMLButtonElement>('[data-mode]');
+  buttons.forEach((button) =>
+    button.addEventListener('click', () => {
+      overlay?.classList.toggle(
+        'is-compact',
+        button.dataset.mode === 'compact',
+      );
+      buttons.forEach((item) =>
+        item.setAttribute('aria-pressed', String(item === button)),
+      );
+    }),
+  );
+</script>

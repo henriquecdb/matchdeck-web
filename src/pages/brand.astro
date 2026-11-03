@@ -1,0 +1,40 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+import Brand from '../components/Brand.astro';
+import { asset } from '../config/site';
+---
+
+<BaseLayout title="MatchDeck — Identidade visual">
+  <header class="site-header wrap">
+    <Brand /><a class="text-link" href={import.meta.env.BASE_URL}
+      >← Voltar ao site</a
+    >
+  </header>
+  <main class="wrap section brand-page" id="conteudo">
+    <span class="eyebrow">IDENTIDADE MATCHDECK</span><h1>
+      Um ícone.<br />Muitas partidas<span class="accent">.</span>
+    </h1><p>
+      O símbolo original do app, preservado como base da identidade MatchDeck.
+    </p><div class="brand-showcase">
+      <img
+        src={asset('brand/icon.png')}
+        alt="Ícone MatchDeck: letra M clara sobre quadrado escuro com cantos arredondados"
+        width="256"
+        height="256"
+      />
+    </div><div class="hero-actions">
+      <a
+        class="button button-primary"
+        href={asset('brand/icon.png')}
+        download="matchdeck-icon.png">Baixar PNG original ↓</a
+      ><a
+        class="button"
+        href={asset('brand/mark.svg')}
+        download="matchdeck-mark.svg">Baixar símbolo vetorial ↓</a
+      >
+    </div><p class="brand-note">
+      O PNG é o mesmo utilizado pelo aplicativo. O SVG é uma reconstrução
+      vetorial da geometria do símbolo para uso em novas peças.
+    </p>
+  </main>
+</BaseLayout>

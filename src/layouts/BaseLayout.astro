@@ -1,0 +1,35 @@
+---
+import { site, asset } from '../config/site';
+import '../styles/global.css';
+interface Props {
+  title?: string;
+}
+const { title = 'MatchDeck — Sua partida, em perspectiva.' } = Astro.props;
+const canonical = new URL(Astro.url.pathname, Astro.site);
+---
+
+<!doctype html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="description" content={site.description} />
+    <meta name="theme-color" content="#101411" />
+    <link rel="icon" type="image/png" href={asset('brand/icon.png')} />
+    <link rel="apple-touch-icon" href={asset('brand/icon.png')} />
+    <link rel="canonical" href={canonical} />
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content={title} />
+    <meta property="og:description" content={site.description} />
+    <meta property="og:url" content={canonical} />
+    <meta
+      property="og:image"
+      content={new URL(asset('brand/icon.png'), Astro.site)}
+    />
+    <title>{title}</title>
+  </head>
+  <body>
+    <a class="skip-link" href="#conteudo">Pular para o conteúdo</a>
+    <slot />
+  </body>
+</html>
