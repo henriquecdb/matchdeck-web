@@ -58,8 +58,22 @@ Não foi escolhida uma licença para o projeto. A inclusão de uma licença e os
 
 ## Identidade
 
-`public/brand/icon.png` é uma cópia sem alteração do ícone original do MatchDeck. `mark.svg` reconstrói o símbolo em vetor. A página `/brand/` permite baixar os dois. O site usa fundo escuro, branco e verde suave como acento. Não usa artes de terceiros dos jogos.
+`public/brand/icon.png` é uma cópia sem alteração do ícone original do MatchDeck. `mark.svg` reconstrói o símbolo em vetor. A página `/brand/` permite baixar os dois. O site usa a paleta do aplicativo: fundo azul escuro, cinza azulado e ciano. A prévia reutiliza as imagens do app, com os avisos de origem em `public/units/NOTICE.md`.
 
 ## Colaboração
 
 Consulte [CONTRIBUTING.md](CONTRIBUTING.md). CI verifica formatação, tipos, build, proteção de downloads e Conventional Commits nos pull requests. Dependabot acompanha npm e Actions.
+
+## Prévia fiel ao aplicativo
+
+A prévia usa `MatchOverlay`, `CompactOverlay`, dados fictícios, imagens e CSS originais do app. React renderiza o HTML durante o build; não é enviado runtime React ao navegador. Cada modo é isolado em um iframe para que os estilos do site não alterem o overlay. A redução proporcional permite manter as dimensões nativas de 480 e 720 pixels sem reorganizar os cards.
+
+Os arquivos em `src/vendor/matchdeck` são cópias sem edição, com commit de origem e hashes em `provenance.json`. Para atualizar a partir de um checkout local do app:
+
+```sh
+npm run preview:sync -- /caminho/para/MatchDeck
+npm test
+npm run build
+```
+
+O build e o CI não dependem de um checkout do app. Depois de sincronizar, revise e envie as alterações no repositório web. As imagens da demonstração mantêm os avisos de origem em `public/units/NOTICE.md`.

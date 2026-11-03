@@ -1,0 +1,24 @@
+{
+  "repository": "https://github.com/henriquecdb/MatchDeck",
+  "commit": "424ec58320a2febd5b4f04b25a91fb9b8b8833cc",
+  "files": {
+    "src/features/overlay/MatchOverlay.tsx": "2b007dd90fd9eb55547fe071c81638e5fb6d906f0e6eacc748de731159ae7bbb",
+    "src/domain/match.ts": "e4e042bed98e24fb453fd985afb50be42e8c53731d4498de80cf0936caed7b65",
+    "src/domain/match-labels.ts": "7a96416b2a006fdd7bad2bcb7a3cfb073edca6f73dbeb35ddcf3fd838d7f1639",
+    "src/domain/player-color.ts": "789597657bab47a3c47829b3b949640679bf0450fa93ebb8a0eee87b405edcb5",
+    "src/games/registry.ts": "ee984d8f9336d1de5371424b9f241ce78483925c2bc7e4c76fccb4c0c531e30b",
+    "src/games/aoe2/demo.ts": "7195c42ece9a0d812e60b6bfa8f8acea75b08890bc1430ca28e4b0c43c197154",
+    "src/games/aoe2/artwork.ts": "f3892d3c6b4c80217fa487f1d01b7b991bf59767d5628f70ba60c468b57c1f05",
+    "src/games/aoe2/unit-catalog.json": "877d73ec3883b7466ae098658fb268926bf381a2b330fc65a9c760a683473d6d",
+    "src/games/aoe2/pt-BR.json": "dd4be2c0b7dba54db613d6dd85614c809df69a171bcd16ed5233067856ebb93e",
+    "src/games/games.json": "6c6146091d530cb4a46250bf25c86f16919b929bc677fd08928997486795bdf1",
+    "src/features/overlay/UnitPortrait.tsx": "439569c7b09809e425b7cd84f0d2d0cb544fe3eb4bd7f6c417ae054d30afc6a2",
+    "src/features/overlay/RatingImpact.tsx": "7e47aff9e52e80451c9fbf9692aa040e7f78a37c266b2c895d1f4e832903efa9",
+    "src/domain/rating.ts": "611d57dc8c86db54b6dbc368f0843d09bde4adb1089e4d777eb630a524b8cbbc",
+    "src/domain/settings.ts": "dae9d054aa54379a5ff127e178e2df543a4085e90202cd629edc83eaa67db95a",
+    "src/features/overlay/CompactOverlay.tsx": "51d6af44dc0bebc02a2dcc5d675830bcac02587a829cf3f2c7f59cc60469c32f",
+    "src/domain/teams.ts": "e231fc9eb3dfc55caa09a8108901613c9d031f7b7887b44a00615b1ed27d6272",
+    "src/features/overlay/CivilizationEmblem.tsx": "f5689e96e4a62e471643a94747705f0a33c3e1a57133711880c123de0556615d",
+    "src/styles.css": "f812433830cb1321b017efb79d7375b882cc5c6c956667ad6d23e4c4bc501279"
+  }
+}

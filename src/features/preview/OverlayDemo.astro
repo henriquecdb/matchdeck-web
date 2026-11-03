@@ -1,78 +1,37 @@
 ---
-const players = [
-  {
-    name: 'Seu jogador',
-    civ: 'Francos',
-    rating: '1.482',
-    wins: '54%',
-    tone: 'blue',
-  },
-  {
-    name: 'Adversário',
-    civ: 'Mongóis',
-    rating: '1.506',
-    wins: '52%',
-    tone: 'red',
-  },
-];
+import { renderPreview } from './render-preview';
 ---
 
 <div class="demo-shell">
   <div class="demo-top">
-    <span><span class="live-dot"></span> PRÉVIA DO OVERLAY</span><span
+    <span><span class="live-dot"></span> PRÉVIA DO APP</span><span
       >AOE II · DE</span
     >
   </div>
-  <div class="demo-stage">
-    <div class="map-lines" aria-hidden="true"></div>
-    <div class="map-label" aria-hidden="true">ARABIA <span>— 1V1</span></div>
-    <div class="overlay" id="overlay-demo">
-      <div class="overlay-heading">
-        <span>PARTIDA RANQUEADA</span><span>1 × 1</span>
-      </div>
-      <div class="players">
-        {
-          players.map((player) => (
-            <div class={`player ${player.tone}`}>
-              <div class="player-name">
-                <span class="player-marker" />
-                {player.name}
-              </div>
-              <span class="civilization">{player.civ}</span>
-              <div class="player-stats">
-                <>
-                  <div>
-                    <>
-                      <strong>{player.rating}</strong>
-                      <span>RATING</span>
-                    </>
-                  </div>
-                  <div class="win-stat">
-                    <>
-                      <strong>{player.wins}</strong>
-                      <span>VITÓRIAS</span>
-                    </>
-                  </div>
-                </>
-              </div>
-            </div>
-          ))
-        }
-      </div>
-      <div class="overlay-bottom">
-        <span class="live-dot"></span> Dados ilustrativos <span class="sync"
-          >MatchDeck</span
-        >
-      </div>
+  <div class="app-demo-stage">
+    <div class="app-preview" data-layout="detailed">
+      <iframe
+        title="Overlay completo do MatchDeck com dados fictícios"
+        srcdoc={renderPreview('detailed')}
+        width="480"
+        height="420"
+        loading="eager"></iframe>
     </div>
-    <span class="stage-note">O contexto da partida. Sempre à vista.</span>
+    <div class="app-preview" data-layout="compact" hidden>
+      <iframe
+        title="Overlay compacto do MatchDeck com dados fictícios"
+        srcdoc={renderPreview('compact')}
+        width="720"
+        height="120"
+        loading="eager"></iframe>
+    </div>
   </div>
   <div class="demo-controls">
-    <span>Encontre o seu jeito de jogar</span><div
+    <span>Interface do app · dados fictícios</span><div
       role="group"
       aria-label="Modo de exibição"
     >
-      <button type="button" data-mode="full" aria-pressed="true"
+      <button type="button" data-mode="detailed" aria-pressed="true"
         >Completo</button
       ><button type="button" data-mode="compact" aria-pressed="false"
         >Compacto</button
@@ -81,14 +40,34 @@ const players = [
   </div>
 </div>
 <script>
-  const overlay = document.querySelector('#overlay-demo');
+  const previews = document.querySelectorAll<HTMLElement>('.app-preview');
   const buttons = document.querySelectorAll<HTMLButtonElement>('[data-mode]');
+  function fitPreview(container: HTMLElement) {
+    if (container.hidden) return;
+    const frame = container.querySelector('iframe');
+    if (!frame) return;
+    const nativeWidth = Number(frame.getAttribute('width'));
+    const height =
+      frame.contentDocument?.body.scrollHeight ||
+      Number(frame.getAttribute('height'));
+    const scale = Math.min(1, container.clientWidth / nativeWidth);
+    frame.style.height = `${height}px`;
+    frame.style.marginLeft = `${(container.clientWidth - nativeWidth * scale) / 2}px`;
+    frame.style.transform = `scale(${scale})`;
+    container.style.height = `${height * scale}px`;
+  }
+  previews.forEach((container) => {
+    const frame = container.querySelector('iframe');
+    frame?.addEventListener('load', () => fitPreview(container));
+    new ResizeObserver(() => fitPreview(container)).observe(container);
+    fitPreview(container);
+  });
   buttons.forEach((button) =>
     button.addEventListener('click', () => {
-      overlay?.classList.toggle(
-        'is-compact',
-        button.dataset.mode === 'compact',
-      );
+      previews.forEach((container) => {
+        container.hidden = container.dataset.layout !== button.dataset.mode;
+        fitPreview(container);
+      });
       buttons.forEach((item) =>
         item.setAttribute('aria-pressed', String(item === button)),
       );
