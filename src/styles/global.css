@@ -974,3 +974,26 @@ p {
     animation: none !important;
   }
 }
+/* Allow the demo to shrink inside grid tracks on narrow screens. */
+.hero-copy,
+.hero-demo {
+  min-width: 0;
+}
+.overlay {
+  max-width: 100%;
+}
+@media (max-width: 760px) {
+  .hero {
+    grid-template-columns: minmax(0, 1fr);
+  }
+  .demo-stage {
+    padding-inline: 16px;
+  }
+  .player-stats {
+    gap: 15px;
+  }
+  .player {
+    min-width: 0;
+    padding: 12px;
+  }
+}
