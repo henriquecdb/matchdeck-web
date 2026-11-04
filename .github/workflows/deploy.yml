@@ -43,7 +43,7 @@ jobs:
             git commit -m 'chore(stats): refresh public civilization aggregates'
             git push origin HEAD:main
           fi
-      - uses: actions/upload-pages-artifact@v3
+      - uses: actions/upload-pages-artifact@v5
         with:
           path: dist
   deploy:
