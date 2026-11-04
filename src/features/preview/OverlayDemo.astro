@@ -108,6 +108,11 @@ import provenance from '../../vendor/matchdeck/provenance.json';
   game.addEventListener('change', updatePreview);
   teams.addEventListener('change', updatePreview);
   frame.addEventListener('load', fitPreview);
-  new ResizeObserver(fitPreview).observe(container);
+  let measuredWidth = 0;
+  new ResizeObserver(([entry]) => {
+    if (entry.contentRect.width === measuredWidth) return;
+    measuredWidth = entry.contentRect.width;
+    requestAnimationFrame(fitPreview);
+  }).observe(container);
   fitPreview();
 </script>
