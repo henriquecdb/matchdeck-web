@@ -15,7 +15,8 @@
     "format:check": "prettier --check .",
     "test": "node --test tests/*.test.mjs",
     "prepare": "node scripts/install-hooks.mjs",
-    "preview:sync": "node scripts/sync-app-preview.mjs"
+    "preview:sync": "node scripts/sync-app-preview.mjs",
+    "test:build": "node --test tests/build/*.test.mjs"
   },
   "dependencies": {
     "astro": "^7.4.5",

@@ -2,14 +2,32 @@ import { createElement } from 'react';
 import { renderToStaticMarkup } from 'react-dom/server';
 import { MatchOverlay } from '../../vendor/matchdeck/src/features/overlay/MatchOverlay';
 import { createDemoMatch } from '../../vendor/matchdeck/src/games/aoe2/demo';
+import { createAoe4Demo } from '../../vendor/matchdeck/src/games/aoe4/demo';
+import { LanguageProvider } from '../../vendor/matchdeck/src/i18n/LanguageProvider';
+import { defaultPreferences } from '../../vendor/matchdeck/src/domain/preferences';
 import appStyles from '../../vendor/matchdeck/src/styles.css?raw';
 import { asset } from '../../config/site';
-export function renderPreview(layout: 'detailed' | 'compact') {
-  const match = { ...createDemoMatch('ranked'), id: 'website-demo' };
+import type { PreviewOption, PreviewLayout } from './preview-options';
+
+export function renderPreview(option: PreviewOption) {
+  const match = {
+    ...(option.game === 'aoe4'
+      ? createAoe4Demo('ranked')
+      : createDemoMatch('ranked', option.teamSize)),
+    id: 'website-demo',
+  };
+  const overlay = createElement(MatchOverlay, {
+    match,
+    layout: option.layout as PreviewLayout,
+  });
   const html = renderToStaticMarkup(
-    createElement(MatchOverlay, { match, layout }),
+    createElement(LanguageProvider, {
+      preferences: defaultPreferences,
+      children: overlay,
+    }),
   )
     .replaceAll('"/units/', `"${asset('units/')}`)
-    .replaceAll('"/civilizations/', `"${asset('civilizations/')}`);
-  return `<!doctype html><html lang="pt-BR"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width"><style>${appStyles}:root{color-scheme:dark}html{background:#19202a}</style></head><body>${html}</body></html>`;
+    .replaceAll('"/civilizations/', `"${asset('civilizations/')}`)
+    .replaceAll('"/aoe4/', `"${asset('aoe4/')}`);
+  return `<!doctype html><html lang="pt-BR"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width"><title>Prévia do MatchDeck · dados fictícios</title><style>${appStyles}:root{color-scheme:dark}html{background:#19202a}</style></head><body>${html}</body></html>`;
 }

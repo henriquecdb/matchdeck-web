@@ -7,19 +7,27 @@ import { site } from '../config/site';
 const questions = [
   [
     'Como o MatchDeck funciona?',
-    'O app consulta os dados da partida e exibe um overlay sobre o jogo. Identifique seu perfil, ative a detecção e jogue Age of Empires II: Definitive Edition em janela sem bordas. A disponibilidade dos dados depende da fonte.',
+    'Escolha o jogo, vincule seu perfil e ative a detecção. O app consulta os dados publicados pela fonte e exibe o overlay durante a partida. Use o jogo em janela sem bordas. A disponibilidade e o tempo de atualização dependem da fonte de cada jogo.',
   ],
   [
     'Quais jogos são compatíveis?',
-    'A integração disponível hoje é Age of Empires II: Definitive Edition, com foco em multiplayer. Outros jogos ainda não estão implementados. Partidas offline estão disponíveis apenas na demonstração.',
+    'Age of Empires II: Definitive Edition tem integração multiplayer. Age of Empires IV tem suporte experimental a 1v1 ranqueado e rápido de PC via AoE4 World. Equipes, partidas personalizadas, campanhas e histórico do Age IV ainda não estão disponíveis. No AoE II, partidas offline estão disponíveis apenas na demonstração.',
   ],
   [
     'Preciso criar uma conta?',
-    'Não. Você pode instalar o app e identificar seu perfil do jogo, sem criar uma conta no MatchDeck.',
+    'Não é necessário criar uma conta no MatchDeck. No AoE II, identifique seu perfil do jogo. No Age IV, vincule pelo ID do AoE4 World, Steam ID ou link do perfil. Perfis, configurações e cache ficam separados por jogo.',
   ],
   [
-    'Posso personalizar o overlay?',
-    'Sim. Escolha os modos completo ou compacto e ajuste posição, escala, opacidade e estatísticas exibidas. O app também oferece atalhos para ocultar o overlay e travar a passagem de cliques.',
+    'Quais layouts posso usar?',
+    'No AoE II, escolha completo para 1v1, compacto horizontal ou compacto vertical. Se o completo estiver selecionado em uma partida de equipes, o app usa o compacto vertical e retoma o completo no próximo 1v1. Age IV usa sua própria faixa horizontal. Posição, escala e opacidade são ajustáveis.',
+  ],
+  [
+    'O app tem perfil e histórico?',
+    'No AoE II, a aba Perfil reúne rating, vitórias, derrotas e aproveitamento por modalidade, além das últimas cinco partidas multiplayer encerradas disponíveis na fonte. Dados podem atrasar ou estar ausentes. Perfil e histórico do Age IV ainda não estão disponíveis.',
+  ],
+  [
+    'Posso mudar o idioma e os atalhos?',
+    'Sim. A interface oferece português brasileiro e inglês. O idioma dos nomes de civilizações e unidades é independente e começa em inglês. Os atalhos para ocultar e travar o overlay podem ser alterados ou desativados; Ctrl+Shift+H e Ctrl+Shift+O são os padrões.',
   ],
   [
     'O Windows pode exibir um aviso na instalação?',
@@ -31,10 +39,9 @@ const questions = [
 <BaseLayout>
   <header class="site-header wrap">
     <Brand /><nav aria-label="Navegação principal">
-      <a href="#recursos">O app</a><a href="#como-funciona">Como funciona</a><a
-        href={site.appRepository}
-        class="github-nav">GitHub ↗</a
-      >
+      <a href="#recursos">O app</a><a href="#jogos">Jogos</a><a
+        href="#como-funciona">Como funciona</a
+      ><a href={site.appRepository} class="github-nav">GitHub ↗</a>
     </nav><a href="#download" class="button button-small"
       >Baixar o app <span aria-hidden="true">↓</span></a
     >
@@ -47,9 +54,8 @@ const questions = [
         ><h1 id="hero-title">
           Mais contexto.<br />Mais jogo<span class="accent">.</span>
         </h1><p>
-          Conheça quem está do outro lado.<br />Rating, civilizações e
-          estatísticas em um overlay<br class="desktop-break" /> que acompanha o seu
-          ritmo.
+          Conheça quem está do outro lado.<br />Civilizações e estatísticas em
+          um overlay<br class="desktop-break" /> que acompanha o seu ritmo.
         </p><div class="hero-actions">
           <a class="button button-primary" href="#download"
             >Conhecer o MatchDeck <span aria-hidden="true">↗</span></a
@@ -58,9 +64,11 @@ const questions = [
           >
         </div><div class="hero-meta">
           <span>WINDOWS</span><span class="meta-divider"></span><span
-            >AGE OF EMPIRES II: DE</span
+            >AGE II: DE + AGE IV*</span
           >
-        </div>
+        </div><p class="hero-footnote">
+          * Age IV com integração experimental para 1v1.
+        </p>
       </div>
       <div class="hero-demo">
         <OverlayDemo /><div class="demo-caption">
@@ -87,7 +95,8 @@ const questions = [
           Uma camada de informação que se adapta<br class="desktop-break" /> ao seu
           jeito de jogar.
         </p>
-      </div><div class="features">
+      </div>
+      <div class="features">
         <article>
           <span class="feature-number">01 / LEITURA DE PARTIDA</span><div
             class="feature-art rating-art"
@@ -99,21 +108,23 @@ const questions = [
               <i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i>
             </div>
           </div><h3>Conheça o confronto.</h3><p>
-            Rating da fila, civilizações e histórico de vitórias dos jogadores.
-            O contexto para entrar na partida.
+            Civilizações e estatísticas da modalidade em disputa. No Age IV
+            ranqueado, o número principal são pontos, distintos do MMR.
           </p>
-        </article><article>
+        </article>
+        <article>
           <span class="feature-number">02 / DO SEU JEITO</span><div
             class="feature-art settings-art"
             aria-hidden="true"
           >
             <span>Opacidade <b>85%</b></span><div class="slider-line">
-            </div><span>Modo de exibição <b>Compacto ↗</b></span>
+            </div><span>AoE II <b>Compacto vertical ↗</b></span>
           </div><h3>O seu espaço. Suas regras.</h3><p>
-            Posição, escala e opacidade ajustáveis. Alterne entre completo e
-            compacto e encontre seu equilíbrio.
+            Ajuste posição, escala e opacidade. No AoE II, use o completo em
+            duelos ou escolha entre dois modos compactos.
           </p>
-        </article><article>
+        </article>
+        <article>
           <span class="feature-number">03 / SEM INTERRUPÇÕES</span><div
             class="feature-art shortcut-art"
             aria-hidden="true"
@@ -122,8 +133,84 @@ const questions = [
               >H</kbd
             >
           </div><h3>Presente quando precisa.</h3><p>
-            Oculte a partida com um atalho. Trave o overlay para que seus
-            cliques continuem chegando ao jogo.
+            Oculte a partida e trave a passagem de cliques com atalhos
+            configuráveis. Altere as combinações ou desative-as nas
+            configurações.
+          </p>
+        </article>
+      </div>
+    </section>
+    <section
+      class="section games-section"
+      id="jogos"
+      aria-labelledby="games-title"
+    >
+      <div class="section-heading">
+        <div>
+          <span class="eyebrow">ESCOLHA A SUA PARTIDA</span><h2
+            id="games-title"
+          >
+            Um deck.<br /><span>Mais de um campo de batalha.</span>
+          </h2>
+        </div><p>
+          Troque de jogo pela tela inicial ou pela lateral.<br
+            class="desktop-break"
+          /> Cada jogo guarda seu próprio perfil e preferências.
+        </p>
+      </div>
+      <div class="game-grid">
+        <article class="game-card">
+          <span class="eyebrow">AGE OF EMPIRES II: DEFINITIVE EDITION</span><h3>
+            O clássico, com contexto.
+          </h3><p>
+            Overlay multiplayer com rating da fila, civilizações e estatísticas.
+            Teste 1v1, 2v2, 3v3 e 4v4 na demonstração.
+          </p><ul>
+            <li>Completo em 1v1; compactos horizontal e vertical.</li><li>
+              Perfil com estatísticas por modalidade e últimas cinco partidas
+              disponíveis.
+            </li><li>
+              Detecção sujeita à cobertura da fonte; lobbies personalizados não
+              têm cobertura garantida.
+            </li>
+          </ul>
+        </article>
+        <article class="game-card">
+          <span class="eyebrow"
+            >AGE OF EMPIRES IV <span class="experimental-badge"
+              >EXPERIMENTAL</span
+            ></span
+          ><h3>Uma nova era no deck.</h3><p>
+            Faixa horizontal para 1v1 ranqueado e rápido de PC, com civilização,
+            liga, posição no ranking, pontos/rating e aproveitamento.
+          </p><ul>
+            <li>
+              Vincule seu perfil por ID, Steam ID ou link do AoE4 World.
+            </li><li>
+              Dados dependem da cobertura e do tempo de publicação do AoE4
+              World.
+            </li><li>
+              Equipes, lobbies personalizados, campanhas, perfil e histórico
+              ainda não estão disponíveis.
+            </li>
+          </ul>
+        </article>
+      </div>
+      <div class="app-extras">
+        <article>
+          <h3>Seu idioma, suas escolhas.</h3><p>
+            Interface em português ou inglês. Nomes de civilizações e unidades
+            com idioma independente.
+          </p>
+        </article><article>
+          <h3>Pronto para voltar.</h3><p>
+            Use a bandeja e, se preferir, configure o início com Windows e a
+            abertura no último jogo usado.
+          </p>
+        </article><article>
+          <h3>Seu perfil em perspectiva.</h3><p>
+            No AoE II, acompanhe seu aproveitamento por modalidade e os
+            resultados recentes publicados pela fonte.
           </p>
         </article>
       </div>
@@ -151,16 +238,16 @@ const questions = [
           </div>
         </li><li>
           <span>02</span><div>
-            <h3>Encontre seu perfil</h3><p>
-              Use a configuração guiada para identificar seu perfil e deixar o
-              overlay com a sua cara.
+            <h3>Escolha o jogo e seu perfil</h3><p>
+              Selecione AoE II: DE ou Age IV e vincule seu perfil. Ajuste o
+              overlay e confira a demonstração antes de jogar.
             </p>
           </div>
         </li><li>
           <span>03</span><div>
             <h3>Entre na partida</h3><p>
-              Ative a detecção e abra o jogo em janela sem bordas. O overlay
-              aparece quando a fonte identifica sua partida.
+              Ative a detecção e use o jogo em janela sem bordas. O overlay
+              aparece quando a fonte identifica uma partida compatível.
             </p>
           </div>
         </li>

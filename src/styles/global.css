@@ -867,3 +867,123 @@ p {
 .app-preview {
   min-width: 0;
 }
+
+.preview-settings {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  padding: 16px 18px;
+  border-bottom: 1px solid var(--line);
+}
+.preview-settings label {
+  min-width: 0;
+  flex: 1 1 100px;
+  font-size: 9px;
+  color: var(--muted);
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+.preview-settings label:first-child {
+  flex-basis: 200px;
+}
+.preview-settings [hidden] {
+  display: none;
+}
+.preview-settings select {
+  width: 100%;
+  min-width: 0;
+  padding: 9px 8px;
+  border: 1px solid #354253;
+  background: #10151e;
+  color: #e9edf2;
+  border-radius: 4px;
+  font: 11px var(--font);
+}
+.preview-settings select:focus-visible {
+  outline: 2px solid var(--accent);
+  outline-offset: 3px;
+}
+.preview-note {
+  min-height: 44px;
+  padding: 12px 18px;
+  margin: 0;
+  border-top: 1px solid var(--line);
+  font-size: 10px;
+  line-height: 1.6;
+}
+.hero-copy > .hero-footnote {
+  font-size: 10px;
+  margin: 12px 0 0;
+}
+.games-section {
+  border-top: 1px solid var(--line);
+}
+.game-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 22px;
+  margin-top: 28px;
+}
+.game-card {
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  padding: 30px;
+  background: #171e2a;
+}
+.game-card h3 {
+  font-size: 24px;
+  margin-top: 23px;
+}
+.game-card p,
+.game-card li,
+.app-extras p {
+  font-size: 12px;
+  line-height: 1.8;
+  color: var(--muted);
+}
+.game-card ul {
+  padding-left: 18px;
+  margin-bottom: 0;
+}
+.game-card li {
+  margin-top: 12px;
+}
+.game-card li::marker {
+  color: var(--accent);
+}
+.experimental-badge {
+  border: 1px solid #355b70;
+  color: #86d9ee;
+  padding: 4px 6px;
+  border-radius: 4px;
+  font-size: 8px;
+  letter-spacing: 0.7px;
+}
+.app-extras {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 32px;
+  margin-top: 32px;
+}
+.app-extras h3 {
+  font-size: 15px;
+}
+@media (max-width: 760px) {
+  .game-grid,
+  .app-extras {
+    grid-template-columns: minmax(0, 1fr);
+  }
+  .game-card {
+    padding: 24px;
+  }
+  .app-extras {
+    gap: 6px;
+  }
+  .preview-settings {
+    padding: 12px;
+  }
+  .preview-settings label:first-child {
+    flex-basis: 100%;
+  }
+}

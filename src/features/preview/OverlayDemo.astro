@@ -1,76 +1,113 @@
 ---
-import { renderPreview } from './render-preview';
+import { asset } from '../../config/site';
+import provenance from '../../vendor/matchdeck/provenance.json';
 ---
 
 <div class="demo-shell">
   <div class="demo-top">
     <span><span class="live-dot"></span> PRÉVIA DO APP</span><span
-      >AOE II · DE</span
+      >v{provenance.version}</span
+    >
+  </div>
+  <div class="preview-settings">
+    <label
+      >Jogo<select id="preview-game"
+        ><option value="aoe2-de">Age of Empires II: DE</option><option
+          value="aoe4">Age of Empires IV · experimental</option
+        ></select
+      ></label
+    >
+    <label data-aoe2-control
+      >Formato<select id="preview-teams"
+        ><option value="1">1v1</option><option value="2">2v2</option><option
+          value="3">3v3</option
+        ><option value="4">4v4</option></select
+      ></label
+    >
+    <label data-aoe2-control
+      >Overlay<select id="preview-layout"
+        ><option value="detailed">Completo</option><option value="compact"
+          >Compacto horizontal</option
+        ><option value="stacked">Compacto vertical</option></select
+      ></label
     >
   </div>
   <div class="app-demo-stage">
-    <div class="app-preview" data-layout="detailed">
+    <div class="app-preview">
       <iframe
-        title="Overlay completo do MatchDeck com dados fictícios"
-        srcdoc={renderPreview('detailed')}
+        id="app-preview-frame"
+        title="Prévia do overlay do Age of Empires II com dados fictícios"
+        src={asset('previews/aoe2-detailed-1.html')}
         width="480"
-        height="420"
-        loading="eager"></iframe>
-    </div>
-    <div class="app-preview" data-layout="compact" hidden>
-      <iframe
-        title="Overlay compacto do MatchDeck com dados fictícios"
-        srcdoc={renderPreview('compact')}
-        width="720"
-        height="120"
+        height="400"
         loading="eager"></iframe>
     </div>
   </div>
-  <div class="demo-controls">
-    <span>Interface do app · dados fictícios</span><div
-      role="group"
-      aria-label="Modo de exibição"
-    >
-      <button type="button" data-mode="detailed" aria-pressed="true"
-        >Completo</button
-      ><button type="button" data-mode="compact" aria-pressed="false"
-        >Compacto</button
-      >
-    </div>
-  </div>
+  <p class="preview-note" id="preview-note" aria-live="polite">
+    Interface original do app · dados fictícios. O modo completo é exclusivo de
+    1v1.
+  </p>
 </div>
 <script>
-  const previews = document.querySelectorAll<HTMLElement>('.app-preview');
-  const buttons = document.querySelectorAll<HTMLButtonElement>('[data-mode]');
-  function fitPreview(container: HTMLElement) {
-    if (container.hidden) return;
-    const frame = container.querySelector('iframe');
-    if (!frame) return;
+  import { asset } from '../../config/site';
+  import {
+    selectPreview,
+    type PreviewLayout,
+    type TeamSize,
+  } from './preview-options';
+  const game = document.querySelector<HTMLSelectElement>('#preview-game')!;
+  const teams = document.querySelector<HTMLSelectElement>('#preview-teams')!;
+  const layout = document.querySelector<HTMLSelectElement>('#preview-layout')!;
+  const frame =
+    document.querySelector<HTMLIFrameElement>('#app-preview-frame')!;
+  const container = frame.parentElement!;
+  const note = document.querySelector<HTMLElement>('#preview-note')!;
+  let preferredLayout: PreviewLayout = 'detailed';
+  function fitPreview() {
+    const overlay = frame.contentDocument?.querySelector<HTMLElement>(
+      '.match-overlay, .linear-overlay, .aoe4-overlay',
+    );
+    if (!overlay) return;
     const nativeWidth = Number(frame.getAttribute('width'));
-    const height =
-      frame.contentDocument?.body.scrollHeight ||
-      Number(frame.getAttribute('height'));
+    const height = Math.ceil(overlay.getBoundingClientRect().height);
     const scale = Math.min(1, container.clientWidth / nativeWidth);
     frame.style.height = `${height}px`;
     frame.style.marginLeft = `${(container.clientWidth - nativeWidth * scale) / 2}px`;
     frame.style.transform = `scale(${scale})`;
     container.style.height = `${height * scale}px`;
   }
-  previews.forEach((container) => {
-    const frame = container.querySelector('iframe');
-    frame?.addEventListener('load', () => fitPreview(container));
-    new ResizeObserver(() => fitPreview(container)).observe(container);
-    fitPreview(container);
-  });
-  buttons.forEach((button) =>
-    button.addEventListener('click', () => {
-      previews.forEach((container) => {
-        container.hidden = container.dataset.layout !== button.dataset.mode;
-        fitPreview(container);
+  function updatePreview() {
+    const option = selectPreview(
+      game.value,
+      preferredLayout,
+      Number(teams.value) as TeamSize,
+    );
+    const isAoe4 = option.game === 'aoe4';
+    document
+      .querySelectorAll<HTMLElement>('[data-aoe2-control]')
+      .forEach((control) => {
+        control.hidden = isAoe4;
       });
-      buttons.forEach((item) =>
-        item.setAttribute('aria-pressed', String(item === button)),
-      );
-    }),
-  );
+    layout.options[0].disabled = teams.value !== '1';
+    if (!isAoe4) layout.value = option.layout;
+    note.textContent = isAoe4
+      ? 'Age IV experimental · 1v1 ranqueado e rápido. Pontos ranqueados não são MMR. Dados fictícios.'
+      : teams.value === '1'
+        ? 'Interface original do app · dados fictícios. O modo completo é exclusivo de 1v1.'
+        : 'Interface original do app · dados fictícios. Em equipes, a preferência pelo completo usa o compacto vertical.';
+    frame.title = isAoe4
+      ? 'Prévia do overlay do Age of Empires IV com dados fictícios'
+      : `Prévia do overlay do Age of Empires II · ${teams.value}v${teams.value} · ${layout.selectedOptions[0].text} · dados fictícios`;
+    frame.setAttribute('width', String(option.width));
+    frame.src = asset(`previews/${option.id}.html`);
+  }
+  layout.addEventListener('change', () => {
+    preferredLayout = layout.value as PreviewLayout;
+    updatePreview();
+  });
+  game.addEventListener('change', updatePreview);
+  teams.addEventListener('change', updatePreview);
+  frame.addEventListener('load', fitPreview);
+  new ResizeObserver(fitPreview).observe(container);
+  fitPreview();
 </script>

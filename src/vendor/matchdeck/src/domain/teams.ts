@@ -6,6 +6,14 @@ export interface MatchTeam {
   players: Player[];
 }
 
+export function isDuel(match: MatchSnapshot): boolean {
+  if (match.players.length !== 2) return false;
+  if (match.queueId?.endsWith('_team')) return false;
+  const [left, right] = match.players;
+  if (left.teamId != null && left.teamId > 0 && right.teamId === left.teamId) return false;
+  return true;
+}
+
 export function matchTeams(match: MatchSnapshot): MatchTeam[] {
   if (match.players.every(player => player.teamId != null && player.teamId > 0)) {
     const groups = new Map<number, Player[]>();

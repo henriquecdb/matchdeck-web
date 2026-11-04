@@ -4,3 +4,5 @@ dist
 .astro
 src/vendor/
 public/units/NOTICE.md
+
+public/aoe4/NOTICE.md
