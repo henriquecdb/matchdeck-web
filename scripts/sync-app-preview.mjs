@@ -75,6 +75,11 @@ for (const civilization of [
     await copyFile(resolve(app, path), resolve(root, path));
   }
 }
+await cp(
+  resolve(app, 'public/civilizations'),
+  resolve(root, 'public/civilizations'),
+  { recursive: true },
+);
 await cp(resolve(app, 'public/aoe4'), resolve(root, 'public/aoe4'), {
   recursive: true,
 });

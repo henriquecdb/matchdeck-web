@@ -1,0 +1,5360 @@
+{
+  "schemaVersion": 1,
+  "games": {
+    "aoe2": {
+      "sourceName": "AOE2 Complete Guide",
+      "sourceUrl": "https://aoe2-guide.vercel.app/data",
+      "endpoint": "https://aoe2-guide.vercel.app/data/ranked_data.json",
+      "sourceUpdatedAt": "2026-10-03T15:01:38.788Z",
+      "periodStart": "2026-06-02",
+      "patch": "Update 185872",
+      "notes": [
+        "Ranqueado 1v1 · Random Map. Amostra publicada por um agregador comunitário; não representa todas as partidas do jogo.",
+        "Partidas significa participações de jogadores com a civilização. Não somar as linhas como partidas únicas.",
+        "Civilizações não mapeadas pelo provedor ficam fora do ranking. Não aplicamos exclusão adicional de espelhos."
+      ],
+      "unmappedIds": [-1, 45, 46, 47, 55, 56, 57, 61, 62, 63],
+      "views": [
+        {
+          "id": "all",
+          "label": "Todos os Elos",
+          "rows": [
+            {
+              "id": "magyars",
+              "games": 51445,
+              "wins": 26084,
+              "losses": 25361,
+              "winRate": 50.70269219554864
+            },
+            {
+              "id": "aztecs",
+              "games": 148538,
+              "wins": 74007,
+              "losses": 74531,
+              "winRate": 49.8236141593397
+            },
+            {
+              "id": "cumans",
+              "games": 65851,
+              "wins": 31775,
+              "losses": 34076,
+              "winRate": 48.2528739123172
+            },
+            {
+              "id": "dravidians",
+              "games": 36313,
+              "wins": 17618,
+              "losses": 18695,
+              "winRate": 48.517060006058436
+            },
+            {
+              "id": "incas",
+              "games": 51992,
+              "wins": 26551,
+              "losses": 25441,
+              "winRate": 51.06747191875673
+            },
+            {
+              "id": "vietnamese",
+              "games": 169177,
+              "wins": 85842,
+              "losses": 83335,
+              "winRate": 50.74093996228802
+            },
+            {
+              "id": "mayans",
+              "games": 23208,
+              "wins": 10935,
+              "losses": 12273,
+              "winRate": 47.11737331954498
+            },
+            {
+              "id": "malay",
+              "games": 41565,
+              "wins": 21425,
+              "losses": 20140,
+              "winRate": 51.54577168290629
+            },
+            {
+              "id": "hindustanis",
+              "games": 45401,
+              "wins": 21485,
+              "losses": 23916,
+              "winRate": 47.32274619501773
+            },
+            {
+              "id": "saracens",
+              "games": 69089,
+              "wins": 32338,
+              "losses": 36751,
+              "winRate": 46.80629333178943
+            },
+            {
+              "id": "malians",
+              "games": 73651,
+              "wins": 36514,
+              "losses": 37137,
+              "winRate": 49.57705937461813
+            },
+            {
+              "id": "khmer",
+              "games": 38467,
+              "wins": 19737,
+              "losses": 18730,
+              "winRate": 51.308914134192946
+            },
+            {
+              "id": "chinese",
+              "games": 58404,
+              "wins": 30823,
+              "losses": 27581,
+              "winRate": 52.77549482912129
+            },
+            {
+              "id": "burgundians",
+              "games": 39674,
+              "wins": 18977,
+              "losses": 20697,
+              "winRate": 47.83233351817311
+            },
+            {
+              "id": "persians",
+              "games": 26104,
+              "wins": 12532,
+              "losses": 13572,
+              "winRate": 48.00796812749004
+            },
+            {
+              "id": "portuguese",
+              "games": 93558,
+              "wins": 46281,
+              "losses": 47277,
+              "winRate": 49.467709869813376
+            },
+            {
+              "id": "byzantines",
+              "games": 74149,
+              "wins": 37080,
+              "losses": 37069,
+              "winRate": 50.00741749720158
+            },
+            {
+              "id": "mapuche",
+              "games": 17432,
+              "wins": 8516,
+              "losses": 8916,
+              "winRate": 48.85268471776044
+            },
+            {
+              "id": "celts",
+              "games": 28708,
+              "wins": 14397,
+              "losses": 14311,
+              "winRate": 50.149784032325485
+            },
+            {
+              "id": "poles",
+              "games": 34053,
+              "wins": 16651,
+              "losses": 17402,
+              "winRate": 48.89730713887176
+            },
+            {
+              "id": "gurjaras",
+              "games": 73501,
+              "wins": 37835,
+              "losses": 35666,
+              "winRate": 51.475490129385996
+            },
+            {
+              "id": "italians",
+              "games": 73807,
+              "wins": 37663,
+              "losses": 36144,
+              "winRate": 51.02903518636444
+            },
+            {
+              "id": "muisca",
+              "games": 18205,
+              "wins": 9087,
+              "losses": 9118,
+              "winRate": 49.91485855534194
+            },
+            {
+              "id": "bohemians",
+              "games": 106341,
+              "wins": 54058,
+              "losses": 52283,
+              "winRate": 50.83457932500165
+            },
+            {
+              "id": "shu",
+              "games": 18692,
+              "wins": 9388,
+              "losses": 9304,
+              "winRate": 50.224695056708754
+            },
+            {
+              "id": "mongols",
+              "games": 53505,
+              "wins": 26050,
+              "losses": 27455,
+              "winRate": 48.68703859452388
+            },
+            {
+              "id": "britons",
+              "games": 42414,
+              "wins": 20959,
+              "losses": 21455,
+              "winRate": 49.41528740510209
+            },
+            {
+              "id": "wu",
+              "games": 39302,
+              "wins": 19502,
+              "losses": 19800,
+              "winRate": 49.62088443336217
+            },
+            {
+              "id": "berbers",
+              "games": 113008,
+              "wins": 57160,
+              "losses": 55848,
+              "winRate": 50.58048987682288
+            },
+            {
+              "id": "franks",
+              "games": 26796,
+              "wins": 13202,
+              "losses": 13594,
+              "winRate": 49.268547544409614
+            },
+            {
+              "id": "teutons",
+              "games": 64692,
+              "wins": 32299,
+              "losses": 32393,
+              "winRate": 49.927348049217834
+            },
+            {
+              "id": "vikings",
+              "games": 60270,
+              "wins": 29494,
+              "losses": 30776,
+              "winRate": 48.936452629832424
+            },
+            {
+              "id": "bulgarians",
+              "games": 107620,
+              "wins": 54642,
+              "losses": 52978,
+              "winRate": 50.77309050362386
+            },
+            {
+              "id": "koreans",
+              "games": 28484,
+              "wins": 13117,
+              "losses": 15367,
+              "winRate": 46.050414267659036
+            },
+            {
+              "id": "lithuanians",
+              "games": 56089,
+              "wins": 30418,
+              "losses": 25671,
+              "winRate": 54.23166752839238
+            },
+            {
+              "id": "slavs",
+              "games": 90281,
+              "wins": 47391,
+              "losses": 42890,
+              "winRate": 52.49277256565612
+            },
+            {
+              "id": "georgians",
+              "games": 38086,
+              "wins": 20012,
+              "losses": 18074,
+              "winRate": 52.54424197867983
+            },
+            {
+              "id": "tatars",
+              "games": 51041,
+              "wins": 25303,
+              "losses": 25738,
+              "winRate": 49.57387198526675
+            },
+            {
+              "id": "wei",
+              "games": 23178,
+              "wins": 11350,
+              "losses": 11828,
+              "winRate": 48.96884977133489
+            },
+            {
+              "id": "romans",
+              "games": 101308,
+              "wins": 49838,
+              "losses": 51470,
+              "winRate": 49.194535475974256
+            },
+            {
+              "id": "japanese",
+              "games": 92678,
+              "wins": 44292,
+              "losses": 48386,
+              "winRate": 47.79127732579469
+            },
+            {
+              "id": "sicilians",
+              "games": 53075,
+              "wins": 27515,
+              "losses": 25560,
+              "winRate": 51.84173339613754
+            },
+            {
+              "id": "turks",
+              "games": 50849,
+              "wins": 25785,
+              "losses": 25064,
+              "winRate": 50.70896182815788
+            },
+            {
+              "id": "jurchens",
+              "games": 25453,
+              "wins": 12886,
+              "losses": 12567,
+              "winRate": 50.6266451891722
+            },
+            {
+              "id": "burmese",
+              "games": 50910,
+              "wins": 24992,
+              "losses": 25918,
+              "winRate": 49.09055195442939
+            },
+            {
+              "id": "armenians",
+              "games": 55325,
+              "wins": 29204,
+              "losses": 26121,
+              "winRate": 52.78626299141437
+            },
+            {
+              "id": "khitans",
+              "games": 16782,
+              "wins": 8450,
+              "losses": 8332,
+              "winRate": 50.35156715528542
+            },
+            {
+              "id": "spanish",
+              "games": 72004,
+              "wins": 35987,
+              "losses": 36017,
+              "winRate": 49.97916782400978
+            },
+            {
+              "id": "goths",
+              "games": 39981,
+              "wins": 19498,
+              "losses": 20483,
+              "winRate": 48.7681648783172
+            },
+            {
+              "id": "tupi",
+              "games": 19523,
+              "wins": 9833,
+              "losses": 9690,
+              "winRate": 50.36623469753624
+            },
+            {
+              "id": "bengalis",
+              "games": 76440,
+              "wins": 37423,
+              "losses": 39017,
+              "winRate": 48.957352171637886
+            },
+            {
+              "id": "ethiopians",
+              "games": 42492,
+              "wins": 20832,
+              "losses": 21660,
+              "winRate": 49.02569895509743
+            },
+            {
+              "id": "huns",
+              "games": 57138,
+              "wins": 28442,
+              "losses": 28696,
+              "winRate": 49.777731107144106
+            }
+          ]
+        },
+        {
+          "id": "0",
+          "label": "<600",
+          "rows": [
+            {
+              "id": "gurjaras",
+              "games": 9254,
+              "wins": 4590,
+              "losses": 4664,
+              "winRate": 49.60017289820618
+            },
+            {
+              "id": "vietnamese",
+              "games": 9251,
+              "wins": 4599,
+              "losses": 4652,
+              "winRate": 49.71354448167766
+            },
+            {
+              "id": "japanese",
+              "games": 14586,
+              "wins": 7111,
+              "losses": 7475,
+              "winRate": 48.75222816399287
+            },
+            {
+              "id": "berbers",
+              "games": 6534,
+              "wins": 3359,
+              "losses": 3175,
+              "winRate": 51.40801958983777
+            },
+            {
+              "id": "vikings",
+              "games": 7257,
+              "wins": 3384,
+              "losses": 3873,
+              "winRate": 46.63083918974783
+            },
+            {
+              "id": "italians",
+              "games": 9834,
+              "wins": 4898,
+              "losses": 4936,
+              "winRate": 49.80679275981289
+            },
+            {
+              "id": "chinese",
+              "games": 4785,
+              "wins": 2614,
+              "losses": 2171,
+              "winRate": 54.62904911180773
+            },
+            {
+              "id": "dravidians",
+              "games": 2174,
+              "wins": 1031,
+              "losses": 1143,
+              "winRate": 47.42410303587857
+            },
+            {
+              "id": "saracens",
+              "games": 8795,
+              "wins": 4305,
+              "losses": 4490,
+              "winRate": 48.94826606026151
+            },
+            {
+              "id": "magyars",
+              "games": 4263,
+              "wins": 2075,
+              "losses": 2188,
+              "winRate": 48.67464227070138
+            },
+            {
+              "id": "bulgarians",
+              "games": 10904,
+              "wins": 5571,
+              "losses": 5333,
+              "winRate": 51.09134262655906
+            },
+            {
+              "id": "romans",
+              "games": 8995,
+              "wins": 4566,
+              "losses": 4429,
+              "winRate": 50.7615341856587
+            },
+            {
+              "id": "portuguese",
+              "games": 11164,
+              "wins": 5564,
+              "losses": 5600,
+              "winRate": 49.83876746685776
+            },
+            {
+              "id": "cumans",
+              "games": 8409,
+              "wins": 4103,
+              "losses": 4306,
+              "winRate": 48.79295992389107
+            },
+            {
+              "id": "sicilians",
+              "games": 6365,
+              "wins": 3498,
+              "losses": 2867,
+              "winRate": 54.95679497250589
+            },
+            {
+              "id": "hindustanis",
+              "games": 4313,
+              "wins": 2151,
+              "losses": 2162,
+              "winRate": 49.872478553211224
+            },
+            {
+              "id": "muisca",
+              "games": 1305,
+              "wins": 703,
+              "losses": 602,
+              "winRate": 53.86973180076628
+            },
+            {
+              "id": "slavs",
+              "games": 6913,
+              "wins": 3730,
+              "losses": 3183,
+              "winRate": 53.956314190655284
+            },
+            {
+              "id": "byzantines",
+              "games": 8892,
+              "wins": 4369,
+              "losses": 4523,
+              "winRate": 49.134053081421506
+            },
+            {
+              "id": "bohemians",
+              "games": 13180,
+              "wins": 6563,
+              "losses": 6617,
+              "winRate": 49.79514415781487
+            },
+            {
+              "id": "britons",
+              "games": 4088,
+              "wins": 2026,
+              "losses": 2062,
+              "winRate": 49.55968688845401
+            },
+            {
+              "id": "teutons",
+              "games": 6449,
+              "wins": 3247,
+              "losses": 3202,
+              "winRate": 50.348891300976895
+            },
+            {
+              "id": "malians",
+              "games": 6571,
+              "wins": 3427,
+              "losses": 3144,
+              "winRate": 52.15340130878101
+            },
+            {
+              "id": "burmese",
+              "games": 4094,
+              "wins": 1947,
+              "losses": 2147,
+              "winRate": 47.557401074743524
+            },
+            {
+              "id": "tatars",
+              "games": 4225,
+              "wins": 2114,
+              "losses": 2111,
+              "winRate": 50.03550295857988
+            },
+            {
+              "id": "koreans",
+              "games": 2880,
+              "wins": 1258,
+              "losses": 1622,
+              "winRate": 43.68055555555556
+            },
+            {
+              "id": "bengalis",
+              "games": 12380,
+              "wins": 6098,
+              "losses": 6282,
+              "winRate": 49.25686591276252
+            },
+            {
+              "id": "georgians",
+              "games": 1610,
+              "wins": 933,
+              "losses": 677,
+              "winRate": 57.95031055900621
+            },
+            {
+              "id": "aztecs",
+              "games": 22956,
+              "wins": 11588,
+              "losses": 11368,
+              "winRate": 50.47917755706569
+            },
+            {
+              "id": "lithuanians",
+              "games": 5065,
+              "wins": 2690,
+              "losses": 2375,
+              "winRate": 53.10957551826259
+            },
+            {
+              "id": "celts",
+              "games": 2074,
+              "wins": 1014,
+              "losses": 1060,
+              "winRate": 48.89103182256509
+            },
+            {
+              "id": "spanish",
+              "games": 3829,
+              "wins": 2022,
+              "losses": 1807,
+              "winRate": 52.807521546095586
+            },
+            {
+              "id": "tupi",
+              "games": 1581,
+              "wins": 811,
+              "losses": 770,
+              "winRate": 51.2966476913346
+            },
+            {
+              "id": "armenians",
+              "games": 4625,
+              "wins": 2431,
+              "losses": 2194,
+              "winRate": 52.56216216216216
+            },
+            {
+              "id": "burgundians",
+              "games": 2630,
+              "wins": 1273,
+              "losses": 1357,
+              "winRate": 48.40304182509506
+            },
+            {
+              "id": "huns",
+              "games": 6653,
+              "wins": 3407,
+              "losses": 3246,
+              "winRate": 51.209980459942884
+            },
+            {
+              "id": "incas",
+              "games": 3234,
+              "wins": 1545,
+              "losses": 1689,
+              "winRate": 47.77365491651206
+            },
+            {
+              "id": "persians",
+              "games": 1671,
+              "wins": 752,
+              "losses": 919,
+              "winRate": 45.00299222022741
+            },
+            {
+              "id": "turks",
+              "games": 5274,
+              "wins": 2674,
+              "losses": 2600,
+              "winRate": 50.701554797117936
+            },
+            {
+              "id": "malay",
+              "games": 2511,
+              "wins": 1260,
+              "losses": 1251,
+              "winRate": 50.17921146953405
+            },
+            {
+              "id": "goths",
+              "games": 2173,
+              "wins": 939,
+              "losses": 1234,
+              "winRate": 43.2121491026231
+            },
+            {
+              "id": "mongols",
+              "games": 5598,
+              "wins": 2625,
+              "losses": 2973,
+              "winRate": 46.89174705251876
+            },
+            {
+              "id": "wei",
+              "games": 1159,
+              "wins": 578,
+              "losses": 581,
+              "winRate": 49.87057808455565
+            },
+            {
+              "id": "khmer",
+              "games": 2382,
+              "wins": 1166,
+              "losses": 1216,
+              "winRate": 48.95046179680941
+            },
+            {
+              "id": "wu",
+              "games": 1596,
+              "wins": 815,
+              "losses": 781,
+              "winRate": 51.06516290726817
+            },
+            {
+              "id": "ethiopians",
+              "games": 2881,
+              "wins": 1358,
+              "losses": 1523,
+              "winRate": 47.13641096841374
+            },
+            {
+              "id": "shu",
+              "games": 1220,
+              "wins": 608,
+              "losses": 612,
+              "winRate": 49.83606557377049
+            },
+            {
+              "id": "poles",
+              "games": 3218,
+              "wins": 1599,
+              "losses": 1619,
+              "winRate": 49.68924798011187
+            },
+            {
+              "id": "khitans",
+              "games": 795,
+              "wins": 391,
+              "losses": 404,
+              "winRate": 49.18238993710692
+            },
+            {
+              "id": "mayans",
+              "games": 1264,
+              "wins": 605,
+              "losses": 659,
+              "winRate": 47.86392405063291
+            },
+            {
+              "id": "franks",
+              "games": 1734,
+              "wins": 806,
+              "losses": 928,
+              "winRate": 46.48212226066897
+            },
+            {
+              "id": "mapuche",
+              "games": 685,
+              "wins": 335,
+              "losses": 350,
+              "winRate": 48.90510948905109
+            },
+            {
+              "id": "jurchens",
+              "games": 964,
+              "wins": 490,
+              "losses": 474,
+              "winRate": 50.829875518672196
+            }
+          ]
+        },
+        {
+          "id": "1",
+          "label": "600-825",
+          "rows": [
+            {
+              "id": "hindustanis",
+              "games": 6378,
+              "wins": 3118,
+              "losses": 3260,
+              "winRate": 48.886798369394796
+            },
+            {
+              "id": "incas",
+              "games": 4885,
+              "wins": 2447,
+              "losses": 2438,
+              "winRate": 50.0921187308086
+            },
+            {
+              "id": "byzantines",
+              "games": 11602,
+              "wins": 5820,
+              "losses": 5782,
+              "winRate": 50.16376486812619
+            },
+            {
+              "id": "burgundians",
+              "games": 4712,
+              "wins": 2249,
+              "losses": 2463,
+              "winRate": 47.72920203735144
+            },
+            {
+              "id": "ethiopians",
+              "games": 5416,
+              "wins": 2581,
+              "losses": 2835,
+              "winRate": 47.65509601181684
+            },
+            {
+              "id": "britons",
+              "games": 5608,
+              "wins": 2811,
+              "losses": 2797,
+              "winRate": 50.124821683309555
+            },
+            {
+              "id": "aztecs",
+              "games": 33098,
+              "wins": 16362,
+              "losses": 16736,
+              "winRate": 49.4350111789232
+            },
+            {
+              "id": "berbers",
+              "games": 12442,
+              "wins": 6380,
+              "losses": 6062,
+              "winRate": 51.27792959331297
+            },
+            {
+              "id": "slavs",
+              "games": 12979,
+              "wins": 6932,
+              "losses": 6047,
+              "winRate": 53.4093535711534
+            },
+            {
+              "id": "portuguese",
+              "games": 14813,
+              "wins": 7332,
+              "losses": 7481,
+              "winRate": 49.49706339026531
+            },
+            {
+              "id": "wu",
+              "games": 3386,
+              "wins": 1736,
+              "losses": 1650,
+              "winRate": 51.269935026580036
+            },
+            {
+              "id": "bengalis",
+              "games": 14501,
+              "wins": 7054,
+              "losses": 7447,
+              "winRate": 48.64492103992828
+            },
+            {
+              "id": "wei",
+              "games": 2192,
+              "wins": 1106,
+              "losses": 1086,
+              "winRate": 50.456204379562045
+            },
+            {
+              "id": "georgians",
+              "games": 4495,
+              "wins": 2514,
+              "losses": 1981,
+              "winRate": 55.92880978865406
+            },
+            {
+              "id": "magyars",
+              "games": 5752,
+              "wins": 2792,
+              "losses": 2960,
+              "winRate": 48.53963838664812
+            },
+            {
+              "id": "muisca",
+              "games": 1723,
+              "wins": 866,
+              "losses": 857,
+              "winRate": 50.261172373766684
+            },
+            {
+              "id": "bohemians",
+              "games": 17326,
+              "wins": 8880,
+              "losses": 8446,
+              "winRate": 51.25245296086806
+            },
+            {
+              "id": "bulgarians",
+              "games": 15636,
+              "wins": 7912,
+              "losses": 7724,
+              "winRate": 50.60117677155283
+            },
+            {
+              "id": "khitans",
+              "games": 1587,
+              "wins": 759,
+              "losses": 828,
+              "winRate": 47.82608695652174
+            },
+            {
+              "id": "saracens",
+              "games": 12384,
+              "wins": 5703,
+              "losses": 6681,
+              "winRate": 46.05135658914729
+            },
+            {
+              "id": "chinese",
+              "games": 9458,
+              "wins": 5261,
+              "losses": 4197,
+              "winRate": 55.62486783675195
+            },
+            {
+              "id": "gurjaras",
+              "games": 11622,
+              "wins": 6031,
+              "losses": 5591,
+              "winRate": 51.89296162450525
+            },
+            {
+              "id": "lithuanians",
+              "games": 8998,
+              "wins": 4873,
+              "losses": 4125,
+              "winRate": 54.15647921760391
+            },
+            {
+              "id": "huns",
+              "games": 10747,
+              "wins": 5417,
+              "losses": 5330,
+              "winRate": 50.404764120219596
+            },
+            {
+              "id": "cumans",
+              "games": 11032,
+              "wins": 5400,
+              "losses": 5632,
+              "winRate": 48.94851341551849
+            },
+            {
+              "id": "teutons",
+              "games": 10588,
+              "wins": 5510,
+              "losses": 5078,
+              "winRate": 52.04004533434076
+            },
+            {
+              "id": "vietnamese",
+              "games": 18877,
+              "wins": 9445,
+              "losses": 9432,
+              "winRate": 50.034433437516554
+            },
+            {
+              "id": "turks",
+              "games": 8423,
+              "wins": 4307,
+              "losses": 4116,
+              "winRate": 51.133800308678616
+            },
+            {
+              "id": "japanese",
+              "games": 19242,
+              "wins": 9029,
+              "losses": 10213,
+              "winRate": 46.923396736305996
+            },
+            {
+              "id": "khmer",
+              "games": 4729,
+              "wins": 2528,
+              "losses": 2201,
+              "winRate": 53.45739056883062
+            },
+            {
+              "id": "romans",
+              "games": 14470,
+              "wins": 7116,
+              "losses": 7354,
+              "winRate": 49.177608845888045
+            },
+            {
+              "id": "goths",
+              "games": 3568,
+              "wins": 1644,
+              "losses": 1924,
+              "winRate": 46.0762331838565
+            },
+            {
+              "id": "tatars",
+              "games": 7439,
+              "wins": 3731,
+              "losses": 3708,
+              "winRate": 50.154590670789084
+            },
+            {
+              "id": "sicilians",
+              "games": 9018,
+              "wins": 4870,
+              "losses": 4148,
+              "winRate": 54.0031049013085
+            },
+            {
+              "id": "mayans",
+              "games": 2273,
+              "wins": 1072,
+              "losses": 1201,
+              "winRate": 47.1623405191377
+            },
+            {
+              "id": "persians",
+              "games": 2887,
+              "wins": 1368,
+              "losses": 1519,
+              "winRate": 47.38482854173883
+            },
+            {
+              "id": "mongols",
+              "games": 8699,
+              "wins": 4124,
+              "losses": 4575,
+              "winRate": 47.407748017013446
+            },
+            {
+              "id": "celts",
+              "games": 3093,
+              "wins": 1471,
+              "losses": 1622,
+              "winRate": 47.55900420303912
+            },
+            {
+              "id": "armenians",
+              "games": 7704,
+              "wins": 4112,
+              "losses": 3592,
+              "winRate": 53.374870197300105
+            },
+            {
+              "id": "italians",
+              "games": 11453,
+              "wins": 5733,
+              "losses": 5720,
+              "winRate": 50.05675368898979
+            },
+            {
+              "id": "malians",
+              "games": 10161,
+              "wins": 5108,
+              "losses": 5053,
+              "winRate": 50.27064265328216
+            },
+            {
+              "id": "franks",
+              "games": 2675,
+              "wins": 1315,
+              "losses": 1360,
+              "winRate": 49.1588785046729
+            },
+            {
+              "id": "tupi",
+              "games": 2260,
+              "wins": 1143,
+              "losses": 1117,
+              "winRate": 50.575221238938056
+            },
+            {
+              "id": "spanish",
+              "games": 8850,
+              "wins": 4490,
+              "losses": 4360,
+              "winRate": 50.73446327683616
+            },
+            {
+              "id": "burmese",
+              "games": 6283,
+              "wins": 2938,
+              "losses": 3345,
+              "winRate": 46.76110138468884
+            },
+            {
+              "id": "vikings",
+              "games": 8905,
+              "wins": 4112,
+              "losses": 4793,
+              "winRate": 46.176305446378436
+            },
+            {
+              "id": "poles",
+              "games": 4456,
+              "wins": 2157,
+              "losses": 2299,
+              "winRate": 48.40664272890485
+            },
+            {
+              "id": "mapuche",
+              "games": 1517,
+              "wins": 752,
+              "losses": 765,
+              "winRate": 49.57152274225445
+            },
+            {
+              "id": "malay",
+              "games": 4384,
+              "wins": 2206,
+              "losses": 2178,
+              "winRate": 50.31934306569343
+            },
+            {
+              "id": "jurchens",
+              "games": 2074,
+              "wins": 1057,
+              "losses": 1017,
+              "winRate": 50.96432015429122
+            },
+            {
+              "id": "dravidians",
+              "games": 3687,
+              "wins": 1764,
+              "losses": 1923,
+              "winRate": 47.84377542717657
+            },
+            {
+              "id": "koreans",
+              "games": 3389,
+              "wins": 1450,
+              "losses": 1939,
+              "winRate": 42.78548244319858
+            },
+            {
+              "id": "shu",
+              "games": 1443,
+              "wins": 695,
+              "losses": 748,
+              "winRate": 48.163548163548164
+            }
+          ]
+        },
+        {
+          "id": "2",
+          "label": "825-1050",
+          "rows": [
+            {
+              "id": "malay",
+              "games": 9003,
+              "wins": 4708,
+              "losses": 4295,
+              "winRate": 52.29367988448295
+            },
+            {
+              "id": "celts",
+              "games": 6146,
+              "wins": 3084,
+              "losses": 3062,
+              "winRate": 50.17897819720143
+            },
+            {
+              "id": "bohemians",
+              "games": 30121,
+              "wins": 15328,
+              "losses": 14793,
+              "winRate": 50.88808472494273
+            },
+            {
+              "id": "japanese",
+              "games": 25191,
+              "wins": 11622,
+              "losses": 13569,
+              "winRate": 46.135524592116234
+            },
+            {
+              "id": "khitans",
+              "games": 2973,
+              "wins": 1483,
+              "losses": 1490,
+              "winRate": 49.88227379751093
+            },
+            {
+              "id": "ethiopians",
+              "games": 10151,
+              "wins": 4928,
+              "losses": 5223,
+              "winRate": 48.54694118806029
+            },
+            {
+              "id": "vietnamese",
+              "games": 41886,
+              "wins": 21195,
+              "losses": 20691,
+              "winRate": 50.60163300386764
+            },
+            {
+              "id": "khmer",
+              "games": 8949,
+              "wins": 4615,
+              "losses": 4334,
+              "winRate": 51.57000782210303
+            },
+            {
+              "id": "koreans",
+              "games": 6019,
+              "wins": 2795,
+              "losses": 3224,
+              "winRate": 46.436285097192226
+            },
+            {
+              "id": "cumans",
+              "games": 16074,
+              "wins": 7701,
+              "losses": 8373,
+              "winRate": 47.909667786487496
+            },
+            {
+              "id": "portuguese",
+              "games": 24867,
+              "wins": 12370,
+              "losses": 12497,
+              "winRate": 49.74464149274139
+            },
+            {
+              "id": "poles",
+              "games": 8502,
+              "wins": 4207,
+              "losses": 4295,
+              "winRate": 49.48247471183251
+            },
+            {
+              "id": "berbers",
+              "games": 29877,
+              "wins": 15472,
+              "losses": 14405,
+              "winRate": 51.785654516852425
+            },
+            {
+              "id": "britons",
+              "games": 10567,
+              "wins": 5138,
+              "losses": 5429,
+              "winRate": 48.62307182738715
+            },
+            {
+              "id": "spanish",
+              "games": 20948,
+              "wins": 10606,
+              "losses": 10342,
+              "winRate": 50.63013175482146
+            },
+            {
+              "id": "gurjaras",
+              "games": 21155,
+              "wins": 11249,
+              "losses": 9906,
+              "winRate": 53.17419049870007
+            },
+            {
+              "id": "incas",
+              "games": 12480,
+              "wins": 6422,
+              "losses": 6058,
+              "winRate": 51.458333333333336
+            },
+            {
+              "id": "hindustanis",
+              "games": 10596,
+              "wins": 5089,
+              "losses": 5507,
+              "winRate": 48.027557568893926
+            },
+            {
+              "id": "sicilians",
+              "games": 12993,
+              "wins": 6707,
+              "losses": 6286,
+              "winRate": 51.62010313245594
+            },
+            {
+              "id": "persians",
+              "games": 5281,
+              "wins": 2575,
+              "losses": 2706,
+              "winRate": 48.759704601401246
+            },
+            {
+              "id": "chinese",
+              "games": 16157,
+              "wins": 8592,
+              "losses": 7565,
+              "winRate": 53.178189020238904
+            },
+            {
+              "id": "shu",
+              "games": 3576,
+              "wins": 1841,
+              "losses": 1735,
+              "winRate": 51.482102908277405
+            },
+            {
+              "id": "wu",
+              "games": 8327,
+              "wins": 4124,
+              "losses": 4203,
+              "winRate": 49.52563948600937
+            },
+            {
+              "id": "aztecs",
+              "games": 46897,
+              "wins": 23114,
+              "losses": 23783,
+              "winRate": 49.286734759153035
+            },
+            {
+              "id": "slavs",
+              "games": 24071,
+              "wins": 12818,
+              "losses": 11253,
+              "winRate": 53.25079971750239
+            },
+            {
+              "id": "vikings",
+              "games": 12263,
+              "wins": 5542,
+              "losses": 6721,
+              "winRate": 45.1928565603849
+            },
+            {
+              "id": "romans",
+              "games": 26750,
+              "wins": 12976,
+              "losses": 13774,
+              "winRate": 48.50841121495327
+            },
+            {
+              "id": "dravidians",
+              "games": 8063,
+              "wins": 4024,
+              "losses": 4039,
+              "winRate": 49.90698251271239
+            },
+            {
+              "id": "huns",
+              "games": 16581,
+              "wins": 8184,
+              "losses": 8397,
+              "winRate": 49.357698570653156
+            },
+            {
+              "id": "byzantines",
+              "games": 18407,
+              "wins": 9188,
+              "losses": 9219,
+              "winRate": 49.91579290487314
+            },
+            {
+              "id": "franks",
+              "games": 5029,
+              "wins": 2437,
+              "losses": 2592,
+              "winRate": 48.45893815867966
+            },
+            {
+              "id": "bengalis",
+              "games": 19435,
+              "wins": 9232,
+              "losses": 10203,
+              "winRate": 47.501929508618474
+            },
+            {
+              "id": "bulgarians",
+              "games": 27171,
+              "wins": 13599,
+              "losses": 13572,
+              "winRate": 50.049685326266975
+            },
+            {
+              "id": "tupi",
+              "games": 3755,
+              "wins": 1898,
+              "losses": 1857,
+              "winRate": 50.54593874833555
+            },
+            {
+              "id": "mapuche",
+              "games": 3443,
+              "wins": 1732,
+              "losses": 1711,
+              "winRate": 50.304966598896314
+            },
+            {
+              "id": "mongols",
+              "games": 13079,
+              "wins": 6467,
+              "losses": 6612,
+              "winRate": 49.44567627494457
+            },
+            {
+              "id": "malians",
+              "games": 20352,
+              "wins": 10220,
+              "losses": 10132,
+              "winRate": 50.21619496855346
+            },
+            {
+              "id": "tatars",
+              "games": 12914,
+              "wins": 6335,
+              "losses": 6579,
+              "winRate": 49.05528883382376
+            },
+            {
+              "id": "italians",
+              "games": 17411,
+              "wins": 8683,
+              "losses": 8728,
+              "winRate": 49.87077135144449
+            },
+            {
+              "id": "burmese",
+              "games": 12348,
+              "wins": 5901,
+              "losses": 6447,
+              "winRate": 47.7891156462585
+            },
+            {
+              "id": "wei",
+              "games": 4726,
+              "wins": 2375,
+              "losses": 2351,
+              "winRate": 50.25391451544647
+            },
+            {
+              "id": "teutons",
+              "games": 18201,
+              "wins": 9124,
+              "losses": 9077,
+              "winRate": 50.12911378495687
+            },
+            {
+              "id": "lithuanians",
+              "games": 15150,
+              "wins": 8176,
+              "losses": 6974,
+              "winRate": 53.96699669966997
+            },
+            {
+              "id": "burgundians",
+              "games": 8700,
+              "wins": 4199,
+              "losses": 4501,
+              "winRate": 48.264367816091955
+            },
+            {
+              "id": "mayans",
+              "games": 5000,
+              "wins": 2376,
+              "losses": 2624,
+              "winRate": 47.52
+            },
+            {
+              "id": "turks",
+              "games": 13635,
+              "wins": 6911,
+              "losses": 6724,
+              "winRate": 50.68573524019069
+            },
+            {
+              "id": "magyars",
+              "games": 12726,
+              "wins": 6482,
+              "losses": 6244,
+              "winRate": 50.935093509350935
+            },
+            {
+              "id": "goths",
+              "games": 8907,
+              "wins": 4442,
+              "losses": 4465,
+              "winRate": 49.87088806556641
+            },
+            {
+              "id": "georgians",
+              "games": 10315,
+              "wins": 5645,
+              "losses": 4670,
+              "winRate": 54.726126999515266
+            },
+            {
+              "id": "saracens",
+              "games": 19217,
+              "wins": 8783,
+              "losses": 10434,
+              "winRate": 45.70432429619608
+            },
+            {
+              "id": "armenians",
+              "games": 14671,
+              "wins": 7720,
+              "losses": 6951,
+              "winRate": 52.620816576920454
+            },
+            {
+              "id": "muisca",
+              "games": 3150,
+              "wins": 1565,
+              "losses": 1585,
+              "winRate": 49.682539682539684
+            },
+            {
+              "id": "jurchens",
+              "games": 4650,
+              "wins": 2391,
+              "losses": 2259,
+              "winRate": 51.41935483870968
+            }
+          ]
+        },
+        {
+          "id": "3",
+          "label": "1050-1200",
+          "rows": [
+            {
+              "id": "portuguese",
+              "games": 14595,
+              "wins": 7202,
+              "losses": 7393,
+              "winRate": 49.34566632408359
+            },
+            {
+              "id": "bulgarians",
+              "games": 19169,
+              "wins": 9777,
+              "losses": 9392,
+              "winRate": 51.00422557253899
+            },
+            {
+              "id": "goths",
+              "games": 7363,
+              "wins": 3659,
+              "losses": 3704,
+              "winRate": 49.69441803612658
+            },
+            {
+              "id": "teutons",
+              "games": 11103,
+              "wins": 5333,
+              "losses": 5770,
+              "winRate": 48.03206340628659
+            },
+            {
+              "id": "franks",
+              "games": 4370,
+              "wins": 2122,
+              "losses": 2248,
+              "winRate": 48.558352402745996
+            },
+            {
+              "id": "berbers",
+              "games": 23680,
+              "wins": 12033,
+              "losses": 11647,
+              "winRate": 50.81503378378378
+            },
+            {
+              "id": "wei",
+              "games": 3690,
+              "wins": 1769,
+              "losses": 1921,
+              "winRate": 47.94037940379404
+            },
+            {
+              "id": "armenians",
+              "games": 10191,
+              "wins": 5285,
+              "losses": 4906,
+              "winRate": 51.85948385830635
+            },
+            {
+              "id": "sicilians",
+              "games": 7958,
+              "wins": 4079,
+              "losses": 3879,
+              "winRate": 51.25659713495853
+            },
+            {
+              "id": "japanese",
+              "games": 12780,
+              "wins": 6174,
+              "losses": 6606,
+              "winRate": 48.309859154929576
+            },
+            {
+              "id": "malians",
+              "games": 13625,
+              "wins": 6756,
+              "losses": 6869,
+              "winRate": 49.58532110091743
+            },
+            {
+              "id": "aztecs",
+              "games": 21115,
+              "wins": 10648,
+              "losses": 10467,
+              "winRate": 50.42860525692635
+            },
+            {
+              "id": "burmese",
+              "games": 8582,
+              "wins": 4114,
+              "losses": 4468,
+              "winRate": 47.937543696108136
+            },
+            {
+              "id": "hindustanis",
+              "games": 8054,
+              "wins": 3849,
+              "losses": 4205,
+              "winRate": 47.7899180531413
+            },
+            {
+              "id": "georgians",
+              "games": 8471,
+              "wins": 4392,
+              "losses": 4079,
+              "winRate": 51.84747963640656
+            },
+            {
+              "id": "shu",
+              "games": 3274,
+              "wins": 1655,
+              "losses": 1619,
+              "winRate": 50.54978619425779
+            },
+            {
+              "id": "britons",
+              "games": 7216,
+              "wins": 3553,
+              "losses": 3663,
+              "winRate": 49.23780487804878
+            },
+            {
+              "id": "mongols",
+              "games": 8844,
+              "wins": 4349,
+              "losses": 4495,
+              "winRate": 49.174581637268204
+            },
+            {
+              "id": "malay",
+              "games": 7691,
+              "wins": 4034,
+              "losses": 3657,
+              "winRate": 52.45091665583149
+            },
+            {
+              "id": "chinese",
+              "games": 9775,
+              "wins": 5105,
+              "losses": 4670,
+              "winRate": 52.22506393861892
+            },
+            {
+              "id": "bohemians",
+              "games": 17054,
+              "wins": 8844,
+              "losses": 8210,
+              "winRate": 51.85880145420429
+            },
+            {
+              "id": "ethiopians",
+              "games": 7594,
+              "wins": 3641,
+              "losses": 3953,
+              "winRate": 47.94574664208586
+            },
+            {
+              "id": "byzantines",
+              "games": 11883,
+              "wins": 5908,
+              "losses": 5975,
+              "winRate": 49.718084658756204
+            },
+            {
+              "id": "khmer",
+              "games": 6467,
+              "wins": 3263,
+              "losses": 3204,
+              "winRate": 50.456162053502396
+            },
+            {
+              "id": "italians",
+              "games": 11252,
+              "wins": 5912,
+              "losses": 5340,
+              "winRate": 52.54177035193743
+            },
+            {
+              "id": "vietnamese",
+              "games": 34541,
+              "wins": 17347,
+              "losses": 17194,
+              "winRate": 50.22147592715903
+            },
+            {
+              "id": "turks",
+              "games": 8131,
+              "wins": 4085,
+              "losses": 4046,
+              "winRate": 50.2398229000123
+            },
+            {
+              "id": "romans",
+              "games": 17642,
+              "wins": 8535,
+              "losses": 9107,
+              "winRate": 48.378868609001245
+            },
+            {
+              "id": "bengalis",
+              "games": 10769,
+              "wins": 5430,
+              "losses": 5339,
+              "winRate": 50.42250905376544
+            },
+            {
+              "id": "gurjaras",
+              "games": 12310,
+              "wins": 6359,
+              "losses": 5951,
+              "winRate": 51.65718927701056
+            },
+            {
+              "id": "spanish",
+              "games": 15260,
+              "wins": 7513,
+              "losses": 7747,
+              "winRate": 49.233289646133684
+            },
+            {
+              "id": "dravidians",
+              "games": 6886,
+              "wins": 3281,
+              "losses": 3605,
+              "winRate": 47.647400522799884
+            },
+            {
+              "id": "cumans",
+              "games": 9869,
+              "wins": 4670,
+              "losses": 5199,
+              "winRate": 47.319890566420106
+            },
+            {
+              "id": "lithuanians",
+              "games": 10521,
+              "wins": 5793,
+              "losses": 4728,
+              "winRate": 55.06130595950955
+            },
+            {
+              "id": "tatars",
+              "games": 8446,
+              "wins": 4142,
+              "losses": 4304,
+              "winRate": 49.04096613781672
+            },
+            {
+              "id": "incas",
+              "games": 10349,
+              "wins": 5324,
+              "losses": 5025,
+              "winRate": 51.4445840177795
+            },
+            {
+              "id": "slavs",
+              "games": 17187,
+              "wins": 9013,
+              "losses": 8174,
+              "winRate": 52.44079827776808
+            },
+            {
+              "id": "vikings",
+              "games": 7991,
+              "wins": 3926,
+              "losses": 4065,
+              "winRate": 49.13027155549994
+            },
+            {
+              "id": "burgundians",
+              "games": 7686,
+              "wins": 3737,
+              "losses": 3949,
+              "winRate": 48.620869112672395
+            },
+            {
+              "id": "jurchens",
+              "games": 4797,
+              "wins": 2481,
+              "losses": 2316,
+              "winRate": 51.719824890556595
+            },
+            {
+              "id": "poles",
+              "games": 5416,
+              "wins": 2625,
+              "losses": 2791,
+              "winRate": 48.467503692762186
+            },
+            {
+              "id": "wu",
+              "games": 7496,
+              "wins": 3708,
+              "losses": 3788,
+              "winRate": 49.46638207043757
+            },
+            {
+              "id": "magyars",
+              "games": 9348,
+              "wins": 4714,
+              "losses": 4634,
+              "winRate": 50.42789901583227
+            },
+            {
+              "id": "mayans",
+              "games": 3954,
+              "wins": 1853,
+              "losses": 2101,
+              "winRate": 46.86393525543753
+            },
+            {
+              "id": "saracens",
+              "games": 10950,
+              "wins": 5097,
+              "losses": 5853,
+              "winRate": 46.54794520547945
+            },
+            {
+              "id": "muisca",
+              "games": 2797,
+              "wins": 1388,
+              "losses": 1409,
+              "winRate": 49.62459778333929
+            },
+            {
+              "id": "huns",
+              "games": 8101,
+              "wins": 4024,
+              "losses": 4077,
+              "winRate": 49.67287989137144
+            },
+            {
+              "id": "celts",
+              "games": 4476,
+              "wins": 2226,
+              "losses": 2250,
+              "winRate": 49.73190348525469
+            },
+            {
+              "id": "persians",
+              "games": 4117,
+              "wins": 1980,
+              "losses": 2137,
+              "winRate": 48.093271799854264
+            },
+            {
+              "id": "koreans",
+              "games": 4235,
+              "wins": 1945,
+              "losses": 2290,
+              "winRate": 45.92680047225502
+            },
+            {
+              "id": "tupi",
+              "games": 2635,
+              "wins": 1294,
+              "losses": 1341,
+              "winRate": 49.108159392789375
+            },
+            {
+              "id": "mapuche",
+              "games": 2992,
+              "wins": 1475,
+              "losses": 1517,
+              "winRate": 49.29812834224599
+            },
+            {
+              "id": "khitans",
+              "games": 2827,
+              "wins": 1394,
+              "losses": 1433,
+              "winRate": 49.31022285107888
+            }
+          ]
+        },
+        {
+          "id": "4",
+          "label": "1200-1400",
+          "rows": [
+            {
+              "id": "vietnamese",
+              "games": 29018,
+              "wins": 14846,
+              "losses": 14172,
+              "winRate": 51.161348128747676
+            },
+            {
+              "id": "dravidians",
+              "games": 5888,
+              "wins": 2868,
+              "losses": 3020,
+              "winRate": 48.70923913043478
+            },
+            {
+              "id": "burmese",
+              "games": 8370,
+              "wins": 4154,
+              "losses": 4216,
+              "winRate": 49.629629629629626
+            },
+            {
+              "id": "incas",
+              "games": 8891,
+              "wins": 4526,
+              "losses": 4365,
+              "winRate": 50.90540996513328
+            },
+            {
+              "id": "bulgarians",
+              "games": 17452,
+              "wins": 8804,
+              "losses": 8648,
+              "winRate": 50.446940178776075
+            },
+            {
+              "id": "shu",
+              "games": 3159,
+              "wins": 1611,
+              "losses": 1548,
+              "winRate": 50.997150997150996
+            },
+            {
+              "id": "armenians",
+              "games": 7823,
+              "wins": 4144,
+              "losses": 3679,
+              "winRate": 52.972005624440754
+            },
+            {
+              "id": "sicilians",
+              "games": 7037,
+              "wins": 3543,
+              "losses": 3494,
+              "winRate": 50.34815972715646
+            },
+            {
+              "id": "slavs",
+              "games": 14212,
+              "wins": 7261,
+              "losses": 6951,
+              "winRate": 51.09062763861525
+            },
+            {
+              "id": "cumans",
+              "games": 8465,
+              "wins": 4046,
+              "losses": 4419,
+              "winRate": 47.796810395747194
+            },
+            {
+              "id": "berbers",
+              "games": 21484,
+              "wins": 10652,
+              "losses": 10832,
+              "winRate": 49.581083597095514
+            },
+            {
+              "id": "portuguese",
+              "games": 13771,
+              "wins": 6760,
+              "losses": 7011,
+              "winRate": 49.08866458499746
+            },
+            {
+              "id": "malians",
+              "games": 11690,
+              "wins": 5714,
+              "losses": 5976,
+              "winRate": 48.879384088964926
+            },
+            {
+              "id": "aztecs",
+              "games": 12935,
+              "wins": 6505,
+              "losses": 6430,
+              "winRate": 50.289911093931195
+            },
+            {
+              "id": "romans",
+              "games": 15598,
+              "wins": 7683,
+              "losses": 7915,
+              "winRate": 49.25631491216823
+            },
+            {
+              "id": "vikings",
+              "games": 8690,
+              "wins": 4381,
+              "losses": 4309,
+              "winRate": 50.41426927502877
+            },
+            {
+              "id": "italians",
+              "games": 11020,
+              "wins": 5741,
+              "losses": 5279,
+              "winRate": 52.0961887477314
+            },
+            {
+              "id": "tupi",
+              "games": 2946,
+              "wins": 1464,
+              "losses": 1482,
+              "winRate": 49.69450101832994
+            },
+            {
+              "id": "wei",
+              "games": 4427,
+              "wins": 2217,
+              "losses": 2210,
+              "winRate": 50.07906031172352
+            },
+            {
+              "id": "khmer",
+              "games": 6098,
+              "wins": 3138,
+              "losses": 2960,
+              "winRate": 51.45949491636602
+            },
+            {
+              "id": "huns",
+              "games": 6917,
+              "wins": 3443,
+              "losses": 3474,
+              "winRate": 49.77591441376319
+            },
+            {
+              "id": "tatars",
+              "games": 7413,
+              "wins": 3669,
+              "losses": 3744,
+              "winRate": 49.494131930392555
+            },
+            {
+              "id": "bengalis",
+              "games": 9006,
+              "wins": 4522,
+              "losses": 4484,
+              "winRate": 50.21097046413502
+            },
+            {
+              "id": "jurchens",
+              "games": 5256,
+              "wins": 2683,
+              "losses": 2573,
+              "winRate": 51.04642313546423
+            },
+            {
+              "id": "ethiopians",
+              "games": 6943,
+              "wins": 3439,
+              "losses": 3504,
+              "winRate": 49.53190263574824
+            },
+            {
+              "id": "goths",
+              "games": 7992,
+              "wins": 3945,
+              "losses": 4047,
+              "winRate": 49.36186186186186
+            },
+            {
+              "id": "hindustanis",
+              "games": 6595,
+              "wins": 3025,
+              "losses": 3570,
+              "winRate": 45.86808188021228
+            },
+            {
+              "id": "spanish",
+              "games": 11323,
+              "wins": 5545,
+              "losses": 5778,
+              "winRate": 48.97112072772234
+            },
+            {
+              "id": "turks",
+              "games": 6313,
+              "wins": 3179,
+              "losses": 3134,
+              "winRate": 50.3564074132742
+            },
+            {
+              "id": "mongols",
+              "games": 7187,
+              "wins": 3611,
+              "losses": 3576,
+              "winRate": 50.243495199666064
+            },
+            {
+              "id": "wu",
+              "games": 7727,
+              "wins": 3817,
+              "losses": 3910,
+              "winRate": 49.39821405461369
+            },
+            {
+              "id": "georgians",
+              "games": 5713,
+              "wins": 2890,
+              "losses": 2823,
+              "winRate": 50.586381935935584
+            },
+            {
+              "id": "saracens",
+              "games": 8154,
+              "wins": 3809,
+              "losses": 4345,
+              "winRate": 46.71326956095168
+            },
+            {
+              "id": "celts",
+              "games": 4409,
+              "wins": 2234,
+              "losses": 2175,
+              "winRate": 50.66908596053527
+            },
+            {
+              "id": "bohemians",
+              "games": 13469,
+              "wins": 6840,
+              "losses": 6629,
+              "winRate": 50.783280124730865
+            },
+            {
+              "id": "teutons",
+              "games": 7580,
+              "wins": 3762,
+              "losses": 3818,
+              "winRate": 49.63060686015831
+            },
+            {
+              "id": "britons",
+              "games": 6292,
+              "wins": 3105,
+              "losses": 3187,
+              "winRate": 49.34837889383344
+            },
+            {
+              "id": "burgundians",
+              "games": 7203,
+              "wins": 3423,
+              "losses": 3780,
+              "winRate": 47.521865889212826
+            },
+            {
+              "id": "magyars",
+              "games": 8380,
+              "wins": 4400,
+              "losses": 3980,
+              "winRate": 52.50596658711217
+            },
+            {
+              "id": "malay",
+              "games": 8017,
+              "wins": 4077,
+              "losses": 3940,
+              "winRate": 50.85443432705501
+            },
+            {
+              "id": "mayans",
+              "games": 4113,
+              "wins": 1898,
+              "losses": 2215,
+              "winRate": 46.146365183564306
+            },
+            {
+              "id": "franks",
+              "games": 4385,
+              "wins": 2229,
+              "losses": 2156,
+              "winRate": 50.83238312428735
+            },
+            {
+              "id": "khitans",
+              "games": 2920,
+              "wins": 1504,
+              "losses": 1416,
+              "winRate": 51.50684931506849
+            },
+            {
+              "id": "chinese",
+              "games": 8256,
+              "wins": 4221,
+              "losses": 4035,
+              "winRate": 51.12645348837209
+            },
+            {
+              "id": "persians",
+              "games": 4237,
+              "wins": 2046,
+              "losses": 2191,
+              "winRate": 48.2888836440878
+            },
+            {
+              "id": "byzantines",
+              "games": 10599,
+              "wins": 5438,
+              "losses": 5161,
+              "winRate": 51.30672704972167
+            },
+            {
+              "id": "poles",
+              "games": 4710,
+              "wins": 2318,
+              "losses": 2392,
+              "winRate": 49.21443736730361
+            },
+            {
+              "id": "lithuanians",
+              "games": 7848,
+              "wins": 4281,
+              "losses": 3567,
+              "winRate": 54.54892966360856
+            },
+            {
+              "id": "muisca",
+              "games": 2581,
+              "wins": 1270,
+              "losses": 1311,
+              "winRate": 49.20573421154591
+            },
+            {
+              "id": "japanese",
+              "games": 9410,
+              "wins": 4609,
+              "losses": 4801,
+              "winRate": 48.9798087141339
+            },
+            {
+              "id": "gurjaras",
+              "games": 9058,
+              "wins": 4570,
+              "losses": 4488,
+              "winRate": 50.45263855155663
+            },
+            {
+              "id": "mapuche",
+              "games": 2789,
+              "wins": 1348,
+              "losses": 1441,
+              "winRate": 48.332735747579775
+            },
+            {
+              "id": "koreans",
+              "games": 4581,
+              "wins": 2156,
+              "losses": 2425,
+              "winRate": 47.06395983409736
+            }
+          ]
+        },
+        {
+          "id": "5",
+          "label": "1400-1600",
+          "rows": [
+            {
+              "id": "burmese",
+              "games": 5278,
+              "wins": 2712,
+              "losses": 2566,
+              "winRate": 51.383099658961726
+            },
+            {
+              "id": "turks",
+              "games": 3890,
+              "wins": 1978,
+              "losses": 1912,
+              "winRate": 50.84832904884319
+            },
+            {
+              "id": "lithuanians",
+              "games": 4343,
+              "wins": 2372,
+              "losses": 1971,
+              "winRate": 54.61662445314299
+            },
+            {
+              "id": "aztecs",
+              "games": 6389,
+              "wins": 3277,
+              "losses": 3112,
+              "winRate": 51.29128189074972
+            },
+            {
+              "id": "vietnamese",
+              "games": 18634,
+              "wins": 9651,
+              "losses": 8983,
+              "winRate": 51.792422453579476
+            },
+            {
+              "id": "bulgarians",
+              "games": 9353,
+              "wins": 4811,
+              "losses": 4542,
+              "winRate": 51.43804127018069
+            },
+            {
+              "id": "saracens",
+              "games": 4450,
+              "wins": 2135,
+              "losses": 2315,
+              "winRate": 47.97752808988764
+            },
+            {
+              "id": "britons",
+              "games": 3694,
+              "wins": 1835,
+              "losses": 1859,
+              "winRate": 49.67514889009204
+            },
+            {
+              "id": "incas",
+              "games": 5982,
+              "wins": 2973,
+              "losses": 3009,
+              "winRate": 49.699097291875624
+            },
+            {
+              "id": "byzantines",
+              "games": 6088,
+              "wins": 2987,
+              "losses": 3101,
+              "winRate": 49.063731931668855
+            },
+            {
+              "id": "bengalis",
+              "games": 4547,
+              "wins": 2321,
+              "losses": 2226,
+              "winRate": 51.044644820760944
+            },
+            {
+              "id": "jurchens",
+              "games": 3515,
+              "wins": 1729,
+              "losses": 1786,
+              "winRate": 49.189189189189186
+            },
+            {
+              "id": "japanese",
+              "games": 5243,
+              "wins": 2624,
+              "losses": 2619,
+              "winRate": 50.04768262445165
+            },
+            {
+              "id": "wu",
+              "games": 4999,
+              "wins": 2410,
+              "losses": 2589,
+              "winRate": 48.20964192838568
+            },
+            {
+              "id": "goths",
+              "games": 4751,
+              "wins": 2331,
+              "losses": 2420,
+              "winRate": 49.063355083140394
+            },
+            {
+              "id": "muisca",
+              "games": 2187,
+              "wins": 1115,
+              "losses": 1072,
+              "winRate": 50.98308184727938
+            },
+            {
+              "id": "tupi",
+              "games": 2331,
+              "wins": 1127,
+              "losses": 1204,
+              "winRate": 48.348348348348345
+            },
+            {
+              "id": "berbers",
+              "games": 10492,
+              "wins": 5135,
+              "losses": 5357,
+              "winRate": 48.94205108654213
+            },
+            {
+              "id": "portuguese",
+              "games": 7449,
+              "wins": 3656,
+              "losses": 3793,
+              "winRate": 49.08041347831924
+            },
+            {
+              "id": "spanish",
+              "games": 6465,
+              "wins": 3236,
+              "losses": 3229,
+              "winRate": 50.054137664346484
+            },
+            {
+              "id": "bohemians",
+              "games": 7084,
+              "wins": 3630,
+              "losses": 3454,
+              "winRate": 51.24223602484472
+            },
+            {
+              "id": "vikings",
+              "games": 6386,
+              "wins": 3313,
+              "losses": 3073,
+              "winRate": 51.879110554337615
+            },
+            {
+              "id": "georgians",
+              "games": 3048,
+              "wins": 1470,
+              "losses": 1578,
+              "winRate": 48.22834645669291
+            },
+            {
+              "id": "ethiopians",
+              "games": 4231,
+              "wins": 2127,
+              "losses": 2104,
+              "winRate": 50.27180335618057
+            },
+            {
+              "id": "italians",
+              "games": 6204,
+              "wins": 3206,
+              "losses": 2998,
+              "winRate": 51.67633784655061
+            },
+            {
+              "id": "tatars",
+              "games": 4975,
+              "wins": 2525,
+              "losses": 2450,
+              "winRate": 50.753768844221106
+            },
+            {
+              "id": "cumans",
+              "games": 5689,
+              "wins": 2767,
+              "losses": 2922,
+              "winRate": 48.63772191949376
+            },
+            {
+              "id": "romans",
+              "games": 9226,
+              "wins": 4613,
+              "losses": 4613,
+              "winRate": 50
+            },
+            {
+              "id": "hindustanis",
+              "games": 4401,
+              "wins": 1967,
+              "losses": 2434,
+              "winRate": 44.694387639172916
+            },
+            {
+              "id": "gurjaras",
+              "games": 4819,
+              "wins": 2409,
+              "losses": 2410,
+              "winRate": 49.9896244034032
+            },
+            {
+              "id": "khmer",
+              "games": 4267,
+              "wins": 2162,
+              "losses": 2105,
+              "winRate": 50.66791656901805
+            },
+            {
+              "id": "mongols",
+              "games": 4585,
+              "wins": 2284,
+              "losses": 2301,
+              "winRate": 49.81461286804798
+            },
+            {
+              "id": "malay",
+              "games": 4975,
+              "wins": 2582,
+              "losses": 2393,
+              "winRate": 51.89949748743719
+            },
+            {
+              "id": "huns",
+              "games": 3514,
+              "wins": 1729,
+              "losses": 1785,
+              "winRate": 49.20318725099602
+            },
+            {
+              "id": "koreans",
+              "games": 2891,
+              "wins": 1357,
+              "losses": 1534,
+              "winRate": 46.93877551020408
+            },
+            {
+              "id": "poles",
+              "games": 3248,
+              "wins": 1546,
+              "losses": 1702,
+              "winRate": 47.59852216748769
+            },
+            {
+              "id": "chinese",
+              "games": 4713,
+              "wins": 2404,
+              "losses": 2309,
+              "winRate": 51.007850625928285
+            },
+            {
+              "id": "armenians",
+              "games": 4976,
+              "wins": 2622,
+              "losses": 2354,
+              "winRate": 52.69292604501608
+            },
+            {
+              "id": "teutons",
+              "games": 4592,
+              "wins": 2288,
+              "losses": 2304,
+              "winRate": 49.825783972125436
+            },
+            {
+              "id": "khitans",
+              "games": 2162,
+              "wins": 1109,
+              "losses": 1053,
+              "winRate": 51.29509713228492
+            },
+            {
+              "id": "magyars",
+              "games": 5138,
+              "wins": 2631,
+              "losses": 2507,
+              "winRate": 51.2066952121448
+            },
+            {
+              "id": "slavs",
+              "games": 7293,
+              "wins": 3788,
+              "losses": 3505,
+              "winRate": 51.940216646098996
+            },
+            {
+              "id": "persians",
+              "games": 3150,
+              "wins": 1541,
+              "losses": 1609,
+              "winRate": 48.92063492063492
+            },
+            {
+              "id": "franks",
+              "games": 3332,
+              "wins": 1665,
+              "losses": 1667,
+              "winRate": 49.96998799519808
+            },
+            {
+              "id": "burgundians",
+              "games": 4147,
+              "wins": 1917,
+              "losses": 2230,
+              "winRate": 46.22618760549795
+            },
+            {
+              "id": "malians",
+              "games": 5483,
+              "wins": 2585,
+              "losses": 2898,
+              "winRate": 47.14572314426409
+            },
+            {
+              "id": "wei",
+              "games": 3251,
+              "wins": 1581,
+              "losses": 1670,
+              "winRate": 48.63119040295294
+            },
+            {
+              "id": "dravidians",
+              "games": 4260,
+              "wins": 2080,
+              "losses": 2180,
+              "winRate": 48.82629107981221
+            },
+            {
+              "id": "celts",
+              "games": 3440,
+              "wins": 1800,
+              "losses": 1640,
+              "winRate": 52.325581395348834
+            },
+            {
+              "id": "sicilians",
+              "games": 4408,
+              "wins": 2246,
+              "losses": 2162,
+              "winRate": 50.952813067150636
+            },
+            {
+              "id": "mayans",
+              "games": 2609,
+              "wins": 1198,
+              "losses": 1411,
+              "winRate": 45.91797623610579
+            },
+            {
+              "id": "mapuche",
+              "games": 2478,
+              "wins": 1164,
+              "losses": 1314,
+              "winRate": 46.973365617433416
+            },
+            {
+              "id": "shu",
+              "games": 2407,
+              "wins": 1165,
+              "losses": 1242,
+              "winRate": 48.400498545907766
+            }
+          ]
+        },
+        {
+          "id": "6",
+          "label": "1600-1800",
+          "rows": [
+            {
+              "id": "vikings",
+              "games": 4222,
+              "wins": 2297,
+              "losses": 1925,
+              "winRate": 54.405495026054005
+            },
+            {
+              "id": "poles",
+              "games": 2005,
+              "wins": 961,
+              "losses": 1044,
+              "winRate": 47.930174563591024
+            },
+            {
+              "id": "cumans",
+              "games": 3222,
+              "wins": 1579,
+              "losses": 1643,
+              "winRate": 49.006828057107384
+            },
+            {
+              "id": "chinese",
+              "games": 2583,
+              "wins": 1276,
+              "losses": 1307,
+              "winRate": 49.399922570654276
+            },
+            {
+              "id": "dravidians",
+              "games": 2569,
+              "wins": 1247,
+              "losses": 1322,
+              "winRate": 48.54028804982484
+            },
+            {
+              "id": "tatars",
+              "games": 2774,
+              "wins": 1357,
+              "losses": 1417,
+              "winRate": 48.91852919971161
+            },
+            {
+              "id": "bulgarians",
+              "games": 4330,
+              "wins": 2337,
+              "losses": 1993,
+              "winRate": 53.97228637413395
+            },
+            {
+              "id": "aztecs",
+              "games": 2639,
+              "wins": 1293,
+              "losses": 1346,
+              "winRate": 48.995831754452446
+            },
+            {
+              "id": "vietnamese",
+              "games": 9622,
+              "wins": 4961,
+              "losses": 4661,
+              "winRate": 51.55892745790896
+            },
+            {
+              "id": "mongols",
+              "games": 2549,
+              "wins": 1230,
+              "losses": 1319,
+              "winRate": 48.25421734013339
+            },
+            {
+              "id": "khmer",
+              "games": 2667,
+              "wins": 1391,
+              "losses": 1276,
+              "winRate": 52.155980502437195
+            },
+            {
+              "id": "bohemians",
+              "games": 4133,
+              "wins": 2034,
+              "losses": 2099,
+              "winRate": 49.213646261795304
+            },
+            {
+              "id": "malay",
+              "games": 2371,
+              "wins": 1226,
+              "losses": 1145,
+              "winRate": 51.70814002530578
+            },
+            {
+              "id": "italians",
+              "games": 3292,
+              "wins": 1709,
+              "losses": 1583,
+              "winRate": 51.91373025516403
+            },
+            {
+              "id": "muisca",
+              "games": 1690,
+              "wins": 810,
+              "losses": 880,
+              "winRate": 47.928994082840234
+            },
+            {
+              "id": "sicilians",
+              "games": 2376,
+              "wins": 1169,
+              "losses": 1207,
+              "winRate": 49.2003367003367
+            },
+            {
+              "id": "bengalis",
+              "games": 3101,
+              "wins": 1534,
+              "losses": 1567,
+              "winRate": 49.46791357626572
+            },
+            {
+              "id": "britons",
+              "games": 2313,
+              "wins": 1137,
+              "losses": 1176,
+              "winRate": 49.156939040207526
+            },
+            {
+              "id": "slavs",
+              "games": 3687,
+              "wins": 1868,
+              "losses": 1819,
+              "winRate": 50.66449688093301
+            },
+            {
+              "id": "armenians",
+              "games": 2676,
+              "wins": 1459,
+              "losses": 1217,
+              "winRate": 54.521674140508225
+            },
+            {
+              "id": "burgundians",
+              "games": 2063,
+              "wins": 1001,
+              "losses": 1062,
+              "winRate": 48.52157052835676
+            },
+            {
+              "id": "saracens",
+              "games": 2522,
+              "wins": 1236,
+              "losses": 1286,
+              "winRate": 49.00872323552736
+            },
+            {
+              "id": "goths",
+              "games": 2511,
+              "wins": 1167,
+              "losses": 1344,
+              "winRate": 46.47550776583034
+            },
+            {
+              "id": "spanish",
+              "games": 2806,
+              "wins": 1363,
+              "losses": 1443,
+              "winRate": 48.57448325017819
+            },
+            {
+              "id": "teutons",
+              "games": 2890,
+              "wins": 1404,
+              "losses": 1486,
+              "winRate": 48.581314878892734
+            },
+            {
+              "id": "wu",
+              "games": 2909,
+              "wins": 1442,
+              "losses": 1467,
+              "winRate": 49.570299071845994
+            },
+            {
+              "id": "gurjaras",
+              "games": 2656,
+              "wins": 1324,
+              "losses": 1332,
+              "winRate": 49.84939759036145
+            },
+            {
+              "id": "mayans",
+              "games": 1745,
+              "wins": 850,
+              "losses": 895,
+              "winRate": 48.710601719197705
+            },
+            {
+              "id": "jurchens",
+              "games": 1879,
+              "wins": 903,
+              "losses": 976,
+              "winRate": 48.05747738158595
+            },
+            {
+              "id": "turks",
+              "games": 2314,
+              "wins": 1203,
+              "losses": 1111,
+              "winRate": 51.98789974070873
+            },
+            {
+              "id": "shu",
+              "games": 1515,
+              "wins": 764,
+              "losses": 751,
+              "winRate": 50.42904290429043
+            },
+            {
+              "id": "persians",
+              "games": 2166,
+              "wins": 1063,
+              "losses": 1103,
+              "winRate": 49.07663896583564
+            },
+            {
+              "id": "portuguese",
+              "games": 3752,
+              "wins": 1818,
+              "losses": 1934,
+              "winRate": 48.45415778251599
+            },
+            {
+              "id": "japanese",
+              "games": 3240,
+              "wins": 1620,
+              "losses": 1620,
+              "winRate": 50
+            },
+            {
+              "id": "berbers",
+              "games": 4721,
+              "wins": 2290,
+              "losses": 2431,
+              "winRate": 48.50667231518746
+            },
+            {
+              "id": "burmese",
+              "games": 2913,
+              "wins": 1539,
+              "losses": 1374,
+              "winRate": 52.832131822863026
+            },
+            {
+              "id": "romans",
+              "games": 4977,
+              "wins": 2475,
+              "losses": 2502,
+              "winRate": 49.72875226039783
+            },
+            {
+              "id": "khitans",
+              "games": 1444,
+              "wins": 713,
+              "losses": 731,
+              "winRate": 49.37673130193906
+            },
+            {
+              "id": "koreans",
+              "games": 2068,
+              "wins": 983,
+              "losses": 1085,
+              "winRate": 47.53384912959381
+            },
+            {
+              "id": "malians",
+              "games": 2892,
+              "wins": 1354,
+              "losses": 1538,
+              "winRate": 46.81881051175657
+            },
+            {
+              "id": "mapuche",
+              "games": 1641,
+              "wins": 789,
+              "losses": 852,
+              "winRate": 48.08043875685558
+            },
+            {
+              "id": "ethiopians",
+              "games": 2517,
+              "wins": 1289,
+              "losses": 1228,
+              "winRate": 51.21176003178387
+            },
+            {
+              "id": "incas",
+              "games": 3179,
+              "wins": 1711,
+              "losses": 1468,
+              "winRate": 53.82195659012268
+            },
+            {
+              "id": "hindustanis",
+              "games": 2394,
+              "wins": 1081,
+              "losses": 1313,
+              "winRate": 45.154553049289895
+            },
+            {
+              "id": "franks",
+              "games": 2286,
+              "wins": 1154,
+              "losses": 1132,
+              "winRate": 50.48118985126859
+            },
+            {
+              "id": "magyars",
+              "games": 2707,
+              "wins": 1400,
+              "losses": 1307,
+              "winRate": 51.717768747691174
+            },
+            {
+              "id": "celts",
+              "games": 2175,
+              "wins": 1105,
+              "losses": 1070,
+              "winRate": 50.804597701149426
+            },
+            {
+              "id": "byzantines",
+              "games": 3433,
+              "wins": 1712,
+              "losses": 1721,
+              "winRate": 49.86891931255462
+            },
+            {
+              "id": "huns",
+              "games": 2086,
+              "wins": 1009,
+              "losses": 1077,
+              "winRate": 48.37008628954938
+            },
+            {
+              "id": "georgians",
+              "games": 1865,
+              "wins": 882,
+              "losses": 983,
+              "winRate": 47.292225201072384
+            },
+            {
+              "id": "wei",
+              "games": 1713,
+              "wins": 814,
+              "losses": 899,
+              "winRate": 47.5189725627554
+            },
+            {
+              "id": "tupi",
+              "games": 1697,
+              "wins": 906,
+              "losses": 791,
+              "winRate": 53.388332351208014
+            },
+            {
+              "id": "lithuanians",
+              "games": 2185,
+              "wins": 1187,
+              "losses": 998,
+              "winRate": 54.32494279176201
+            }
+          ]
+        },
+        {
+          "id": "7",
+          "label": "1800-2200",
+          "rows": [
+            {
+              "id": "malians",
+              "games": 2248,
+              "wins": 1066,
+              "losses": 1182,
+              "winRate": 47.419928825622776
+            },
+            {
+              "id": "magyars",
+              "games": 2426,
+              "wins": 1236,
+              "losses": 1190,
+              "winRate": 50.94806265457543
+            },
+            {
+              "id": "persians",
+              "games": 1972,
+              "wins": 926,
+              "losses": 1046,
+              "winRate": 46.95740365111562
+            },
+            {
+              "id": "portuguese",
+              "games": 2440,
+              "wins": 1236,
+              "losses": 1204,
+              "winRate": 50.65573770491803
+            },
+            {
+              "id": "hindustanis",
+              "games": 1996,
+              "wins": 900,
+              "losses": 1096,
+              "winRate": 45.09018036072144
+            },
+            {
+              "id": "poles",
+              "games": 1883,
+              "wins": 912,
+              "losses": 971,
+              "winRate": 48.433351035581516
+            },
+            {
+              "id": "jurchens",
+              "games": 1749,
+              "wins": 874,
+              "losses": 875,
+              "winRate": 49.97141223556318
+            },
+            {
+              "id": "cumans",
+              "games": 2398,
+              "wins": 1168,
+              "losses": 1230,
+              "winRate": 48.70725604670559
+            },
+            {
+              "id": "koreans",
+              "games": 1790,
+              "wins": 857,
+              "losses": 933,
+              "winRate": 47.87709497206704
+            },
+            {
+              "id": "burgundians",
+              "games": 1904,
+              "wins": 901,
+              "losses": 1003,
+              "winRate": 47.32142857142857
+            },
+            {
+              "id": "teutons",
+              "games": 2387,
+              "wins": 1164,
+              "losses": 1223,
+              "winRate": 48.76413908671973
+            },
+            {
+              "id": "tupi",
+              "games": 1645,
+              "wins": 833,
+              "losses": 812,
+              "winRate": 50.638297872340424
+            },
+            {
+              "id": "berbers",
+              "games": 3109,
+              "wins": 1537,
+              "losses": 1572,
+              "winRate": 49.43711804438726
+            },
+            {
+              "id": "bulgarians",
+              "games": 2986,
+              "wins": 1527,
+              "losses": 1459,
+              "winRate": 51.13864701942398
+            },
+            {
+              "id": "britons",
+              "games": 2003,
+              "wins": 1039,
+              "losses": 964,
+              "winRate": 51.87219171243135
+            },
+            {
+              "id": "khmer",
+              "games": 2244,
+              "wins": 1130,
+              "losses": 1114,
+              "winRate": 50.35650623885918
+            },
+            {
+              "id": "sicilians",
+              "games": 2240,
+              "wins": 1056,
+              "losses": 1184,
+              "winRate": 47.142857142857146
+            },
+            {
+              "id": "wei",
+              "games": 1476,
+              "wins": 675,
+              "losses": 801,
+              "winRate": 45.73170731707317
+            },
+            {
+              "id": "vikings",
+              "games": 3658,
+              "wins": 2055,
+              "losses": 1603,
+              "winRate": 56.17823947512302
+            },
+            {
+              "id": "chinese",
+              "games": 2074,
+              "wins": 1055,
+              "losses": 1019,
+              "winRate": 50.8678881388621
+            },
+            {
+              "id": "armenians",
+              "games": 2037,
+              "wins": 1102,
+              "losses": 935,
+              "winRate": 54.099165439371625
+            },
+            {
+              "id": "celts",
+              "games": 2224,
+              "wins": 1138,
+              "losses": 1086,
+              "winRate": 51.169064748201436
+            },
+            {
+              "id": "tatars",
+              "games": 2156,
+              "wins": 1087,
+              "losses": 1069,
+              "winRate": 50.41743970315399
+            },
+            {
+              "id": "romans",
+              "games": 2974,
+              "wins": 1537,
+              "losses": 1437,
+              "winRate": 51.681237390719566
+            },
+            {
+              "id": "huns",
+              "games": 1900,
+              "wins": 911,
+              "losses": 989,
+              "winRate": 47.94736842105263
+            },
+            {
+              "id": "gurjaras",
+              "games": 1990,
+              "wins": 989,
+              "losses": 1001,
+              "winRate": 49.698492462311556
+            },
+            {
+              "id": "spanish",
+              "games": 1922,
+              "wins": 921,
+              "losses": 1001,
+              "winRate": 47.91883454734651
+            },
+            {
+              "id": "mapuche",
+              "games": 1190,
+              "wins": 557,
+              "losses": 633,
+              "winRate": 46.80672268907563
+            },
+            {
+              "id": "wu",
+              "games": 2187,
+              "wins": 1088,
+              "losses": 1099,
+              "winRate": 49.74851394604481
+            },
+            {
+              "id": "dravidians",
+              "games": 2156,
+              "wins": 1016,
+              "losses": 1140,
+              "winRate": 47.12430426716141
+            },
+            {
+              "id": "ethiopians",
+              "games": 2101,
+              "wins": 1110,
+              "losses": 991,
+              "winRate": 52.83198476915754
+            },
+            {
+              "id": "saracens",
+              "games": 2011,
+              "wins": 964,
+              "losses": 1047,
+              "winRate": 47.936350074589754
+            },
+            {
+              "id": "incas",
+              "games": 2349,
+              "wins": 1251,
+              "losses": 1098,
+              "winRate": 53.25670498084291
+            },
+            {
+              "id": "khitans",
+              "games": 1499,
+              "wins": 780,
+              "losses": 719,
+              "winRate": 52.03468979319546
+            },
+            {
+              "id": "aztecs",
+              "games": 1883,
+              "wins": 905,
+              "losses": 978,
+              "winRate": 48.06160382368561
+            },
+            {
+              "id": "turks",
+              "games": 2094,
+              "wins": 1038,
+              "losses": 1056,
+              "winRate": 49.570200573065904
+            },
+            {
+              "id": "malay",
+              "games": 1957,
+              "wins": 1010,
+              "losses": 947,
+              "winRate": 51.6096065406234
+            },
+            {
+              "id": "lithuanians",
+              "games": 1400,
+              "wins": 740,
+              "losses": 660,
+              "winRate": 52.857142857142854
+            },
+            {
+              "id": "bengalis",
+              "games": 2067,
+              "wins": 934,
+              "losses": 1133,
+              "winRate": 45.1862602805999
+            },
+            {
+              "id": "japanese",
+              "games": 2323,
+              "wins": 1167,
+              "losses": 1156,
+              "winRate": 50.236762806715454
+            },
+            {
+              "id": "italians",
+              "games": 2648,
+              "wins": 1398,
+              "losses": 1250,
+              "winRate": 52.794561933534744
+            },
+            {
+              "id": "mayans",
+              "games": 1637,
+              "wins": 798,
+              "losses": 839,
+              "winRate": 48.747709224190594
+            },
+            {
+              "id": "burmese",
+              "games": 2382,
+              "wins": 1323,
+              "losses": 1059,
+              "winRate": 55.541561712846345
+            },
+            {
+              "id": "mongols",
+              "games": 2245,
+              "wins": 1047,
+              "losses": 1198,
+              "winRate": 46.636971046770604
+            },
+            {
+              "id": "muisca",
+              "games": 1958,
+              "wins": 971,
+              "losses": 987,
+              "winRate": 49.59141981613892
+            },
+            {
+              "id": "slavs",
+              "games": 3193,
+              "wins": 1597,
+              "losses": 1596,
+              "winRate": 50.01565925461948
+            },
+            {
+              "id": "vietnamese",
+              "games": 6176,
+              "wins": 3208,
+              "losses": 2968,
+              "winRate": 51.943005181347154
+            },
+            {
+              "id": "goths",
+              "games": 2020,
+              "wins": 1028,
+              "losses": 992,
+              "winRate": 50.89108910891089
+            },
+            {
+              "id": "bohemians",
+              "games": 3191,
+              "wins": 1540,
+              "losses": 1651,
+              "winRate": 48.26073331244124
+            },
+            {
+              "id": "shu",
+              "games": 1514,
+              "wins": 769,
+              "losses": 745,
+              "winRate": 50.792602377807135
+            },
+            {
+              "id": "byzantines",
+              "games": 2582,
+              "wins": 1314,
+              "losses": 1268,
+              "winRate": 50.89078233927188
+            },
+            {
+              "id": "franks",
+              "games": 2326,
+              "wins": 1170,
+              "losses": 1156,
+              "winRate": 50.300945829750646
+            },
+            {
+              "id": "georgians",
+              "games": 1835,
+              "wins": 904,
+              "losses": 931,
+              "winRate": 49.264305177111716
+            }
+          ]
+        },
+        {
+          "id": "8",
+          "label": "2200-2400",
+          "rows": [
+            {
+              "id": "magyars",
+              "games": 391,
+              "wins": 184,
+              "losses": 207,
+              "winRate": 47.05882352941177
+            },
+            {
+              "id": "aztecs",
+              "games": 359,
+              "wins": 177,
+              "losses": 182,
+              "winRate": 49.30362116991643
+            },
+            {
+              "id": "vietnamese",
+              "games": 701,
+              "wins": 350,
+              "losses": 351,
+              "winRate": 49.92867332382311
+            },
+            {
+              "id": "mayans",
+              "games": 332,
+              "wins": 149,
+              "losses": 183,
+              "winRate": 44.87951807228916
+            },
+            {
+              "id": "khmer",
+              "games": 371,
+              "wins": 191,
+              "losses": 180,
+              "winRate": 51.482479784366575
+            },
+            {
+              "id": "malay",
+              "games": 388,
+              "wins": 187,
+              "losses": 201,
+              "winRate": 48.1958762886598
+            },
+            {
+              "id": "byzantines",
+              "games": 371,
+              "wins": 190,
+              "losses": 181,
+              "winRate": 51.21293800539083
+            },
+            {
+              "id": "saracens",
+              "games": 323,
+              "wins": 170,
+              "losses": 153,
+              "winRate": 52.63157894736842
+            },
+            {
+              "id": "incas",
+              "games": 359,
+              "wins": 211,
+              "losses": 148,
+              "winRate": 58.77437325905292
+            },
+            {
+              "id": "mapuche",
+              "games": 365,
+              "wins": 201,
+              "losses": 164,
+              "winRate": 55.06849315068493
+            },
+            {
+              "id": "gurjaras",
+              "games": 372,
+              "wins": 186,
+              "losses": 186,
+              "winRate": 50
+            },
+            {
+              "id": "italians",
+              "games": 383,
+              "wins": 205,
+              "losses": 178,
+              "winRate": 53.52480417754569
+            },
+            {
+              "id": "muisca",
+              "games": 421,
+              "wins": 201,
+              "losses": 220,
+              "winRate": 47.74346793349169
+            },
+            {
+              "id": "poles",
+              "games": 334,
+              "wins": 177,
+              "losses": 157,
+              "winRate": 52.9940119760479
+            },
+            {
+              "id": "shu",
+              "games": 325,
+              "wins": 160,
+              "losses": 165,
+              "winRate": 49.23076923076923
+            },
+            {
+              "id": "wu",
+              "games": 366,
+              "wins": 204,
+              "losses": 162,
+              "winRate": 55.73770491803279
+            },
+            {
+              "id": "berbers",
+              "games": 377,
+              "wins": 158,
+              "losses": 219,
+              "winRate": 41.90981432360743
+            },
+            {
+              "id": "chinese",
+              "games": 326,
+              "wins": 160,
+              "losses": 166,
+              "winRate": 49.079754601226995
+            },
+            {
+              "id": "hindustanis",
+              "games": 386,
+              "wins": 176,
+              "losses": 210,
+              "winRate": 45.59585492227979
+            },
+            {
+              "id": "koreans",
+              "games": 349,
+              "wins": 180,
+              "losses": 169,
+              "winRate": 51.57593123209169
+            },
+            {
+              "id": "lithuanians",
+              "games": 299,
+              "wins": 157,
+              "losses": 142,
+              "winRate": 52.508361204013376
+            },
+            {
+              "id": "slavs",
+              "games": 421,
+              "wins": 213,
+              "losses": 208,
+              "winRate": 50.5938242280285
+            },
+            {
+              "id": "georgians",
+              "games": 388,
+              "wins": 201,
+              "losses": 187,
+              "winRate": 51.8041237113402
+            },
+            {
+              "id": "tatars",
+              "games": 383,
+              "wins": 179,
+              "losses": 204,
+              "winRate": 46.73629242819843
+            },
+            {
+              "id": "britons",
+              "games": 350,
+              "wins": 176,
+              "losses": 174,
+              "winRate": 50.285714285714285
+            },
+            {
+              "id": "persians",
+              "games": 334,
+              "wins": 151,
+              "losses": 183,
+              "winRate": 45.209580838323355
+            },
+            {
+              "id": "wei",
+              "games": 295,
+              "wins": 127,
+              "losses": 168,
+              "winRate": 43.05084745762712
+            },
+            {
+              "id": "bohemians",
+              "games": 445,
+              "wins": 228,
+              "losses": 217,
+              "winRate": 51.235955056179776
+            },
+            {
+              "id": "cumans",
+              "games": 389,
+              "wins": 184,
+              "losses": 205,
+              "winRate": 47.30077120822622
+            },
+            {
+              "id": "burgundians",
+              "games": 319,
+              "wins": 136,
+              "losses": 183,
+              "winRate": 42.63322884012539
+            },
+            {
+              "id": "romans",
+              "games": 367,
+              "wins": 194,
+              "losses": 173,
+              "winRate": 52.86103542234333
+            },
+            {
+              "id": "japanese",
+              "games": 390,
+              "wins": 200,
+              "losses": 190,
+              "winRate": 51.282051282051285
+            },
+            {
+              "id": "sicilians",
+              "games": 390,
+              "wins": 197,
+              "losses": 193,
+              "winRate": 50.51282051282051
+            },
+            {
+              "id": "turks",
+              "games": 428,
+              "wins": 252,
+              "losses": 176,
+              "winRate": 58.87850467289719
+            },
+            {
+              "id": "dravidians",
+              "games": 342,
+              "wins": 165,
+              "losses": 177,
+              "winRate": 48.24561403508772
+            },
+            {
+              "id": "khitans",
+              "games": 274,
+              "wins": 160,
+              "losses": 114,
+              "winRate": 58.394160583941606
+            },
+            {
+              "id": "teutons",
+              "games": 476,
+              "wins": 255,
+              "losses": 221,
+              "winRate": 53.57142857142857
+            },
+            {
+              "id": "franks",
+              "games": 369,
+              "wins": 186,
+              "losses": 183,
+              "winRate": 50.40650406504065
+            },
+            {
+              "id": "jurchens",
+              "games": 312,
+              "wins": 149,
+              "losses": 163,
+              "winRate": 47.756410256410255
+            },
+            {
+              "id": "burmese",
+              "games": 379,
+              "wins": 204,
+              "losses": 175,
+              "winRate": 53.82585751978892
+            },
+            {
+              "id": "celts",
+              "games": 379,
+              "wins": 179,
+              "losses": 200,
+              "winRate": 47.229551451187334
+            },
+            {
+              "id": "bengalis",
+              "games": 355,
+              "wins": 165,
+              "losses": 190,
+              "winRate": 46.478873239436616
+            },
+            {
+              "id": "vikings",
+              "games": 540,
+              "wins": 286,
+              "losses": 254,
+              "winRate": 52.96296296296296
+            },
+            {
+              "id": "tupi",
+              "games": 377,
+              "wins": 209,
+              "losses": 168,
+              "winRate": 55.43766578249337
+            },
+            {
+              "id": "ethiopians",
+              "games": 354,
+              "wins": 189,
+              "losses": 165,
+              "winRate": 53.389830508474574
+            },
+            {
+              "id": "armenians",
+              "games": 355,
+              "wins": 177,
+              "losses": 178,
+              "winRate": 49.859154929577464
+            },
+            {
+              "id": "malians",
+              "games": 348,
+              "wins": 150,
+              "losses": 198,
+              "winRate": 43.10344827586207
+            },
+            {
+              "id": "bulgarians",
+              "games": 364,
+              "wins": 177,
+              "losses": 187,
+              "winRate": 48.62637362637363
+            },
+            {
+              "id": "huns",
+              "games": 341,
+              "wins": 169,
+              "losses": 172,
+              "winRate": 49.56011730205279
+            },
+            {
+              "id": "mongols",
+              "games": 396,
+              "wins": 173,
+              "losses": 223,
+              "winRate": 43.686868686868685
+            },
+            {
+              "id": "goths",
+              "games": 397,
+              "wins": 189,
+              "losses": 208,
+              "winRate": 47.60705289672544
+            },
+            {
+              "id": "spanish",
+              "games": 314,
+              "wins": 149,
+              "losses": 165,
+              "winRate": 47.452229299363054
+            },
+            {
+              "id": "portuguese",
+              "games": 388,
+              "wins": 187,
+              "losses": 201,
+              "winRate": 48.1958762886598
+            }
+          ]
+        },
+        {
+          "id": "9",
+          "label": "2400+",
+          "rows": [
+            {
+              "id": "cumans",
+              "games": 300,
+              "wins": 154,
+              "losses": 146,
+              "winRate": 51.333333333333336
+            },
+            {
+              "id": "dravidians",
+              "games": 288,
+              "wins": 142,
+              "losses": 146,
+              "winRate": 49.30555555555556
+            },
+            {
+              "id": "incas",
+              "games": 284,
+              "wins": 141,
+              "losses": 143,
+              "winRate": 49.647887323943664
+            },
+            {
+              "id": "malay",
+              "games": 268,
+              "wins": 135,
+              "losses": 133,
+              "winRate": 50.37313432835821
+            },
+            {
+              "id": "hindustanis",
+              "games": 286,
+              "wins": 128,
+              "losses": 158,
+              "winRate": 44.75524475524475
+            },
+            {
+              "id": "vietnamese",
+              "games": 470,
+              "wins": 240,
+              "losses": 230,
+              "winRate": 51.06382978723404
+            },
+            {
+              "id": "saracens",
+              "games": 281,
+              "wins": 135,
+              "losses": 146,
+              "winRate": 48.04270462633452
+            },
+            {
+              "id": "chinese",
+              "games": 276,
+              "wins": 134,
+              "losses": 142,
+              "winRate": 48.55072463768116
+            },
+            {
+              "id": "burgundians",
+              "games": 308,
+              "wins": 139,
+              "losses": 169,
+              "winRate": 45.12987012987013
+            },
+            {
+              "id": "celts",
+              "games": 291,
+              "wins": 146,
+              "losses": 145,
+              "winRate": 50.171821305841924
+            },
+            {
+              "id": "poles",
+              "games": 281,
+              "wins": 149,
+              "losses": 132,
+              "winRate": 53.02491103202847
+            },
+            {
+              "id": "bohemians",
+              "games": 337,
+              "wins": 171,
+              "losses": 166,
+              "winRate": 50.74183976261128
+            },
+            {
+              "id": "mongols",
+              "games": 323,
+              "wins": 140,
+              "losses": 183,
+              "winRate": 43.343653250774
+            },
+            {
+              "id": "britons",
+              "games": 283,
+              "wins": 139,
+              "losses": 144,
+              "winRate": 49.11660777385159
+            },
+            {
+              "id": "franks",
+              "games": 287,
+              "wins": 115,
+              "losses": 172,
+              "winRate": 40.069686411149824
+            },
+            {
+              "id": "teutons",
+              "games": 419,
+              "wins": 211,
+              "losses": 208,
+              "winRate": 50.35799522673031
+            },
+            {
+              "id": "vikings",
+              "games": 354,
+              "wins": 196,
+              "losses": 158,
+              "winRate": 55.367231638418076
+            },
+            {
+              "id": "shu",
+              "games": 259,
+              "wins": 120,
+              "losses": 139,
+              "winRate": 46.33204633204633
+            },
+            {
+              "id": "italians",
+              "games": 303,
+              "wins": 174,
+              "losses": 129,
+              "winRate": 57.42574257425743
+            },
+            {
+              "id": "bulgarians",
+              "games": 255,
+              "wins": 127,
+              "losses": 128,
+              "winRate": 49.80392156862745
+            },
+            {
+              "id": "magyars",
+              "games": 314,
+              "wins": 170,
+              "losses": 144,
+              "winRate": 54.140127388535035
+            },
+            {
+              "id": "turks",
+              "games": 345,
+              "wins": 157,
+              "losses": 188,
+              "winRate": 45.507246376811594
+            },
+            {
+              "id": "burmese",
+              "games": 280,
+              "wins": 160,
+              "losses": 120,
+              "winRate": 57.142857142857146
+            },
+            {
+              "id": "armenians",
+              "games": 267,
+              "wins": 152,
+              "losses": 115,
+              "winRate": 56.92883895131086
+            },
+            {
+              "id": "khitans",
+              "games": 301,
+              "wins": 157,
+              "losses": 144,
+              "winRate": 52.159468438538205
+            },
+            {
+              "id": "tatars",
+              "games": 316,
+              "wins": 164,
+              "losses": 152,
+              "winRate": 51.89873417721519
+            },
+            {
+              "id": "spanish",
+              "games": 287,
+              "wins": 142,
+              "losses": 145,
+              "winRate": 49.47735191637631
+            },
+            {
+              "id": "mayans",
+              "games": 281,
+              "wins": 136,
+              "losses": 145,
+              "winRate": 48.39857651245551
+            },
+            {
+              "id": "slavs",
+              "games": 324,
+              "wins": 170,
+              "losses": 154,
+              "winRate": 52.46913580246913
+            },
+            {
+              "id": "goths",
+              "games": 297,
+              "wins": 154,
+              "losses": 143,
+              "winRate": 51.851851851851855
+            },
+            {
+              "id": "jurchens",
+              "games": 257,
+              "wins": 129,
+              "losses": 128,
+              "winRate": 50.19455252918288
+            },
+            {
+              "id": "portuguese",
+              "games": 317,
+              "wins": 156,
+              "losses": 161,
+              "winRate": 49.21135646687697
+            },
+            {
+              "id": "muisca",
+              "games": 393,
+              "wins": 198,
+              "losses": 195,
+              "winRate": 50.38167938931298
+            },
+            {
+              "id": "tupi",
+              "games": 296,
+              "wins": 148,
+              "losses": 148,
+              "winRate": 50
+            },
+            {
+              "id": "berbers",
+              "games": 291,
+              "wins": 144,
+              "losses": 147,
+              "winRate": 49.48453608247423
+            },
+            {
+              "id": "gurjaras",
+              "games": 265,
+              "wins": 128,
+              "losses": 137,
+              "winRate": 48.301886792452834
+            },
+            {
+              "id": "sicilians",
+              "games": 289,
+              "wins": 150,
+              "losses": 139,
+              "winRate": 51.90311418685121
+            },
+            {
+              "id": "khmer",
+              "games": 292,
+              "wins": 152,
+              "losses": 140,
+              "winRate": 52.054794520547944
+            },
+            {
+              "id": "japanese",
+              "games": 272,
+              "wins": 135,
+              "losses": 137,
+              "winRate": 49.63235294117647
+            },
+            {
+              "id": "byzantines",
+              "games": 288,
+              "wins": 152,
+              "losses": 136,
+              "winRate": 52.77777777777778
+            },
+            {
+              "id": "bengalis",
+              "games": 278,
+              "wins": 133,
+              "losses": 145,
+              "winRate": 47.84172661870504
+            },
+            {
+              "id": "huns",
+              "games": 295,
+              "wins": 147,
+              "losses": 148,
+              "winRate": 49.83050847457627
+            },
+            {
+              "id": "georgians",
+              "games": 346,
+              "wins": 181,
+              "losses": 165,
+              "winRate": 52.3121387283237
+            },
+            {
+              "id": "wu",
+              "games": 309,
+              "wins": 158,
+              "losses": 151,
+              "winRate": 51.13268608414239
+            },
+            {
+              "id": "persians",
+              "games": 288,
+              "wins": 129,
+              "losses": 159,
+              "winRate": 44.791666666666664
+            },
+            {
+              "id": "wei",
+              "games": 248,
+              "wins": 107,
+              "losses": 141,
+              "winRate": 43.145161290322584
+            },
+            {
+              "id": "romans",
+              "games": 308,
+              "wins": 142,
+              "losses": 166,
+              "winRate": 46.103896103896105
+            },
+            {
+              "id": "aztecs",
+              "games": 262,
+              "wins": 136,
+              "losses": 126,
+              "winRate": 51.908396946564885
+            },
+            {
+              "id": "mapuche",
+              "games": 332,
+              "wins": 163,
+              "losses": 169,
+              "winRate": 49.096385542168676
+            },
+            {
+              "id": "ethiopians",
+              "games": 303,
+              "wins": 170,
+              "losses": 133,
+              "winRate": 56.1056105610561
+            },
+            {
+              "id": "koreans",
+              "games": 281,
+              "wins": 135,
+              "losses": 146,
+              "winRate": 48.04270462633452
+            },
+            {
+              "id": "lithuanians",
+              "games": 280,
+              "wins": 149,
+              "losses": 131,
+              "winRate": 53.214285714285715
+            },
+            {
+              "id": "malians",
+              "games": 281,
+              "wins": 134,
+              "losses": 147,
+              "winRate": 47.686832740213525
+            }
+          ]
+        }
+      ],
+      "fetchedAt": "2026-11-04T21:10:38.271Z",
+      "lastAttemptAt": "2026-11-04T21:10:38.271Z",
+      "fetchError": null
+    },
+    "aoe4": {
+      "sourceName": "AoE4 World",
+      "sourceUrl": "https://aoe4world.com/api/",
+      "endpoint": "https://aoe4world.com/api/v0/stats/rm_solo/civilizations",
+      "patch": "10604,10884,11214,11308",
+      "sourceUpdatedAt": null,
+      "periodStart": null,
+      "unmappedIds": [],
+      "views": [
+        {
+          "id": "all",
+          "label": "Todas as ligas",
+          "rows": [
+            {
+              "id": "macedonian_dynasty",
+              "games": 171964,
+              "wins": 94075,
+              "losses": 77889,
+              "winRate": 54.70621758042381
+            },
+            {
+              "id": "knights_templar",
+              "games": 399053,
+              "wins": 213800,
+              "losses": 185253,
+              "winRate": 53.5768431762197
+            },
+            {
+              "id": "golden_horde",
+              "games": 128068,
+              "wins": 68558,
+              "losses": 59510,
+              "winRate": 53.532498360246116
+            },
+            {
+              "id": "order_of_the_dragon",
+              "games": 217028,
+              "wins": 114012,
+              "losses": 103016,
+              "winRate": 52.533313673811676
+            },
+            {
+              "id": "zhu_xis_legacy",
+              "games": 129843,
+              "wins": 68158,
+              "losses": 61685,
+              "winRate": 52.49262570951072
+            },
+            {
+              "id": "jin_dynasty",
+              "games": 73999,
+              "wins": 38012,
+              "losses": 35987,
+              "winRate": 51.368261733266664
+            },
+            {
+              "id": "japanese",
+              "games": 212790,
+              "wins": 109301,
+              "losses": 103489,
+              "winRate": 51.36566567977818
+            },
+            {
+              "id": "french",
+              "games": 483551,
+              "wins": 244866,
+              "losses": 238685,
+              "winRate": 50.63912596603047
+            },
+            {
+              "id": "ayyubids",
+              "games": 86595,
+              "wins": 43674,
+              "losses": 42921,
+              "winRate": 50.43478260869565
+            },
+            {
+              "id": "house_of_lancaster",
+              "games": 117630,
+              "wins": 59126,
+              "losses": 58504,
+              "winRate": 50.26438833630876
+            },
+            {
+              "id": "tughlaq_dynasty",
+              "games": 56445,
+              "wins": 27980,
+              "losses": 28465,
+              "winRate": 49.57037824430862
+            },
+            {
+              "id": "jeanne_darc",
+              "games": 64770,
+              "wins": 31713,
+              "losses": 33057,
+              "winRate": 48.96248263084762
+            },
+            {
+              "id": "mongols",
+              "games": 152127,
+              "wins": 74473,
+              "losses": 77654,
+              "winRate": 48.95449197052463
+            },
+            {
+              "id": "abbasid_dynasty",
+              "games": 100276,
+              "wins": 48954,
+              "losses": 51322,
+              "winRate": 48.819258845586184
+            },
+            {
+              "id": "delhi_sultanate",
+              "games": 80147,
+              "wins": 39061,
+              "losses": 41086,
+              "winRate": 48.73669632051106
+            },
+            {
+              "id": "malians",
+              "games": 119213,
+              "wins": 57792,
+              "losses": 61421,
+              "winRate": 48.47793445345726
+            },
+            {
+              "id": "holy_roman_empire",
+              "games": 183460,
+              "wins": 88364,
+              "losses": 95096,
+              "winRate": 48.165267633271554
+            },
+            {
+              "id": "rus",
+              "games": 160219,
+              "wins": 77090,
+              "losses": 83129,
+              "winRate": 48.11539205712182
+            },
+            {
+              "id": "ottomans",
+              "games": 190497,
+              "wins": 91001,
+              "losses": 99496,
+              "winRate": 47.77030609405922
+            },
+            {
+              "id": "english",
+              "games": 501222,
+              "wins": 237101,
+              "losses": 264121,
+              "winRate": 47.30458758793509
+            },
+            {
+              "id": "byzantines",
+              "games": 127735,
+              "wins": 60363,
+              "losses": 67372,
+              "winRate": 47.256429326339685
+            },
+            {
+              "id": "sengoku_daimyo",
+              "games": 50898,
+              "wins": 23494,
+              "losses": 27404,
+              "winRate": 46.158984635938545
+            },
+            {
+              "id": "chinese",
+              "games": 150888,
+              "wins": 68195,
+              "losses": 82693,
+              "winRate": 45.19577434918615
+            }
+          ]
+        },
+        {
+          "id": "bronze",
+          "label": "Bronze",
+          "rows": [
+            {
+              "id": "knights_templar",
+              "games": 27096,
+              "wins": 15785,
+              "losses": 11311,
+              "winRate": 58.255831118984354
+            },
+            {
+              "id": "golden_horde",
+              "games": 7441,
+              "wins": 4217,
+              "losses": 3224,
+              "winRate": 56.67249025668593
+            },
+            {
+              "id": "macedonian_dynasty",
+              "games": 7480,
+              "wins": 4230,
+              "losses": 3250,
+              "winRate": 56.55080213903744
+            },
+            {
+              "id": "order_of_the_dragon",
+              "games": 13402,
+              "wins": 7390,
+              "losses": 6012,
+              "winRate": 55.14102372780182
+            },
+            {
+              "id": "japanese",
+              "games": 15805,
+              "wins": 8541,
+              "losses": 7264,
+              "winRate": 54.039860803543185
+            },
+            {
+              "id": "french",
+              "games": 51177,
+              "wins": 26158,
+              "losses": 25019,
+              "winRate": 51.112804580182505
+            },
+            {
+              "id": "ayyubids",
+              "games": 3867,
+              "wins": 1969,
+              "losses": 1898,
+              "winRate": 50.91802430824929
+            },
+            {
+              "id": "tughlaq_dynasty",
+              "games": 3443,
+              "wins": 1749,
+              "losses": 1694,
+              "winRate": 50.798722044728436
+            },
+            {
+              "id": "zhu_xis_legacy",
+              "games": 7233,
+              "wins": 3647,
+              "losses": 3586,
+              "winRate": 50.421678418360294
+            },
+            {
+              "id": "holy_roman_empire",
+              "games": 24817,
+              "wins": 12414,
+              "losses": 12403,
+              "winRate": 50.02216222750534
+            },
+            {
+              "id": "house_of_lancaster",
+              "games": 7645,
+              "wins": 3816,
+              "losses": 3829,
+              "winRate": 49.91497710922172
+            },
+            {
+              "id": "jin_dynasty",
+              "games": 4697,
+              "wins": 2284,
+              "losses": 2413,
+              "winRate": 48.62678305301256
+            },
+            {
+              "id": "english",
+              "games": 80493,
+              "wins": 38901,
+              "losses": 41592,
+              "winRate": 48.32842607431702
+            },
+            {
+              "id": "delhi_sultanate",
+              "games": 7627,
+              "wins": 3661,
+              "losses": 3966,
+              "winRate": 48.0005244526026
+            },
+            {
+              "id": "ottomans",
+              "games": 27879,
+              "wins": 13321,
+              "losses": 14558,
+              "winRate": 47.78148427131533
+            },
+            {
+              "id": "jeanne_darc",
+              "games": 7274,
+              "wins": 3474,
+              "losses": 3800,
+              "winRate": 47.75914215012373
+            },
+            {
+              "id": "rus",
+              "games": 13595,
+              "wins": 6428,
+              "losses": 7167,
+              "winRate": 47.28208900331004
+            },
+            {
+              "id": "byzantines",
+              "games": 7339,
+              "wins": 3462,
+              "losses": 3877,
+              "winRate": 47.1726393241586
+            },
+            {
+              "id": "mongols",
+              "games": 17231,
+              "wins": 8126,
+              "losses": 9105,
+              "winRate": 47.15918983227903
+            },
+            {
+              "id": "sengoku_daimyo",
+              "games": 4168,
+              "wins": 1956,
+              "losses": 2212,
+              "winRate": 46.92898272552783
+            },
+            {
+              "id": "abbasid_dynasty",
+              "games": 8106,
+              "wins": 3728,
+              "losses": 4378,
+              "winRate": 45.9906242289662
+            },
+            {
+              "id": "malians",
+              "games": 7502,
+              "wins": 3438,
+              "losses": 4064,
+              "winRate": 45.827779258864304
+            },
+            {
+              "id": "chinese",
+              "games": 19071,
+              "wins": 8499,
+              "losses": 10572,
+              "winRate": 44.5650464055372
+            }
+          ]
+        },
+        {
+          "id": "silver",
+          "label": "Prata",
+          "rows": [
+            {
+              "id": "macedonian_dynasty",
+              "games": 16950,
+              "wins": 9589,
+              "losses": 7361,
+              "winRate": 56.57227138643068
+            },
+            {
+              "id": "golden_horde",
+              "games": 13275,
+              "wins": 7485,
+              "losses": 5790,
+              "winRate": 56.38418079096045
+            },
+            {
+              "id": "knights_templar",
+              "games": 50811,
+              "wins": 28339,
+              "losses": 22472,
+              "winRate": 55.773356163035565
+            },
+            {
+              "id": "order_of_the_dragon",
+              "games": 25442,
+              "wins": 13851,
+              "losses": 11591,
+              "winRate": 54.441474726829654
+            },
+            {
+              "id": "zhu_xis_legacy",
+              "games": 13772,
+              "wins": 7259,
+              "losses": 6513,
+              "winRate": 52.70839384257915
+            },
+            {
+              "id": "jin_dynasty",
+              "games": 6718,
+              "wins": 3532,
+              "losses": 3186,
+              "winRate": 52.57517118189938
+            },
+            {
+              "id": "japanese",
+              "games": 30421,
+              "wins": 15843,
+              "losses": 14578,
+              "winRate": 52.07915584629039
+            },
+            {
+              "id": "ayyubids",
+              "games": 7613,
+              "wins": 3888,
+              "losses": 3725,
+              "winRate": 51.070537238933404
+            },
+            {
+              "id": "french",
+              "games": 75257,
+              "wins": 38025,
+              "losses": 37232,
+              "winRate": 50.52686128865089
+            },
+            {
+              "id": "tughlaq_dynasty",
+              "games": 5160,
+              "wins": 2587,
+              "losses": 2573,
+              "winRate": 50.13565891472868
+            },
+            {
+              "id": "house_of_lancaster",
+              "games": 12681,
+              "wins": 6246,
+              "losses": 6435,
+              "winRate": 49.254790631653655
+            },
+            {
+              "id": "jeanne_darc",
+              "games": 9279,
+              "wins": 4540,
+              "losses": 4739,
+              "winRate": 48.927686173078996
+            },
+            {
+              "id": "mongols",
+              "games": 20725,
+              "wins": 10056,
+              "losses": 10669,
+              "winRate": 48.5211097708082
+            },
+            {
+              "id": "holy_roman_empire",
+              "games": 29160,
+              "wins": 14028,
+              "losses": 15132,
+              "winRate": 48.10699588477366
+            },
+            {
+              "id": "rus",
+              "games": 20434,
+              "wins": 9738,
+              "losses": 10696,
+              "winRate": 47.655867671527844
+            },
+            {
+              "id": "abbasid_dynasty",
+              "games": 9370,
+              "wins": 4451,
+              "losses": 4919,
+              "winRate": 47.50266808964781
+            },
+            {
+              "id": "delhi_sultanate",
+              "games": 9426,
+              "wins": 4471,
+              "losses": 4955,
+              "winRate": 47.43263314237216
+            },
+            {
+              "id": "malians",
+              "games": 12412,
+              "wins": 5885,
+              "losses": 6527,
+              "winRate": 47.41379310344828
+            },
+            {
+              "id": "ottomans",
+              "games": 29462,
+              "wins": 13910,
+              "losses": 15552,
+              "winRate": 47.213359581834226
+            },
+            {
+              "id": "english",
+              "games": 93469,
+              "wins": 43990,
+              "losses": 49479,
+              "winRate": 47.063732360461756
+            },
+            {
+              "id": "byzantines",
+              "games": 12689,
+              "wins": 5971,
+              "losses": 6718,
+              "winRate": 47.056505634801795
+            },
+            {
+              "id": "sengoku_daimyo",
+              "games": 6076,
+              "wins": 2806,
+              "losses": 3270,
+              "winRate": 46.18169848584595
+            },
+            {
+              "id": "chinese",
+              "games": 21090,
+              "wins": 9353,
+              "losses": 11737,
+              "winRate": 44.34803224276909
+            }
+          ]
+        },
+        {
+          "id": "gold",
+          "label": "Ouro",
+          "rows": [
+            {
+              "id": "macedonian_dynasty",
+              "games": 66518,
+              "wins": 36967,
+              "losses": 29551,
+              "winRate": 55.57443098108783
+            },
+            {
+              "id": "golden_horde",
+              "games": 48101,
+              "wins": 26460,
+              "losses": 21641,
+              "winRate": 55.00925136691545
+            },
+            {
+              "id": "knights_templar",
+              "games": 162058,
+              "wins": 87091,
+              "losses": 74967,
+              "winRate": 53.740636068568044
+            },
+            {
+              "id": "order_of_the_dragon",
+              "games": 83779,
+              "wins": 44328,
+              "losses": 39451,
+              "winRate": 52.91063392974373
+            },
+            {
+              "id": "zhu_xis_legacy",
+              "games": 48915,
+              "wins": 25623,
+              "losses": 23292,
+              "winRate": 52.38270469181233
+            },
+            {
+              "id": "jin_dynasty",
+              "games": 23048,
+              "wins": 11973,
+              "losses": 11075,
+              "winRate": 51.94810829573065
+            },
+            {
+              "id": "ayyubids",
+              "games": 32787,
+              "wins": 16837,
+              "losses": 15950,
+              "winRate": 51.35267026565407
+            },
+            {
+              "id": "japanese",
+              "games": 90110,
+              "wins": 46060,
+              "losses": 44050,
+              "winRate": 51.11530351792254
+            },
+            {
+              "id": "french",
+              "games": 194341,
+              "wins": 98312,
+              "losses": 96029,
+              "winRate": 50.58736962349684
+            },
+            {
+              "id": "jeanne_darc",
+              "games": 25013,
+              "wins": 12420,
+              "losses": 12593,
+              "winRate": 49.65417982649023
+            },
+            {
+              "id": "house_of_lancaster",
+              "games": 41250,
+              "wins": 20450,
+              "losses": 20800,
+              "winRate": 49.57575757575758
+            },
+            {
+              "id": "tughlaq_dynasty",
+              "games": 20038,
+              "wins": 9847,
+              "losses": 10191,
+              "winRate": 49.141630901287556
+            },
+            {
+              "id": "delhi_sultanate",
+              "games": 28388,
+              "wins": 13917,
+              "losses": 14471,
+              "winRate": 49.02423559250388
+            },
+            {
+              "id": "abbasid_dynasty",
+              "games": 34029,
+              "wins": 16677,
+              "losses": 17352,
+              "winRate": 49.00819888918276
+            },
+            {
+              "id": "malians",
+              "games": 42153,
+              "wins": 20509,
+              "losses": 21644,
+              "winRate": 48.653713851920386
+            },
+            {
+              "id": "mongols",
+              "games": 57025,
+              "wins": 27523,
+              "losses": 29502,
+              "winRate": 48.26479614204296
+            },
+            {
+              "id": "byzantines",
+              "games": 45032,
+              "wins": 21572,
+              "losses": 23460,
+              "winRate": 47.90371291526026
+            },
+            {
+              "id": "ottomans",
+              "games": 70872,
+              "wins": 33882,
+              "losses": 36990,
+              "winRate": 47.80731459532679
+            },
+            {
+              "id": "rus",
+              "games": 57490,
+              "wins": 27479,
+              "losses": 30011,
+              "winRate": 47.79787789180727
+            },
+            {
+              "id": "holy_roman_empire",
+              "games": 70168,
+              "wins": 33402,
+              "losses": 36766,
+              "winRate": 47.60289590696614
+            },
+            {
+              "id": "sengoku_daimyo",
+              "games": 18479,
+              "wins": 8594,
+              "losses": 9885,
+              "winRate": 46.5068456085286
+            },
+            {
+              "id": "english",
+              "games": 188856,
+              "wins": 87203,
+              "losses": 101653,
+              "winRate": 46.17433388401745
+            },
+            {
+              "id": "chinese",
+              "games": 55588,
+              "wins": 24887,
+              "losses": 30701,
+              "winRate": 44.77045405483198
+            }
+          ]
+        },
+        {
+          "id": "platinum",
+          "label": "Platina",
+          "rows": [
+            {
+              "id": "macedonian_dynasty",
+              "games": 45318,
+              "wins": 24270,
+              "losses": 21048,
+              "winRate": 53.554878856083675
+            },
+            {
+              "id": "zhu_xis_legacy",
+              "games": 31676,
+              "wins": 16708,
+              "losses": 14968,
+              "winRate": 52.74655890895315
+            },
+            {
+              "id": "order_of_the_dragon",
+              "games": 50128,
+              "wins": 26191,
+              "losses": 23937,
+              "winRate": 52.24824449409512
+            },
+            {
+              "id": "jin_dynasty",
+              "games": 17870,
+              "wins": 9287,
+              "losses": 8583,
+              "winRate": 51.96978175713486
+            },
+            {
+              "id": "golden_horde",
+              "games": 30643,
+              "wins": 15902,
+              "losses": 14741,
+              "winRate": 51.894396762719055
+            },
+            {
+              "id": "knights_templar",
+              "games": 89751,
+              "wins": 46453,
+              "losses": 43298,
+              "winRate": 51.757640583391826
+            },
+            {
+              "id": "french",
+              "games": 91608,
+              "wins": 46547,
+              "losses": 45061,
+              "winRate": 50.811064535848395
+            },
+            {
+              "id": "house_of_lancaster",
+              "games": 26805,
+              "wins": 13493,
+              "losses": 13312,
+              "winRate": 50.33762357769073
+            },
+            {
+              "id": "mongols",
+              "games": 27291,
+              "wins": 13697,
+              "losses": 13594,
+              "winRate": 50.188706899710525
+            },
+            {
+              "id": "japanese",
+              "games": 42888,
+              "wins": 21459,
+              "losses": 21429,
+              "winRate": 50.03497481813095
+            },
+            {
+              "id": "abbasid_dynasty",
+              "games": 23429,
+              "wins": 11669,
+              "losses": 11760,
+              "winRate": 49.80579623543472
+            },
+            {
+              "id": "delhi_sultanate",
+              "games": 18542,
+              "wins": 9121,
+              "losses": 9421,
+              "winRate": 49.19102577931183
+            },
+            {
+              "id": "ayyubids",
+              "games": 21470,
+              "wins": 10533,
+              "losses": 10937,
+              "winRate": 49.05915230554262
+            },
+            {
+              "id": "malians",
+              "games": 28522,
+              "wins": 13940,
+              "losses": 14582,
+              "winRate": 48.8745529766496
+            },
+            {
+              "id": "tughlaq_dynasty",
+              "games": 12172,
+              "wins": 5906,
+              "losses": 6266,
+              "winRate": 48.52119618797239
+            },
+            {
+              "id": "english",
+              "games": 74481,
+              "wins": 35970,
+              "losses": 38511,
+              "winRate": 48.294195835179444
+            },
+            {
+              "id": "rus",
+              "games": 33462,
+              "wins": 16112,
+              "losses": 17350,
+              "winRate": 48.15014045783276
+            },
+            {
+              "id": "holy_roman_empire",
+              "games": 32424,
+              "wins": 15611,
+              "losses": 16813,
+              "winRate": 48.14643473969899
+            },
+            {
+              "id": "ottomans",
+              "games": 32705,
+              "wins": 15648,
+              "losses": 17057,
+              "winRate": 47.845895123069866
+            },
+            {
+              "id": "jeanne_darc",
+              "games": 13591,
+              "wins": 6496,
+              "losses": 7095,
+              "winRate": 47.79633581046281
+            },
+            {
+              "id": "byzantines",
+              "games": 30388,
+              "wins": 14242,
+              "losses": 16146,
+              "winRate": 46.86718441490062
+            },
+            {
+              "id": "chinese",
+              "games": 28562,
+              "wins": 13151,
+              "losses": 15411,
+              "winRate": 46.04369441915832
+            },
+            {
+              "id": "sengoku_daimyo",
+              "games": 11054,
+              "wins": 4982,
+              "losses": 6072,
+              "winRate": 45.069658042337615
+            }
+          ]
+        },
+        {
+          "id": "diamond",
+          "label": "Diamante",
+          "rows": [
+            {
+              "id": "macedonian_dynasty",
+              "games": 19757,
+              "wins": 10449,
+              "losses": 9308,
+              "winRate": 52.8875841473908
+            },
+            {
+              "id": "zhu_xis_legacy",
+              "games": 14654,
+              "wins": 7709,
+              "losses": 6945,
+              "winRate": 52.60679677903644
+            },
+            {
+              "id": "japanese",
+              "games": 17023,
+              "wins": 8823,
+              "losses": 8200,
+              "winRate": 51.829877224930975
+            },
+            {
+              "id": "house_of_lancaster",
+              "games": 14612,
+              "wins": 7573,
+              "losses": 7039,
+              "winRate": 51.82726526142896
+            },
+            {
+              "id": "knights_templar",
+              "games": 36850,
+              "wins": 18916,
+              "losses": 17934,
+              "winRate": 51.33242876526459
+            },
+            {
+              "id": "golden_horde",
+              "games": 15267,
+              "wins": 7833,
+              "losses": 7434,
+              "winRate": 51.306740027510315
+            },
+            {
+              "id": "mongols",
+              "games": 14331,
+              "wins": 7275,
+              "losses": 7056,
+              "winRate": 50.76407787314214
+            },
+            {
+              "id": "order_of_the_dragon",
+              "games": 26549,
+              "wins": 13415,
+              "losses": 13134,
+              "winRate": 50.52921013974161
+            },
+            {
+              "id": "french",
+              "games": 36401,
+              "wins": 18335,
+              "losses": 18066,
+              "winRate": 50.36949534353452
+            },
+            {
+              "id": "jin_dynasty",
+              "games": 10774,
+              "wins": 5426,
+              "losses": 5348,
+              "winRate": 50.36198255058474
+            },
+            {
+              "id": "ayyubids",
+              "games": 11076,
+              "wins": 5517,
+              "losses": 5559,
+              "winRate": 49.810400866738895
+            },
+            {
+              "id": "malians",
+              "games": 14758,
+              "wins": 7351,
+              "losses": 7407,
+              "winRate": 49.81027239463342
+            },
+            {
+              "id": "english",
+              "games": 31794,
+              "wins": 15709,
+              "losses": 16085,
+              "winRate": 49.40869346417563
+            },
+            {
+              "id": "tughlaq_dynasty",
+              "games": 7217,
+              "wins": 3547,
+              "losses": 3670,
+              "winRate": 49.14784536511016
+            },
+            {
+              "id": "rus",
+              "games": 17888,
+              "wins": 8775,
+              "losses": 9113,
+              "winRate": 49.05523255813954
+            },
+            {
+              "id": "ottomans",
+              "games": 14937,
+              "wins": 7300,
+              "losses": 7637,
+              "winRate": 48.871928767490125
+            },
+            {
+              "id": "abbasid_dynasty",
+              "games": 13564,
+              "wins": 6587,
+              "losses": 6977,
+              "winRate": 48.5623709820112
+            },
+            {
+              "id": "delhi_sultanate",
+              "games": 8201,
+              "wins": 3973,
+              "losses": 4228,
+              "winRate": 48.44531154737227
+            },
+            {
+              "id": "jeanne_darc",
+              "games": 4276,
+              "wins": 2064,
+              "losses": 2212,
+              "winRate": 48.26941066417212
+            },
+            {
+              "id": "holy_roman_empire",
+              "games": 13988,
+              "wins": 6712,
+              "losses": 7276,
+              "winRate": 47.9839862739491
+            },
+            {
+              "id": "byzantines",
+              "games": 17584,
+              "wins": 8261,
+              "losses": 9323,
+              "winRate": 46.9802092811647
+            },
+            {
+              "id": "chinese",
+              "games": 13147,
+              "wins": 6025,
+              "losses": 7122,
+              "winRate": 45.827945538906214
+            },
+            {
+              "id": "sengoku_daimyo",
+              "games": 5274,
+              "wins": 2386,
+              "losses": 2888,
+              "winRate": 45.24080394387562
+            }
+          ]
+        },
+        {
+          "id": "conqueror",
+          "label": "Conquistador",
+          "rows": [
+            {
+              "id": "jeanne_darc",
+              "games": 3708,
+              "wins": 1968,
+              "losses": 1740,
+              "winRate": 53.07443365695793
+            },
+            {
+              "id": "zhu_xis_legacy",
+              "games": 10565,
+              "wins": 5582,
+              "losses": 4983,
+              "winRate": 52.83483199242783
+            },
+            {
+              "id": "macedonian_dynasty",
+              "games": 12206,
+              "wins": 6435,
+              "losses": 5771,
+              "winRate": 52.71997378338522
+            },
+            {
+              "id": "house_of_lancaster",
+              "games": 12040,
+              "wins": 6253,
+              "losses": 5787,
+              "winRate": 51.935215946843854
+            },
+            {
+              "id": "mongols",
+              "games": 11923,
+              "wins": 6171,
+              "losses": 5752,
+              "winRate": 51.75710811037491
+            },
+            {
+              "id": "knights_templar",
+              "games": 22976,
+              "wins": 11877,
+              "losses": 11099,
+              "winRate": 51.69307103064067
+            },
+            {
+              "id": "tughlaq_dynasty",
+              "games": 7173,
+              "wins": 3704,
+              "losses": 3469,
+              "winRate": 51.63808727171337
+            },
+            {
+              "id": "japanese",
+              "games": 11275,
+              "wins": 5752,
+              "losses": 5523,
+              "winRate": 51.01552106430155
+            },
+            {
+              "id": "jin_dynasty",
+              "games": 9253,
+              "wins": 4709,
+              "losses": 4544,
+              "winRate": 50.891602723441046
+            },
+            {
+              "id": "delhi_sultanate",
+              "games": 6096,
+              "wins": 3065,
+              "losses": 3031,
+              "winRate": 50.278871391076116
+            },
+            {
+              "id": "abbasid_dynasty",
+              "games": 9495,
+              "wins": 4772,
+              "losses": 4723,
+              "winRate": 50.258030542390735
+            },
+            {
+              "id": "french",
+              "games": 22355,
+              "wins": 11217,
+              "losses": 11138,
+              "winRate": 50.17669425184523
+            },
+            {
+              "id": "rus",
+              "games": 13526,
+              "wins": 6751,
+              "losses": 6775,
+              "winRate": 49.91128197545468
+            },
+            {
+              "id": "ayyubids",
+              "games": 7893,
+              "wins": 3925,
+              "losses": 3968,
+              "winRate": 49.7276067401495
+            },
+            {
+              "id": "english",
+              "games": 17200,
+              "wins": 8550,
+              "losses": 8650,
+              "winRate": 49.7093023255814
+            },
+            {
+              "id": "holy_roman_empire",
+              "games": 8080,
+              "wins": 3914,
+              "losses": 4166,
+              "winRate": 48.44059405940594
+            },
+            {
+              "id": "chinese",
+              "games": 9466,
+              "wins": 4565,
+              "losses": 4901,
+              "winRate": 48.22522712867103
+            },
+            {
+              "id": "golden_horde",
+              "games": 10561,
+              "wins": 5073,
+              "losses": 5488,
+              "winRate": 48.035223937127164
+            },
+            {
+              "id": "order_of_the_dragon",
+              "games": 12702,
+              "wins": 6086,
+              "losses": 6616,
+              "winRate": 47.91371437568887
+            },
+            {
+              "id": "malians",
+              "games": 10997,
+              "wins": 5228,
+              "losses": 5769,
+              "winRate": 47.54023824679458
+            },
+            {
+              "id": "sengoku_daimyo",
+              "games": 4707,
+              "wins": 2237,
+              "losses": 2470,
+              "winRate": 47.524962821329936
+            },
+            {
+              "id": "ottomans",
+              "games": 9994,
+              "wins": 4710,
+              "losses": 5284,
+              "winRate": 47.128276966179705
+            },
+            {
+              "id": "byzantines",
+              "games": 11987,
+              "wins": 5544,
+              "losses": 6443,
+              "winRate": 46.250104279636275
+            }
+          ]
+        }
+      ],
+      "notes": [
+        "Ranqueado solo 1v1 de PC. A API não informa a data exata de geração deste agregado.",
+        "Partidas usa player_games_count: participações com a civilização, a mesma base das vitórias e do winrate da fonte.",
+        "Espelhos seguem o agregado do provedor. Contagens por liga descrevem o recorte da API e não devem ser somadas para reconstruir o total."
+      ],
+      "fetchedAt": "2026-11-04T21:10:38.271Z",
+      "lastAttemptAt": "2026-11-04T21:10:38.271Z",
+      "fetchError": null
+    }
+  },
+  "lastAttemptAt": "2026-11-04T21:10:38.271Z"
+}

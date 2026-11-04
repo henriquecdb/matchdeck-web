@@ -81,3 +81,13 @@ O build e o CI não dependem de um checkout do app. Depois de sincronizar, revis
 A prévia usa os providers de idioma originais, em português e com nomes de jogo em inglês (padrões do app). O seletor oferece os três layouts do AoE II, formatos de 1v1 a 4v4 e a faixa do Age IV experimental. Equipes usam compacto vertical quando a preferência é completo. As imagens do Age IV mantêm os créditos em `public/aoe4/NOTICE.md`.
 
 A sincronização exige o caminho explícito do checkout do app, que pode estar em uma pasta independente. O manifesto de origem registra a versão e o commit usados; mudanças no app exigem uma nova sincronização e publicação do site.
+
+## Estatísticas de civilizações
+
+A página /estatisticas/ usa snapshots estáticos, sem consultas de visitantes aos provedores. Age II: AOE2 Complete Guide, JSON público em https://aoe2-guide.vercel.app/data/ranked_data.json (documentação: https://aoe2-guide.vercel.app/data). Age IV: sete agregados pequenos de ranqueado solo por liga, documentados em https://aoe4world.com/api/. Nenhuma coleta de perfis ou histórico individual.
+
+Execute npm run stats:update para atualizar o snapshot versionado em public/data/statistics.json. O deploy atualiza diariamente às 09:17 UTC (06:17 de Brasília), ou por workflow_dispatch. O build usa os dados já salvos e não depende da rede. Após validação, o workflow salva o snapshot por commit e publica; o commit feito com GITHUB_TOKEN não inicia outro workflow. Falhas de um provedor preservam sua última cópia válida com aviso. Se ambos falharem, a atualização termina com erro e a publicação anterior continua disponível.
+
+Partidas significa participações por civilização. Age IV usa player_games_count e win_count, verificando o percentual publicado; games_count é outra medida e não é usado para calcular derrotas. Age II usa tuplas [participações, vitórias] e o agregado de todos os Elos sem somar novamente as faixas individuais. Derrotas são a diferença entre a amostra e vitórias. A fonte determina a cobertura e o tratamento de espelhos.
+
+Amostras do Age II cuja geração tem mais de sete dias aparecem como históricas, mesmo que consultadas hoje. A API do Age IV não fornece a data exata de geração; a página distingue explicitamente geração, consulta e início do período. Não há filtro de patch arbitrário: é exibido o recorte fornecido na cópia disponível.

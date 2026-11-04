@@ -1,6 +1,7 @@
 ---
 import BaseLayout from '../layouts/BaseLayout.astro';
 import Brand from '../components/Brand.astro';
+import SiteHeader from '../components/SiteHeader.astro';
 import OverlayDemo from '../features/preview/OverlayDemo.astro';
 import DownloadSection from '../features/downloads/DownloadSection.astro';
 import { site } from '../config/site';
@@ -37,15 +38,7 @@ const questions = [
 ---
 
 <BaseLayout>
-  <header class="site-header wrap">
-    <Brand /><nav aria-label="Navegação principal">
-      <a href="#recursos">O app</a><a href="#jogos">Jogos</a><a
-        href="#como-funciona">Como funciona</a
-      ><a href={site.appRepository} class="github-nav">GitHub ↗</a>
-    </nav><a href="#download" class="button button-small"
-      >Baixar o app <span aria-hidden="true">↓</span></a
-    >
-  </header>
+  <SiteHeader />
   <main id="conteudo" class="wrap">
     <section class="hero" aria-labelledby="hero-title">
       <div class="hero-copy">
@@ -252,6 +245,20 @@ const questions = [
           </div>
         </li>
       </ol>
+    </section>
+    <section class="stats-invitation">
+      <div>
+        <span class="eyebrow">CONHEÇA O META</span><h2>
+          Seu próximo pick,<br /><span>com mais contexto.</span>
+        </h2><p>
+          Compare civilizações por winrate, participações e popularidade no Age
+          II e no Age IV. Confira sempre a data e o recorte da fonte.
+        </p>
+      </div><a
+        class="button button-primary"
+        href={import.meta.env.BASE_URL + 'estatisticas/'}
+        >Explorar estatísticas ↗</a
+      >
     </section>
     <DownloadSection />
     <section class="section faq-section" aria-labelledby="faq-title">

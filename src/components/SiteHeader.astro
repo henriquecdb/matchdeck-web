@@ -1,0 +1,24 @@
+---
+import Brand from './Brand.astro';
+import { asset, site } from '../config/site';
+interface Props {
+  statistics?: boolean;
+}
+const { statistics = false } = Astro.props;
+const home = import.meta.env.BASE_URL;
+---
+
+<header class="site-header wrap">
+  <Brand /><nav aria-label="Navegação principal">
+    <a href={`${home}#recursos`}>O app</a><a href={`${home}#jogos`}>Jogos</a><a
+      href={asset('estatisticas/')}
+      aria-current={statistics ? 'page' : undefined}>Estatísticas</a
+    ><a href={site.appRepository}>GitHub ↗</a>
+  </nav><a
+    class="mobile-statistics"
+    href={statistics ? home : asset('estatisticas/')}
+    >{statistics ? 'Início' : 'Estatísticas'}</a
+  ><a href={`${home}#download`} class="button button-small"
+    >Baixar o app <span aria-hidden="true">↓</span></a
+  >
+</header>
