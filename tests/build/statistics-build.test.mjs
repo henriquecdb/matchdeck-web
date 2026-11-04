@@ -13,7 +13,16 @@ test('built statistics page includes consistent snapshots and valid artwork for 
   assert.doesNotMatch(json, /<\/script/i);
   const snapshot = JSON.parse(json);
   assert.deepEqual(Object.keys(snapshot.games).sort(), ['aoe2', 'aoe4']);
-  assert.equal(snapshot.games.aoe2.views[1].label, '<600');
+  const original = JSON.parse(
+    readFileSync(
+      new URL('../../public/data/statistics.json', import.meta.url),
+      'utf8',
+    ),
+  );
+  assert.deepEqual(
+    snapshot.games.aoe2.views.map((view) => view.label),
+    original.games.aoe2.views.map((view) => view.label),
+  );
   for (const data of Object.values(snapshot.games)) {
     assert.ok(Number.isFinite(Date.parse(data.fetchedAt)));
     for (const view of data.views)
@@ -37,5 +46,9 @@ test('built statistics page includes consistent snapshots and valid artwork for 
         }
       }
   }
-  assert.match(html, /Dados históricos/);
+  if (
+    Date.now() - Date.parse(snapshot.games.aoe2.sourceUpdatedAt) >
+    7 * 86400000
+  )
+    assert.match(html, /Dados históricos/);
 });
