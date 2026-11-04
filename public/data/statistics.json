@@ -13,7 +13,18 @@
         "Partidas significa participações de jogadores com a civilização. Não somar as linhas como partidas únicas.",
         "Civilizações não mapeadas pelo provedor ficam fora do ranking. Não aplicamos exclusão adicional de espelhos."
       ],
-      "unmappedIds": [-1, 45, 46, 47, 55, 56, 57, 61, 62, 63],
+      "unmappedIds": [
+        -1,
+        45,
+        46,
+        47,
+        55,
+        56,
+        57,
+        61,
+        62,
+        63
+      ],
       "views": [
         {
           "id": "all",
@@ -4163,8 +4174,8 @@
           ]
         }
       ],
-      "fetchedAt": "2026-11-04T21:10:38.271Z",
-      "lastAttemptAt": "2026-11-04T21:10:38.271Z",
+      "fetchedAt": "2026-11-04T21:44:50.155Z",
+      "lastAttemptAt": "2026-11-04T21:44:50.155Z",
       "fetchError": null
     },
     "aoe4": {
@@ -5351,10 +5362,10 @@
         "Partidas usa player_games_count: participações com a civilização, a mesma base das vitórias e do winrate da fonte.",
         "Espelhos seguem o agregado do provedor. Contagens por liga descrevem o recorte da API e não devem ser somadas para reconstruir o total."
       ],
-      "fetchedAt": "2026-11-04T21:10:38.271Z",
-      "lastAttemptAt": "2026-11-04T21:10:38.271Z",
+      "fetchedAt": "2026-11-04T21:44:50.155Z",
+      "lastAttemptAt": "2026-11-04T21:44:50.155Z",
       "fetchError": null
     }
   },
-  "lastAttemptAt": "2026-11-04T21:10:38.271Z"
+  "lastAttemptAt": "2026-11-04T21:44:50.155Z"
 }
