@@ -15,16 +15,19 @@ for (const option of previewOptions) {
         : option.layout === 'detailed'
           ? 'player'
           : 'linear-player';
-    const playerCount = [
-      ...html.matchAll(
-        new RegExp(`<article class="${playerClass}(?:[^\"]*)"`, 'g'),
-      ),
-    ].length;
+    const playerCount =
+      option.game === 'sc2'
+        ? [...html.matchAll(/<article(?:\s|>)/g)].length
+        : [
+            ...html.matchAll(
+              new RegExp(`<article class="${playerClass}(?:[^\"]*)"`, 'g'),
+            ),
+          ].length;
     assert.equal(playerCount, option.teamSize * 2);
     if (option.layout === 'stacked')
       assert.match(html, /<section class="linear-overlay is-stacked"/);
     for (const [, url] of html.matchAll(/(?:src|href)="([^"]+)"/g)) {
-      const match = url.match(/\/(units|civilizations|aoe4)\/(.*)$/);
+      const match = url.match(/\/(units|civilizations|aoe4|sc2)\/(.*)$/);
       if (match)
         assert.ok(
           existsSync(

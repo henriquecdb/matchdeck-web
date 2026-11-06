@@ -1041,3 +1041,12 @@ p {
     gap: 7px;
   }
 }
+
+.game-grid {
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+}
+@media (max-width: 1050px) {
+  .game-grid {
+    grid-template-columns: minmax(0, 1fr);
+  }
+}

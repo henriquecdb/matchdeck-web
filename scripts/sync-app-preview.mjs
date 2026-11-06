@@ -53,6 +53,11 @@ await copySource('src/features/overlay/MatchOverlay.tsx');
 await copySource('src/styles.css');
 await copySource('src/games/aoe2/demo.ts');
 await copySource('src/games/aoe4/demo.ts');
+await copySource('src/games/sc2/demo.ts');
+await cp(resolve(app, 'public/sc2'), resolve(root, 'public/sc2'), {
+  recursive: true,
+});
+await copyFile(resolve(app, 'LICENSE'), resolve(destination, 'LICENSE'));
 const catalog = JSON.parse(
   await readFile(resolve(app, 'src/games/aoe2/unit-catalog.json'), 'utf8'),
 );

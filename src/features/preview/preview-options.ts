@@ -25,6 +25,7 @@ export const previewOptions = [
     },
   ]),
   { id: 'aoe4-1', game: 'aoe4', layout: 'compact', teamSize: 1, width: 900 },
+  { id: 'sc2-1', game: 'sc2', layout: 'compact', teamSize: 1, width: 640 },
 ] as const;
 export type PreviewOption = (typeof previewOptions)[number];
 export function selectPreview(
@@ -37,7 +38,7 @@ export function selectPreview(
   const option = previewOptions.find(
     (item) =>
       item.game === game &&
-      (game === 'aoe4' ||
+      (game !== 'aoe2-de' ||
         (item.layout === effectiveLayout && item.teamSize === teamSize)),
   );
   if (!option) throw new Error('Unsupported preview combination');

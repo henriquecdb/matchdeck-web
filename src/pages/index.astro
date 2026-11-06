@@ -12,19 +12,23 @@ const questions = [
   ],
   [
     'Quais jogos são compatíveis?',
-    'Age of Empires II: Definitive Edition tem integração multiplayer. Age of Empires IV tem suporte experimental a 1v1 ranqueado e rápido de PC via AoE4 World. Equipes, partidas personalizadas, campanhas e histórico do Age IV ainda não estão disponíveis. No AoE II, partidas offline estão disponíveis apenas na demonstração.',
+    'Age of Empires II: DE tem integração multiplayer; Age IV tem overlay experimental para 1v1 ranqueado e rápido de PC. StarCraft II está em Early Access para partidas entre duas pessoas. A detecção do SC2 usa o cliente local e não distingue a fila. Campanhas e skirmish offline não ativam o overlay; o Age IV ainda não detecta equipes nem partidas personalizadas.',
   ],
   [
     'Preciso criar uma conta?',
-    'Não é necessário criar uma conta no MatchDeck. No AoE II, identifique seu perfil do jogo. No Age IV, vincule pelo ID do AoE4 World, Steam ID ou link do perfil. Perfis, configurações e cache ficam separados por jogo.',
+    'Não é necessário criar uma conta no MatchDeck. Vincule seu perfil do jogo: AoE II, AoE4 World/Steam para Age IV ou ID/link do SC2 Pulse ou perfil oficial para SC2. Age IV (Steam) e SC2 também oferecem identificação local com validação na fonte; quando houver múltiplos perfis, informe o seu manualmente. Confira o nome encontrado.',
   ],
   [
     'Quais layouts posso usar?',
-    'No AoE II, escolha completo para 1v1, compacto horizontal ou compacto vertical. Se o completo estiver selecionado em uma partida de equipes, o app usa o compacto vertical e retoma o completo no próximo 1v1. Age IV usa sua própria faixa horizontal. Posição, escala e opacidade são ajustáveis.',
+    'No AoE II, escolha completo para 1v1, compacto horizontal ou compacto vertical. Se o completo estiver selecionado em uma partida de equipes, o app usa o compacto vertical e retoma o completo no próximo 1v1. Age IV usa sua própria faixa horizontal e SC2 usa um compacto de duas linhas. Posição, escala e opacidade são ajustáveis.',
   ],
   [
     'O app tem perfil e histórico?',
-    'No AoE II, a aba Perfil reúne rating, vitórias, derrotas e aproveitamento por modalidade, além das últimas cinco partidas multiplayer encerradas disponíveis na fonte. Dados podem atrasar ou estar ausentes. Perfil e histórico do Age IV ainda não estão disponíveis.',
+    'Sim. AoE II e Age IV têm estatísticas por modalidade, até cinco partidas encerradas disponíveis e gráficos de evolução recentes. No SC2, o perfil separa MMR, vitórias, derrotas e empates por raça e temporada; o histórico pode usar replays locais para confirmar mapa e resultado. Os gráficos usam os dados publicados pelas fontes e não representam todo o histórico da conta.',
+  ],
+  [
+    'Como funcionam os replays e as estatísticas do SC2?',
+    'O app lê replays locais compatíveis para confirmar mapa e resultado e mostrar até cinco partidas 1v1. Os arquivos são processados localmente, sem upload. Replays assistidos, IA e partidas com mais jogadores não ativam o overlay ao vivo. MMR e estatísticas por raça vêm do SC2 Pulse; uma correspondência por nome/região pode aparecer como Perfil sugerido e não confirma a identidade do adversário. Empates são preservados, e não há projeção da variação ao vivo.',
   ],
   [
     'Posso mudar o idioma e os atalhos?',
@@ -47,8 +51,8 @@ const questions = [
         ><h1 id="hero-title">
           Mais contexto.<br />Mais jogo<span class="accent">.</span>
         </h1><p>
-          Conheça quem está do outro lado.<br />Civilizações e estatísticas em
-          um overlay<br class="desktop-break" /> que acompanha o seu ritmo.
+          Conheça quem está do outro lado.<br />Jogadores e estatísticas em um
+          overlay<br class="desktop-break" /> que acompanha o seu ritmo.
         </p><div class="hero-actions">
           <a class="button button-primary" href="#download"
             >Conhecer o MatchDeck <span aria-hidden="true">↗</span></a
@@ -57,10 +61,10 @@ const questions = [
           >
         </div><div class="hero-meta">
           <span>WINDOWS</span><span class="meta-divider"></span><span
-            >AGE II: DE + AGE IV*</span
+            >AGE II: DE · AGE IV* · SC2*</span
           >
         </div><p class="hero-footnote">
-          * Age IV com integração experimental para 1v1.
+          * Age IV experimental e StarCraft II em Early Access.
         </p>
       </div>
       <div class="hero-demo">
@@ -101,8 +105,9 @@ const questions = [
               <i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i>
             </div>
           </div><h3>Conheça o confronto.</h3><p>
-            Civilizações e estatísticas da modalidade em disputa. No Age IV
-            ranqueado, o número principal são pontos, distintos do MMR.
+            Civilizações, raças e estatísticas para cada jogo. No Age IV, pontos
+            ranqueados são distintos do MMR; no SC2, o MMR publicado é separado
+            por raça.
           </p>
         </article>
         <article>
@@ -160,8 +165,8 @@ const questions = [
             Teste 1v1, 2v2, 3v3 e 4v4 na demonstração.
           </p><ul>
             <li>Completo em 1v1; compactos horizontal e vertical.</li><li>
-              Perfil com estatísticas por modalidade e últimas cinco partidas
-              disponíveis.
+              Perfil por modalidade, últimas cinco partidas disponíveis e
+              gráfico de rating para filas 1v1.
             </li><li>
               Detecção sujeita à cobertura da fonte; lobbies personalizados não
               têm cobertura garantida.
@@ -183,8 +188,31 @@ const questions = [
               Dados dependem da cobertura e do tempo de publicação do AoE4
               World.
             </li><li>
-              Equipes, lobbies personalizados, campanhas, perfil e histórico
-              ainda não estão disponíveis.
+              Perfil com estatísticas, até cinco partidas encerradas e gráfico
+              recente de rating/MMR. O overlay ao vivo continua exclusivo de
+              1v1.
+            </li>
+          </ul>
+        </article>
+        <article class="game-card">
+          <span class="eyebrow"
+            >STARCRAFT II <span class="experimental-badge">EARLY ACCESS</span
+            ></span
+          ><h3>Uma nova fronteira.</h3><p>
+            Overlay de duas linhas para 1v1 entre duas pessoas. MMR e
+            estatísticas por raça via SC2 Pulse, com detecção pelo cliente
+            local.
+          </p><ul>
+            <li>
+              Perfil por raça e temporada, com vitórias, derrotas, empates e
+              gráfico recente de MMR.
+            </li><li>
+              Até cinco partidas no histórico; replays locais compatíveis
+              confirmam mapa e resultado, sem upload.
+            </li><li>
+              A fila não é confirmada pelo cliente. Perfis sugeridos não
+              garantem a identidade do adversário; dados ausentes ficam sem
+              estatísticas.
             </li>
           </ul>
         </article>
@@ -202,8 +230,9 @@ const questions = [
           </p>
         </article><article>
           <h3>Seu perfil em perspectiva.</h3><p>
-            No AoE II, acompanhe seu aproveitamento por modalidade e os
-            resultados recentes publicados pela fonte.
+            Acompanhe estatísticas, últimos resultados e gráficos recentes.
+            Modalidades, raças, temporadas, pontos e MMR ficam identificados,
+            sem misturar medidas diferentes.
           </p>
         </article>
       </div>
@@ -232,8 +261,9 @@ const questions = [
         </li><li>
           <span>02</span><div>
             <h3>Escolha o jogo e seu perfil</h3><p>
-              Selecione AoE II: DE ou Age IV e vincule seu perfil. Ajuste o
-              overlay e confira a demonstração antes de jogar.
+              Selecione AoE II: DE, Age IV ou StarCraft II e confira o perfil
+              vinculado. Ajuste o overlay e experimente a demonstração antes de
+              jogar.
             </p>
           </div>
         </li><li>
@@ -292,7 +322,8 @@ const questions = [
       ><a href="#download">Downloads ↓</a>
     </div><div class="footer-bottom">
       <span>© {new Date().getFullYear()} MatchDeck</span><span
-        >Projeto independente. Sem afiliação com Microsoft ou World's Edge.</span
+        >Projeto independente. Sem afiliação com Microsoft, World's Edge ou
+        Blizzard.</span
       ><a href={import.meta.env.BASE_URL + 'brand/'}>Identidade visual ↗</a>
     </div>
   </footer>

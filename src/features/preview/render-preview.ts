@@ -2,6 +2,7 @@ import { createElement } from 'react';
 import { renderToStaticMarkup } from 'react-dom/server';
 import { MatchOverlay } from '../../vendor/matchdeck/src/features/overlay/MatchOverlay';
 import { createDemoMatch } from '../../vendor/matchdeck/src/games/aoe2/demo';
+import { createSc2Demo } from '../../vendor/matchdeck/src/games/sc2/demo';
 import { createAoe4Demo } from '../../vendor/matchdeck/src/games/aoe4/demo';
 import { LanguageProvider } from '../../vendor/matchdeck/src/i18n/LanguageProvider';
 import { defaultPreferences } from '../../vendor/matchdeck/src/domain/preferences';
@@ -11,9 +12,11 @@ import type { PreviewOption, PreviewLayout } from './preview-options';
 
 export function renderPreview(option: PreviewOption) {
   const match = {
-    ...(option.game === 'aoe4'
-      ? createAoe4Demo('ranked')
-      : createDemoMatch('ranked', option.teamSize)),
+    ...(option.game === 'sc2'
+      ? createSc2Demo('ranked')
+      : option.game === 'aoe4'
+        ? createAoe4Demo('ranked')
+        : createDemoMatch('ranked', option.teamSize)),
     id: 'website-demo',
   };
   const overlay = createElement(MatchOverlay, {
@@ -28,6 +31,7 @@ export function renderPreview(option: PreviewOption) {
   )
     .replaceAll('"/units/', `"${asset('units/')}`)
     .replaceAll('"/civilizations/', `"${asset('civilizations/')}`)
-    .replaceAll('"/aoe4/', `"${asset('aoe4/')}`);
+    .replaceAll('"/aoe4/', `"${asset('aoe4/')}`)
+    .replaceAll('"/sc2/', `"${asset('sc2/')}`);
   return `<!doctype html><html lang="pt-BR"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width"><title>Prévia do MatchDeck · dados fictícios</title><style>${appStyles}:root{color-scheme:dark}html{background:#19202a}</style></head><body>${html}</body></html>`;
 }

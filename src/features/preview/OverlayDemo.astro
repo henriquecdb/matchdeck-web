@@ -14,7 +14,7 @@ import provenance from '../../vendor/matchdeck/provenance.json';
       >Jogo<select id="preview-game"
         ><option value="aoe2-de">Age of Empires II: DE</option><option
           value="aoe4">Age of Empires IV · experimental</option
-        ></select
+        ><option value="sc2">StarCraft II · Early Access</option></select
       ></label
     >
     <label data-aoe2-control
@@ -65,7 +65,7 @@ import provenance from '../../vendor/matchdeck/provenance.json';
   let preferredLayout: PreviewLayout = 'detailed';
   function fitPreview() {
     const overlay = frame.contentDocument?.querySelector<HTMLElement>(
-      '.match-overlay, .linear-overlay, .aoe4-overlay',
+      '.match-overlay, .linear-overlay, .aoe4-overlay, .sc2-overlay',
     );
     if (!overlay) return;
     const nativeWidth = Number(frame.getAttribute('width'));
@@ -83,21 +83,27 @@ import provenance from '../../vendor/matchdeck/provenance.json';
       Number(teams.value) as TeamSize,
     );
     const isAoe4 = option.game === 'aoe4';
+    const isSc2 = option.game === 'sc2';
+    const isAoe2 = option.game === 'aoe2-de';
     document
       .querySelectorAll<HTMLElement>('[data-aoe2-control]')
       .forEach((control) => {
-        control.hidden = isAoe4;
+        control.hidden = !isAoe2;
       });
     layout.options[0].disabled = teams.value !== '1';
-    if (!isAoe4) layout.value = option.layout;
-    note.textContent = isAoe4
-      ? 'Age IV experimental · 1v1 ranqueado e rápido. Pontos ranqueados não são MMR. Dados fictícios.'
-      : teams.value === '1'
-        ? 'Interface original do app · dados fictícios. O modo completo é exclusivo de 1v1.'
-        : 'Interface original do app · dados fictícios. Em equipes, a preferência pelo completo usa o compacto vertical.';
-    frame.title = isAoe4
-      ? 'Prévia do overlay do Age of Empires IV com dados fictícios'
-      : `Prévia do overlay do Age of Empires II · ${teams.value}v${teams.value} · ${layout.selectedOptions[0].text} · dados fictícios`;
+    if (isAoe2) layout.value = option.layout;
+    note.textContent = isSc2
+      ? 'SC2 Early Access · 1v1 entre duas pessoas. O cliente não confirma a fila; MMR ranqueado por raça via SC2 Pulse. Dados fictícios.'
+      : isAoe4
+        ? 'Age IV experimental · 1v1 ranqueado e rápido. Pontos ranqueados não são MMR. Dados fictícios.'
+        : teams.value === '1'
+          ? 'Interface original do app · dados fictícios. O modo completo é exclusivo de 1v1.'
+          : 'Interface original do app · dados fictícios. Em equipes, a preferência pelo completo usa o compacto vertical.';
+    frame.title = isSc2
+      ? 'Prévia do overlay do StarCraft II com dados fictícios'
+      : isAoe4
+        ? 'Prévia do overlay do Age of Empires IV com dados fictícios'
+        : `Prévia do overlay do Age of Empires II · ${teams.value}v${teams.value} · ${layout.selectedOptions[0].text} · dados fictícios`;
     frame.setAttribute('width', String(option.width));
     frame.src = asset(`previews/${option.id}.html`);
   }

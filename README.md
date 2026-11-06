@@ -91,3 +91,7 @@ Execute npm run stats:update para atualizar o snapshot versionado em public/data
 Partidas significa participações por civilização. Age IV usa player_games_count e win_count, verificando o percentual publicado; games_count é outra medida e não é usado para calcular derrotas. Age II usa tuplas [participações, vitórias] e o agregado de todos os Elos sem somar novamente as faixas individuais. Derrotas são a diferença entre a amostra e vitórias. A fonte determina a cobertura e o tratamento de espelhos.
 
 Amostras do Age II cuja geração tem mais de sete dias aparecem como históricas, mesmo que consultadas hoje. A API do Age IV não fornece a data exata de geração; a página distingue explicitamente geração, consulta e início do período. Não há filtro de patch arbitrário: é exibido o recorte fornecido na cópia disponível.
+
+## Atualização do app 0.6.0
+
+A apresentação e a prévia incluem SC2 em Early Access (640 px), mantendo os componentes originais e os créditos em public/sc2/NOTICE.md. Perfil e histórico do Age IV, gráficos recentes, identificação local e replays do SC2 são descritos conforme as limitações do aplicativo. Os componentes copiados do app preservam a licença MIT em src/vendor/matchdeck/LICENSE; os assets dos jogos mantêm seus próprios direitos. As estatísticas públicas de civilizações continuam exclusivamente em Age II e Age IV.

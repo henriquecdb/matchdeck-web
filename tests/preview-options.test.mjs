@@ -17,3 +17,10 @@ test('Age IV always uses its dedicated 1v1 overlay regardless of the prior Age I
   assert.equal(option.teamSize, 1);
   assert.equal(option.width, 900);
 });
+
+test('SC2 uses its dedicated two-player overlay regardless of the Age II team format', () => {
+  const option = selectPreview('sc2', 'detailed', 4);
+  assert.equal(option.id, 'sc2-1');
+  assert.equal(option.teamSize, 1);
+  assert.equal(option.width, 640);
+});
