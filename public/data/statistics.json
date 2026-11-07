@@ -4174,8 +4174,8 @@
           ]
         }
       ],
-      "fetchedAt": "2026-11-06T16:47:14.057Z",
-      "lastAttemptAt": "2026-11-06T16:47:14.057Z",
+      "fetchedAt": "2026-11-07T15:41:26.746Z",
+      "lastAttemptAt": "2026-11-07T15:41:26.746Z",
       "fetchError": null
     },
     "aoe4": {
@@ -5362,10 +5362,10 @@
         "Partidas usa player_games_count: participações com a civilização, a mesma base das vitórias e do winrate da fonte.",
         "Espelhos seguem o agregado do provedor. Contagens por liga descrevem o recorte da API e não devem ser somadas para reconstruir o total."
       ],
-      "fetchedAt": "2026-11-06T16:47:14.057Z",
-      "lastAttemptAt": "2026-11-06T16:47:14.057Z",
+      "fetchedAt": "2026-11-07T15:41:26.746Z",
+      "lastAttemptAt": "2026-11-07T15:41:26.746Z",
       "fetchError": null
     }
   },
-  "lastAttemptAt": "2026-11-06T16:47:14.057Z"
+  "lastAttemptAt": "2026-11-07T15:41:26.746Z"
 }
