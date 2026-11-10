@@ -20,7 +20,7 @@
     "stats:update": "node scripts/update-statistics.mjs"
   },
   "dependencies": {
-    "astro": "^7.4.5",
+    "astro": "^7.4.7",
     "react": "^19.3.1",
     "react-dom": "^19.3.1"
   },
