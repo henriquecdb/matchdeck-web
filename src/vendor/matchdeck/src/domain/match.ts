@@ -8,7 +8,13 @@ export const modeLabels: Record<MatchMode, string> = {
   custom: 'Lobby personalizado',
 };
 
+export interface StatsCache {
+  fetchedAt: string;
+  stale: boolean;
+}
+
 export interface Player {
+  statsCache?: StatsCache | null;
   identityHint?: string | null;
   rank?: number | null;
   rankLevel?: string | null;
@@ -32,6 +38,7 @@ export interface Player {
 }
 
 export interface MatchSnapshot {
+  durationSeconds?: number | null;
   id: string;
   gameId: string;
   mode: MatchMode;

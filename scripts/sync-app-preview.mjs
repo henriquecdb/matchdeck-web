@@ -50,6 +50,9 @@ async function copySource(path) {
   }
 }
 await copySource('src/features/overlay/MatchOverlay.tsx');
+await copySource('src/features/overlay/PostGameCard.tsx');
+await copySource('src/features/demo/post-game-demo.ts');
+await copySource('src/games/sc2/use-sc2-encounter.ts');
 await copySource('src/styles.css');
 await copySource('src/games/aoe2/demo.ts');
 await copySource('src/games/aoe4/demo.ts');

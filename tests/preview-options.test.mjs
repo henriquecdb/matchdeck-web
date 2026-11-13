@@ -11,16 +11,28 @@ test('detailed preference falls back to stacked in teams, and remains detailed i
     );
   assert.equal(selectPreview('aoe2-de', 'compact', 4).id, 'aoe2-compact-4');
 });
-test('Age IV always uses its dedicated 1v1 overlay regardless of the prior Age II selection', () => {
+test('Age IV preserves vertical layout while normalizing team size', () => {
   const option = selectPreview('aoe4', 'stacked', 4);
-  assert.equal(option.id, 'aoe4-1');
+  assert.equal(option.id, 'aoe4-stacked-1');
   assert.equal(option.teamSize, 1);
-  assert.equal(option.width, 900);
+  assert.equal(option.width, 360);
 });
 
 test('SC2 uses its dedicated two-player overlay regardless of the Age II team format', () => {
   const option = selectPreview('sc2', 'detailed', 4);
   assert.equal(option.id, 'sc2-1');
   assert.equal(option.teamSize, 1);
-  assert.equal(option.width, 640);
+  assert.equal(option.width, 400);
+});
+
+test('post-game previews preserve results and normalize unsupported teams', () => {
+  for (const game of ['aoe2-de', 'aoe4', 'sc2']) {
+    for (const result of ['win', 'loss', 'draw']) {
+      const option = selectPreview(game, 'detailed', 4, 'post-game', result);
+      assert.equal(option.stage, 'post-game');
+      assert.equal(option.result, result);
+      assert.equal(option.teamSize, game === 'aoe2-de' ? 4 : 1);
+      assert.equal(option.width, 400);
+    }
+  }
 });
