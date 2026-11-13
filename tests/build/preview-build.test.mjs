@@ -23,8 +23,15 @@ for (const option of previewOptions) {
               new RegExp(`<article class="${playerClass}(?:[^\"]*)"`, 'g'),
             ),
           ].length;
-    assert.equal(playerCount, option.teamSize * 2);
-    if (option.layout === 'stacked')
+    if (option.stage === 'match')
+      assert.equal(playerCount, option.teamSize * 2);
+    else {
+      assert.match(html, new RegExp(`sc2-post-game is-${option.result}`));
+      assert.match(html, /Resumo pós-partida/);
+      assert.match(html, /DEMONSTRAÇÃO/);
+      assert.match(html, /aria-label="Sessão(?: de StarCraft II)?"/);
+    }
+    if (option.layout === 'stacked' && option.game === 'aoe2-de')
       assert.match(html, /<section class="linear-overlay is-stacked"/);
     for (const [, url] of html.matchAll(/(?:src|href)="([^"]+)"/g)) {
       const match = url.match(/\/(units|civilizations|aoe4|sc2)\/(.*)$/);

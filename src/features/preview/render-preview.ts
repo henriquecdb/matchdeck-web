@@ -1,5 +1,9 @@
 import { createElement } from 'react';
 import { renderToStaticMarkup } from 'react-dom/server';
+import { PostGameCard } from '../../vendor/matchdeck/src/features/overlay/PostGameCard';
+import { createPostGameDemo } from '../../vendor/matchdeck/src/features/demo/post-game-demo';
+import { sc2DemoSession } from '../../vendor/matchdeck/src/games/sc2/demo';
+import { demoEncounter } from '../../vendor/matchdeck/src/games/sc2/use-sc2-encounter';
 import { MatchOverlay } from '../../vendor/matchdeck/src/features/overlay/MatchOverlay';
 import { createDemoMatch } from '../../vendor/matchdeck/src/games/aoe2/demo';
 import { createSc2Demo } from '../../vendor/matchdeck/src/games/sc2/demo';
@@ -12,17 +16,32 @@ import type { PreviewOption, PreviewLayout } from './preview-options';
 
 export function renderPreview(option: PreviewOption) {
   const match = {
-    ...(option.game === 'sc2'
-      ? createSc2Demo('ranked')
-      : option.game === 'aoe4'
-        ? createAoe4Demo('ranked')
-        : createDemoMatch('ranked', option.teamSize)),
+    ...(option.stage === 'post-game'
+      ? createPostGameDemo(
+          option.game,
+          option.result!,
+          'ranked',
+          option.teamSize,
+        )
+      : option.game === 'sc2'
+        ? createSc2Demo('ranked')
+        : option.game === 'aoe4'
+          ? createAoe4Demo('ranked')
+          : createDemoMatch('ranked', option.teamSize)),
     id: 'website-demo',
   };
-  const overlay = createElement(MatchOverlay, {
-    match,
-    layout: option.layout as PreviewLayout,
-  });
+  const overlay =
+    option.stage === 'post-game'
+      ? createElement(PostGameCard, {
+          game: match,
+          session: option.game === 'sc2' ? sc2DemoSession : null,
+          encounter:
+            option.game === 'sc2' ? demoEncounter(match.finishedAt) : null,
+        })
+      : createElement(MatchOverlay, {
+          match,
+          layout: option.layout as PreviewLayout,
+        });
   const html = renderToStaticMarkup(
     createElement(LanguageProvider, {
       preferences: defaultPreferences,

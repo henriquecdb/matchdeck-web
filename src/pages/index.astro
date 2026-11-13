@@ -8,35 +8,55 @@ import { site } from '../config/site';
 const questions = [
   [
     'Como o MatchDeck funciona?',
-    'Escolha o jogo, vincule seu perfil e ative a detecção. O app consulta os dados publicados pela fonte e exibe o overlay durante a partida. Use o jogo em janela sem bordas. A disponibilidade e o tempo de atualização dependem da fonte de cada jogo.',
+    'Escolha o jogo, vincule seu perfil e ative a detecção. O overlay aparece durante a partida. Para acompanhar o placar, inicie uma sessão antes de jogar. Use janela sem bordas; a disponibilidade e o tempo de atualização dependem da fonte de cada jogo.',
   ],
   [
     'Quais jogos são compatíveis?',
-    'Age of Empires II: DE tem integração multiplayer; Age IV tem overlay experimental para 1v1 ranqueado e rápido de PC. StarCraft II está em Early Access para partidas entre duas pessoas. A detecção do SC2 usa o cliente local e não distingue a fila. Campanhas e skirmish offline não ativam o overlay; o Age IV ainda não detecta equipes nem partidas personalizadas.',
+    'Age of Empires II: DE tem integração multiplayer, incluindo equipes conforme a cobertura da fonte. Age IV oferece ranqueadas e rápidas de PC em 1v1, em caráter experimental. SC2 está em Early Access para 1v1 entre pessoas. Campanhas e skirmish offline não ativam o overlay. Age IV ainda não detecta equipes nem partidas personalizadas.',
   ],
   [
     'Preciso criar uma conta?',
-    'Não é necessário criar uma conta no MatchDeck. Vincule seu perfil do jogo: AoE II, AoE4 World/Steam para Age IV ou ID/link do SC2 Pulse ou perfil oficial para SC2. Age IV (Steam) e SC2 também oferecem identificação local com validação na fonte; quando houver múltiplos perfis, informe o seu manualmente. Confira o nome encontrado.',
+    'Não há conta do MatchDeck. Vincule seu perfil do jogo: AoE II, AoE4 World/Steam para Age IV ou ID/link do SC2 Pulse ou perfil oficial para SC2. Age IV (Steam) e SC2 também oferecem identificação local, com validação na fonte. Se houver múltiplos perfis, informe o seu manualmente.',
   ],
   [
-    'Quais layouts posso usar?',
-    'No AoE II, escolha completo para 1v1, compacto horizontal ou compacto vertical. Se o completo estiver selecionado em uma partida de equipes, o app usa o compacto vertical e retoma o completo no próximo 1v1. Age IV usa sua própria faixa horizontal e SC2 usa um compacto de duas linhas. Posição, escala e opacidade são ajustáveis.',
+    'Quais layouts posso salvar?',
+    'AoE II tem completo em 1v1 e compactos horizontal e vertical; equipes usam o vertical quando a preferência é completo. Age IV tem horizontal e vertical, e SC2 usa o compacto de duas linhas. Salve até 12 perfis de layout por jogo, com posição, monitor, escala, opacidade e opções de exibição.',
+  ],
+  [
+    'Como funciona a sessão?',
+    'Inicie antes de jogar. Placar, aproveitamento e dez últimos resultados ficam salvos por jogo e perfil, com uma faixa opcional no overlay. SC2 confirma resultados por replay; Age II e Age IV usam suas fontes. Resultados pendentes não contam como derrotas. Nova sessão substitui o placar anterior.',
+  ],
+  [
+    'O resumo pós-partida aparece no jogo?',
+    'Sim. Após a confirmação do resultado, o overlay mostra o resumo com os dados disponíveis: resultado, adversário ou equipe, mapa, duração e placar. No Age II e Age IV, a variação publicada também pode aparecer. Ajuste a duração de 0 a 30 segundos; 0 desativa. O resumo respeita foco e ocultação manual.',
+  ],
+  [
+    'Posso testar sem entrar em uma partida?',
+    'Sim. A demonstração do app e a prévia deste site usam dados fictícios. No app, escolha vitória, derrota ou empate para testar o pós-partida. Age II permite simular de 1v1 a 4v4. Os testes não alteram sua sessão real.',
   ],
   [
     'O app tem perfil e histórico?',
-    'Sim. AoE II e Age IV têm estatísticas por modalidade, até cinco partidas encerradas disponíveis e gráficos de evolução recentes. No SC2, o perfil separa MMR, vitórias, derrotas e empates por raça e temporada; o histórico pode usar replays locais para confirmar mapa e resultado. Os gráficos usam os dados publicados pelas fontes e não representam todo o histórico da conta.',
+    'Sim. AoE II e Age IV têm estatísticas por modalidade, até cinco partidas encerradas disponíveis e gráficos recentes. SC2 separa estatísticas por raça e temporada, usa replays locais e permite consultar o desempenho por mapa na sessão. A cobertura depende das fontes e não representa todo o histórico da conta.',
   ],
   [
-    'Como funcionam os replays e as estatísticas do SC2?',
-    'O app lê replays locais compatíveis para confirmar mapa e resultado e mostrar até cinco partidas 1v1. Os arquivos são processados localmente, sem upload. Replays assistidos, IA e partidas com mais jogadores não ativam o overlay ao vivo. MMR e estatísticas por raça vêm do SC2 Pulse; uma correspondência por nome/região pode aparecer como Perfil sugerido e não confirma a identidade do adversário. Empates são preservados, e não há projeção da variação ao vivo.',
+    'Como funciona o MMR da sessão no SC2?',
+    'O app registra consultas por raça e temporada, com horário, valor inicial, última consulta e variação. Há atualização manual e indicação de falha ou cache. Sem consulta inicial válida, a base e a variação ficam sem valor; o app não estima ganhos por partida.',
+  ],
+  [
+    'O SC2 reconhece adversários que já enfrentei?',
+    'O histórico local usa a identidade do personagem confirmada no replay. Havendo encontros anteriores, o retrospecto e a data do último aparecem no pós-partida. Durante o jogo, uma busca por nome e região pode ser apenas um Perfil sugerido. A API local não confirma a identidade do adversário nem a fila da partida.',
   ],
   [
     'Posso mudar o idioma e os atalhos?',
-    'Sim. A interface oferece português brasileiro e inglês. O idioma dos nomes de civilizações e unidades é independente e começa em inglês. Os atalhos para ocultar e travar o overlay podem ser alterados ou desativados; Ctrl+Shift+H e Ctrl+Shift+O são os padrões.',
+    'Sim. A interface oferece português brasileiro e inglês, com idioma dos nomes do jogo independente. Ctrl+Shift+H mostra ou oculta o overlay; Ctrl+Shift+O trava ou destrava sua posição e a passagem de cliques. Ambos podem ser alterados ou desativados.',
+  ],
+  [
+    'As estatísticas deste site são da minha conta?',
+    'Não. A página Estatísticas usa agregados públicos de civilizações de Age II e Age IV, com a fonte e o período identificados. Ela não acessa sua conta. Sessões, perfis de jogador e resultados pessoais são recursos do aplicativo.',
   ],
   [
     'O Windows pode exibir um aviso na instalação?',
-    'O executável ainda não possui certificado de editor Windows (Authenticode). Baixe somente pelas releases do repositório oficial e confira as notas da versão antes de instalar.',
+    'O executável ainda não possui certificado de editor Windows (Authenticode). Baixe pelas releases oficiais. Os pacotes do atualizador têm assinatura própria e são verificados pelo app; as releases também passam por auditoria de dependências e varredura antivírus.',
   ],
 ];
 ---
@@ -51,8 +71,8 @@ const questions = [
         ><h1 id="hero-title">
           Mais contexto.<br />Mais jogo<span class="accent">.</span>
         </h1><p>
-          Conheça quem está do outro lado.<br />Jogadores e estatísticas em um
-          overlay<br class="desktop-break" /> que acompanha o seu ritmo.
+          Jogadores, estatísticas e o placar da sua sessão no seu campo de
+          visão. Do confronto ao resumo pós-partida.
         </p><div class="hero-actions">
           <a class="button button-primary" href="#download"
             >Conhecer o MatchDeck <span aria-hidden="true">↗</span></a
@@ -118,22 +138,26 @@ const questions = [
             <span>Opacidade <b>85%</b></span><div class="slider-line">
             </div><span>AoE II <b>Compacto vertical ↗</b></span>
           </div><h3>O seu espaço. Suas regras.</h3><p>
-            Ajuste posição, escala e opacidade. No AoE II, use o completo em
-            duelos ou escolha entre dois modos compactos.
+            Salve posição, monitor, escala e opções de exibição em perfis por
+            jogo. AoE II e Age IV oferecem layouts horizontal e vertical.
           </p>
         </article>
         <article>
-          <span class="feature-number">03 / SEM INTERRUPÇÕES</span><div
-            class="feature-art shortcut-art"
+          <span class="feature-number">03 / ACOMPANHE A SESSÃO</span><div
+            class="feature-art session-art"
             aria-hidden="true"
           >
-            <kbd>Ctrl</kbd><span>+</span><kbd>Shift</kbd><span>+</span><kbd
-              >H</kbd
+            <span>SESSÃO · EXEMPLO ILUSTRATIVO</span><div>
+              <strong>4<small>V</small></strong><strong
+                >2<small>D</small></strong
+              ><b>67%</b>
+            </div><span class="session-art-results"
+              ><i></i><i></i><i></i><i></i><i></i><i></i></span
             >
-          </div><h3>Presente quando precisa.</h3><p>
-            Oculte a partida e trave a passagem de cliques com atalhos
-            configuráveis. Altere as combinações ou desative-as nas
-            configurações.
+          </div><h3>Cada resultado conta.</h3><p>
+            Inicie uma sessão e acompanhe placar, aproveitamento e sequência de
+            resultados. Ao terminar, veja o resumo confirmado pela fonte ou pelo
+            replay, direto no overlay.
           </p>
         </article>
       </div>
@@ -162,7 +186,8 @@ const questions = [
             O clássico, com contexto.
           </h3><p>
             Overlay multiplayer com rating da fila, civilizações e estatísticas.
-            Teste 1v1, 2v2, 3v3 e 4v4 na demonstração.
+            Sessão e pós-partida também acompanham as equipes. Teste de 1v1 a
+            4v4.
           </p><ul>
             <li>Completo em 1v1; compactos horizontal e vertical.</li><li>
               Perfil por modalidade, últimas cinco partidas disponíveis e
@@ -179,11 +204,12 @@ const questions = [
               >EXPERIMENTAL</span
             ></span
           ><h3>Uma nova era no deck.</h3><p>
-            Faixa horizontal para 1v1 ranqueado e rápido de PC, com civilização,
-            liga, posição no ranking, pontos/rating e aproveitamento.
+            Overlay horizontal ou vertical para 1v1 ranqueado e rápido de PC,
+            com civilização, liga, posição no ranking, pontos/rating e
+            aproveitamento.
           </p><ul>
             <li>
-              Vincule seu perfil por ID, Steam ID ou link do AoE4 World.
+              Sessão salva por perfil, com faixa de placar e resumo pós-partida.
             </li><li>
               Dados dependem da cobertura e do tempo de publicação do AoE4
               World.
@@ -205,10 +231,10 @@ const questions = [
           </p><ul>
             <li>
               Perfil por raça e temporada, com vitórias, derrotas, empates e
-              gráfico recente de MMR.
+              gráfico recente de MMR. Sessão com consultas de MMR identificadas.
             </li><li>
-              Até cinco partidas no histórico; replays locais compatíveis
-              confirmam mapa e resultado, sem upload.
+              Replays locais confirmam os resultados da sessão e os reencontros
+              exibidos no pós-partida, sem upload.
             </li><li>
               A fila não é confirmada pelo cliente. Perfis sugeridos não
               garantem a identidade do adversário; dados ausentes ficam sem
@@ -220,13 +246,13 @@ const questions = [
       <div class="app-extras">
         <article>
           <h3>Seu idioma, suas escolhas.</h3><p>
-            Interface em português ou inglês. Nomes de civilizações e unidades
-            com idioma independente.
+            Interface em português ou inglês. Nomes do jogo e atalhos
+            configuráveis de forma independente.
           </p>
         </article><article>
           <h3>Pronto para voltar.</h3><p>
-            Use a bandeja e, se preferir, configure o início com Windows e a
-            abertura no último jogo usado.
+            Sessões ficam salvas por jogo e perfil. Use a bandeja e, se
+            preferir, inicie com Windows e retome o último jogo.
           </p>
         </article><article>
           <h3>Seu perfil em perspectiva.</h3><p>
