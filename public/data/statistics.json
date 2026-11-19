@@ -4174,8 +4174,8 @@
           ]
         }
       ],
-      "fetchedAt": "2026-11-18T18:06:53.133Z",
-      "lastAttemptAt": "2026-11-18T18:06:53.133Z",
+      "fetchedAt": "2026-11-19T18:19:00.733Z",
+      "lastAttemptAt": "2026-11-19T18:19:00.733Z",
       "fetchError": null
     },
     "aoe4": {
@@ -4193,178 +4193,178 @@
           "rows": [
             {
               "id": "vikings",
-              "games": 94777,
-              "wins": 54617,
-              "losses": 40160,
-              "winRate": 57.62685039619317
+              "games": 98606,
+              "wins": 56830,
+              "losses": 41776,
+              "winRate": 57.633409731659334
             },
             {
               "id": "jin_dynasty",
-              "games": 11447,
-              "wins": 6247,
-              "losses": 5200,
-              "winRate": 54.573250633353716
+              "games": 12115,
+              "wins": 6612,
+              "losses": 5503,
+              "winRate": 54.57697069748246
             },
             {
               "id": "zhu_xis_legacy",
-              "games": 12329,
-              "wins": 6398,
-              "losses": 5931,
-              "winRate": 51.893908670613996
+              "games": 12946,
+              "wins": 6710,
+              "losses": 6236,
+              "winRate": 51.830681291518616
             },
             {
               "id": "macedonian_dynasty",
-              "games": 9322,
-              "wins": 4805,
-              "losses": 4517,
-              "winRate": 51.544732889937784
+              "games": 9787,
+              "wins": 5039,
+              "losses": 4748,
+              "winRate": 51.48666598549096
             },
             {
               "id": "knights_templar",
-              "games": 31437,
-              "wins": 16087,
-              "losses": 15350,
-              "winRate": 51.17218564112352
+              "games": 33005,
+              "wins": 16883,
+              "losses": 16122,
+              "winRate": 51.15285562793516
             },
             {
               "id": "order_of_the_dragon",
-              "games": 16416,
-              "wins": 8371,
-              "losses": 8045,
-              "winRate": 50.992933723196884
-            },
-            {
-              "id": "golden_horde",
-              "games": 7377,
-              "wins": 3715,
-              "losses": 3662,
-              "winRate": 50.359224617053
+              "games": 17216,
+              "wins": 8778,
+              "losses": 8438,
+              "winRate": 50.98745353159851
             },
             {
               "id": "house_of_lancaster",
-              "games": 10469,
-              "wins": 5269,
-              "losses": 5200,
-              "winRate": 50.329544369089696
+              "games": 10961,
+              "wins": 5534,
+              "losses": 5427,
+              "winRate": 50.48809415199343
+            },
+            {
+              "id": "golden_horde",
+              "games": 7748,
+              "wins": 3894,
+              "losses": 3854,
+              "winRate": 50.25813113061435
             },
             {
               "id": "mongols",
-              "games": 16138,
-              "wins": 7997,
-              "losses": 8141,
-              "winRate": 49.55384806047837
+              "games": 16847,
+              "wins": 8332,
+              "losses": 8515,
+              "winRate": 49.45687659523951
             },
             {
               "id": "french",
-              "games": 43380,
-              "wins": 21368,
-              "losses": 22012,
-              "winRate": 49.2577224527432
+              "games": 45513,
+              "wins": 22419,
+              "losses": 23094,
+              "winRate": 49.258453628633575
             },
             {
               "id": "japanese",
-              "games": 15751,
-              "wins": 7667,
-              "losses": 8084,
-              "winRate": 48.676274522252555
+              "games": 16611,
+              "wins": 8093,
+              "losses": 8518,
+              "winRate": 48.720727228944675
             },
             {
               "id": "holy_roman_empire",
-              "games": 21784,
-              "wins": 10592,
-              "losses": 11192,
-              "winRate": 48.622842453176645
+              "games": 22883,
+              "wins": 11121,
+              "losses": 11762,
+              "winRate": 48.59939693222042
             },
             {
               "id": "ayyubids",
-              "games": 5374,
-              "wins": 2600,
-              "losses": 2774,
-              "winRate": 48.38109415705247
-            },
-            {
-              "id": "delhi_sultanate",
-              "games": 6733,
-              "wins": 3245,
-              "losses": 3488,
-              "winRate": 48.19545522055547
+              "games": 5583,
+              "wins": 2702,
+              "losses": 2881,
+              "winRate": 48.39691921905786
             },
             {
               "id": "jeanne_darc",
-              "games": 5493,
-              "wins": 2641,
-              "losses": 2852,
-              "winRate": 48.079373748407065
+              "games": 5812,
+              "wins": 2796,
+              "losses": 3016,
+              "winRate": 48.10736407432898
+            },
+            {
+              "id": "delhi_sultanate",
+              "games": 7022,
+              "wins": 3362,
+              "losses": 3660,
+              "winRate": 47.87809740814583
             },
             {
               "id": "tughlaq_dynasty",
-              "games": 4743,
-              "wins": 2254,
-              "losses": 2489,
-              "winRate": 47.522664979970486
+              "games": 5013,
+              "wins": 2397,
+              "losses": 2616,
+              "winRate": 47.815679233991624
             },
             {
               "id": "rus",
-              "games": 15787,
-              "wins": 7458,
-              "losses": 8329,
-              "winRate": 47.24140115284728
+              "games": 16597,
+              "wins": 7845,
+              "losses": 8752,
+              "winRate": 47.2675784780382
             },
             {
               "id": "english",
-              "games": 53625,
-              "wins": 25049,
-              "losses": 28576,
-              "winRate": 46.71142191142191
+              "games": 56335,
+              "wins": 26327,
+              "losses": 30008,
+              "winRate": 46.73293689535812
             },
             {
               "id": "scots",
-              "games": 59133,
-              "wins": 27541,
-              "losses": 31592,
-              "winRate": 46.57467065767
+              "games": 61020,
+              "wins": 28474,
+              "losses": 32546,
+              "winRate": 46.66338905276958
             },
             {
               "id": "abbasid_dynasty",
-              "games": 8404,
-              "wins": 3892,
-              "losses": 4512,
-              "winRate": 46.311280342693955
+              "games": 8770,
+              "wins": 4063,
+              "losses": 4707,
+              "winRate": 46.328392246294186
             },
             {
               "id": "sengoku_daimyo",
-              "games": 3281,
-              "wins": 1491,
-              "losses": 1790,
-              "winRate": 45.44346235903688
+              "games": 3470,
+              "wins": 1579,
+              "losses": 1891,
+              "winRate": 45.5043227665706
             },
             {
               "id": "chinese",
-              "games": 14610,
-              "wins": 6589,
-              "losses": 8021,
-              "winRate": 45.09924709103354
+              "games": 15313,
+              "wins": 6891,
+              "losses": 8422,
+              "winRate": 45.00097955985111
             },
             {
               "id": "malians",
-              "games": 8549,
-              "wins": 3799,
-              "losses": 4750,
-              "winRate": 44.43794595859165
+              "games": 8942,
+              "wins": 3968,
+              "losses": 4974,
+              "winRate": 44.374860210243796
             },
             {
               "id": "byzantines",
-              "games": 8721,
-              "wins": 3810,
-              "losses": 4911,
-              "winRate": 43.68765049879601
+              "games": 9226,
+              "wins": 4009,
+              "losses": 5217,
+              "winRate": 43.45328419683503
             },
             {
               "id": "ottomans",
-              "games": 12564,
-              "wins": 5318,
-              "losses": 7246,
-              "winRate": 42.32728430436167
+              "games": 13147,
+              "wins": 5584,
+              "losses": 7563,
+              "winRate": 42.473568114398724
             }
           ]
         },
@@ -4374,178 +4374,178 @@
           "rows": [
             {
               "id": "vikings",
-              "games": 5143,
-              "wins": 3243,
-              "losses": 1900,
-              "winRate": 63.056581761617736
+              "games": 5369,
+              "wins": 3391,
+              "losses": 1978,
+              "winRate": 63.1588750232818
             },
             {
               "id": "order_of_the_dragon",
-              "games": 1388,
-              "wins": 784,
-              "losses": 604,
-              "winRate": 56.48414985590778
+              "games": 1461,
+              "wins": 831,
+              "losses": 630,
+              "winRate": 56.878850102669404
             },
             {
               "id": "knights_templar",
-              "games": 2807,
-              "wins": 1585,
-              "losses": 1222,
-              "winRate": 56.46597791236195
-            },
-            {
-              "id": "sengoku_daimyo",
-              "games": 274,
-              "wins": 143,
-              "losses": 131,
-              "winRate": 52.18978102189781
+              "games": 2951,
+              "wins": 1670,
+              "losses": 1281,
+              "winRate": 56.59098610640461
             },
             {
               "id": "jeanne_darc",
-              "games": 637,
-              "wins": 331,
-              "losses": 306,
-              "winRate": 51.96232339089482
+              "games": 657,
+              "wins": 342,
+              "losses": 315,
+              "winRate": 52.054794520547944
+            },
+            {
+              "id": "sengoku_daimyo",
+              "games": 287,
+              "wins": 149,
+              "losses": 138,
+              "winRate": 51.91637630662021
             },
             {
               "id": "zhu_xis_legacy",
-              "games": 878,
-              "wins": 451,
-              "losses": 427,
-              "winRate": 51.36674259681094
+              "games": 920,
+              "wins": 472,
+              "losses": 448,
+              "winRate": 51.30434782608695
             },
             {
               "id": "japanese",
-              "games": 1264,
-              "wins": 647,
-              "losses": 617,
-              "winRate": 51.186708860759495
-            },
-            {
-              "id": "tughlaq_dynasty",
-              "games": 360,
-              "wins": 183,
-              "losses": 177,
-              "winRate": 50.833333333333336
+              "games": 1335,
+              "wins": 682,
+              "losses": 653,
+              "winRate": 51.08614232209738
             },
             {
               "id": "macedonian_dynasty",
-              "games": 728,
-              "wins": 370,
-              "losses": 358,
-              "winRate": 50.824175824175825
+              "games": 762,
+              "wins": 385,
+              "losses": 377,
+              "winRate": 50.5249343832021
             },
             {
               "id": "golden_horde",
-              "games": 676,
-              "wins": 339,
-              "losses": 337,
-              "winRate": 50.14792899408284
+              "games": 716,
+              "wins": 361,
+              "losses": 355,
+              "winRate": 50.41899441340782
             },
             {
               "id": "holy_roman_empire",
-              "games": 2863,
-              "wins": 1431,
-              "losses": 1432,
-              "winRate": 49.98253580160671
+              "games": 3006,
+              "wins": 1499,
+              "losses": 1507,
+              "winRate": 49.866932801064536
+            },
+            {
+              "id": "tughlaq_dynasty",
+              "games": 381,
+              "wins": 189,
+              "losses": 192,
+              "winRate": 49.60629921259842
             },
             {
               "id": "house_of_lancaster",
-              "games": 794,
-              "wins": 392,
-              "losses": 402,
-              "winRate": 49.37027707808564
-            },
-            {
-              "id": "jin_dynasty",
-              "games": 364,
-              "wins": 179,
-              "losses": 185,
-              "winRate": 49.175824175824175
-            },
-            {
-              "id": "mongols",
-              "games": 2091,
-              "wins": 1021,
-              "losses": 1070,
-              "winRate": 48.82831181252989
+              "games": 832,
+              "wins": 411,
+              "losses": 421,
+              "winRate": 49.39903846153846
             },
             {
               "id": "french",
-              "games": 5819,
-              "wins": 2830,
-              "losses": 2989,
-              "winRate": 48.63378587386149
+              "games": 6077,
+              "wins": 2960,
+              "losses": 3117,
+              "winRate": 48.708244199440514
+            },
+            {
+              "id": "mongols",
+              "games": 2185,
+              "wins": 1061,
+              "losses": 1124,
+              "winRate": 48.558352402745996
             },
             {
               "id": "ayyubids",
-              "games": 323,
-              "wins": 156,
-              "losses": 167,
-              "winRate": 48.297213622291025
-            },
-            {
-              "id": "delhi_sultanate",
-              "games": 818,
-              "wins": 390,
-              "losses": 428,
-              "winRate": 47.67726161369193
+              "games": 338,
+              "wins": 163,
+              "losses": 175,
+              "winRate": 48.22485207100592
             },
             {
               "id": "english",
-              "games": 9113,
-              "wins": 4320,
-              "losses": 4793,
-              "winRate": 47.404806320640844
+              "games": 9570,
+              "wins": 4545,
+              "losses": 5025,
+              "winRate": 47.492163009404386
             },
             {
               "id": "rus",
-              "games": 1624,
-              "wins": 768,
-              "losses": 856,
-              "winRate": 47.29064039408867
+              "games": 1712,
+              "wins": 813,
+              "losses": 899,
+              "winRate": 47.48831775700935
+            },
+            {
+              "id": "delhi_sultanate",
+              "games": 881,
+              "wins": 413,
+              "losses": 468,
+              "winRate": 46.878547105561864
+            },
+            {
+              "id": "jin_dynasty",
+              "games": 392,
+              "wins": 183,
+              "losses": 209,
+              "winRate": 46.683673469387756
             },
             {
               "id": "scots",
-              "games": 2388,
-              "wins": 1096,
-              "losses": 1292,
-              "winRate": 45.89614740368509
+              "games": 2470,
+              "wins": 1133,
+              "losses": 1337,
+              "winRate": 45.87044534412956
             },
             {
               "id": "abbasid_dynasty",
-              "games": 886,
-              "wins": 400,
-              "losses": 486,
-              "winRate": 45.146726862302486
+              "games": 925,
+              "wins": 419,
+              "losses": 506,
+              "winRate": 45.2972972972973
             },
             {
               "id": "ottomans",
-              "games": 2971,
-              "wins": 1320,
-              "losses": 1651,
-              "winRate": 44.42948502187816
-            },
-            {
-              "id": "chinese",
-              "games": 2167,
-              "wins": 936,
-              "losses": 1231,
-              "winRate": 43.19335486848177
+              "games": 3105,
+              "wins": 1385,
+              "losses": 1720,
+              "winRate": 44.60547504025765
             },
             {
               "id": "malians",
-              "games": 727,
-              "wins": 314,
-              "losses": 413,
-              "winRate": 43.191196698762035
+              "games": 783,
+              "wins": 343,
+              "losses": 440,
+              "winRate": 43.805874840357596
+            },
+            {
+              "id": "chinese",
+              "games": 2259,
+              "wins": 974,
+              "losses": 1285,
+              "winRate": 43.11642319610447
             },
             {
               "id": "byzantines",
-              "games": 723,
-              "wins": 284,
-              "losses": 439,
-              "winRate": 39.2807745504841
+              "games": 764,
+              "wins": 295,
+              "losses": 469,
+              "winRate": 38.61256544502618
             }
           ]
         },
@@ -4555,178 +4555,178 @@
           "rows": [
             {
               "id": "vikings",
-              "games": 9396,
-              "wins": 5770,
-              "losses": 3626,
-              "winRate": 61.40911025968497
-            },
-            {
-              "id": "jin_dynasty",
-              "games": 650,
-              "wins": 361,
-              "losses": 289,
-              "winRate": 55.53846153846154
+              "games": 9774,
+              "wins": 5996,
+              "losses": 3778,
+              "winRate": 61.346429302230405
             },
             {
               "id": "macedonian_dynasty",
-              "games": 1110,
-              "wins": 615,
-              "losses": 495,
-              "winRate": 55.4054054054054
+              "games": 1159,
+              "wins": 642,
+              "losses": 517,
+              "winRate": 55.39257981018119
+            },
+            {
+              "id": "jin_dynasty",
+              "games": 701,
+              "wins": 387,
+              "losses": 314,
+              "winRate": 55.20684736091298
             },
             {
               "id": "knights_templar",
-              "games": 4807,
-              "wins": 2568,
-              "losses": 2239,
-              "winRate": 53.42209278136052
+              "games": 4997,
+              "wins": 2674,
+              "losses": 2323,
+              "winRate": 53.51210726435861
             },
             {
               "id": "golden_horde",
-              "games": 970,
-              "wins": 509,
-              "losses": 461,
-              "winRate": 52.47422680412371
+              "games": 1014,
+              "wins": 536,
+              "losses": 478,
+              "winRate": 52.85996055226825
             },
             {
               "id": "zhu_xis_legacy",
-              "games": 1740,
-              "wins": 913,
-              "losses": 827,
-              "winRate": 52.47126436781609
-            },
-            {
-              "id": "japanese",
-              "games": 2467,
-              "wins": 1286,
-              "losses": 1181,
-              "winRate": 52.12809079854074
+              "games": 1823,
+              "wins": 958,
+              "losses": 865,
+              "winRate": 52.55074053757542
             },
             {
               "id": "order_of_the_dragon",
-              "games": 2449,
-              "wins": 1267,
-              "losses": 1182,
-              "winRate": 51.735402204981625
+              "games": 2583,
+              "wins": 1344,
+              "losses": 1239,
+              "winRate": 52.03252032520325
+            },
+            {
+              "id": "japanese",
+              "games": 2584,
+              "wins": 1342,
+              "losses": 1242,
+              "winRate": 51.93498452012384
             },
             {
               "id": "ayyubids",
-              "games": 556,
-              "wins": 283,
-              "losses": 273,
-              "winRate": 50.89928057553957
-            },
-            {
-              "id": "jeanne_darc",
-              "games": 1037,
-              "wins": 519,
-              "losses": 518,
-              "winRate": 50.04821600771456
+              "games": 576,
+              "wins": 292,
+              "losses": 284,
+              "winRate": 50.69444444444444
             },
             {
               "id": "house_of_lancaster",
-              "games": 1272,
-              "wins": 625,
-              "losses": 647,
-              "winRate": 49.13522012578616
+              "games": 1316,
+              "wins": 652,
+              "losses": 664,
+              "winRate": 49.54407294832827
+            },
+            {
+              "id": "jeanne_darc",
+              "games": 1091,
+              "wins": 537,
+              "losses": 554,
+              "winRate": 49.220898258478464
             },
             {
               "id": "abbasid_dynasty",
-              "games": 1067,
-              "wins": 514,
-              "losses": 553,
-              "winRate": 48.17244611059044
-            },
-            {
-              "id": "holy_roman_empire",
-              "games": 3153,
-              "wins": 1515,
-              "losses": 1638,
-              "winRate": 48.04947668886774
+              "games": 1123,
+              "wins": 541,
+              "losses": 582,
+              "winRate": 48.17453250222618
             },
             {
               "id": "french",
-              "games": 7111,
-              "wins": 3405,
-              "losses": 3706,
-              "winRate": 47.88356068063563
+              "games": 7497,
+              "wins": 3597,
+              "losses": 3900,
+              "winRate": 47.979191676670666
+            },
+            {
+              "id": "holy_roman_empire",
+              "games": 3328,
+              "wins": 1595,
+              "losses": 1733,
+              "winRate": 47.92668269230769
             },
             {
               "id": "mongols",
-              "games": 2419,
-              "wins": 1146,
-              "losses": 1273,
-              "winRate": 47.374948325754445
-            },
-            {
-              "id": "delhi_sultanate",
-              "games": 864,
-              "wins": 407,
-              "losses": 457,
-              "winRate": 47.10648148148148
+              "games": 2550,
+              "wins": 1211,
+              "losses": 1339,
+              "winRate": 47.490196078431374
             },
             {
               "id": "rus",
-              "games": 2440,
-              "wins": 1147,
-              "losses": 1293,
-              "winRate": 47.00819672131148
+              "games": 2560,
+              "wins": 1195,
+              "losses": 1365,
+              "winRate": 46.6796875
+            },
+            {
+              "id": "delhi_sultanate",
+              "games": 899,
+              "wins": 415,
+              "losses": 484,
+              "winRate": 46.162402669632925
             },
             {
               "id": "english",
-              "games": 10486,
-              "wins": 4819,
-              "losses": 5667,
-              "winRate": 45.9565134465001
+              "games": 10996,
+              "wins": 5047,
+              "losses": 5949,
+              "winRate": 45.898508548563115
             },
             {
               "id": "scots",
-              "games": 4655,
-              "wins": 2118,
-              "losses": 2537,
-              "winRate": 45.49946294307197
+              "games": 4811,
+              "wins": 2198,
+              "losses": 2613,
+              "winRate": 45.68696736645188
             },
             {
               "id": "sengoku_daimyo",
-              "games": 398,
-              "wins": 181,
-              "losses": 217,
-              "winRate": 45.47738693467337
+              "games": 425,
+              "wins": 193,
+              "losses": 232,
+              "winRate": 45.411764705882355
             },
             {
               "id": "tughlaq_dynasty",
-              "games": 607,
-              "wins": 270,
-              "losses": 337,
-              "winRate": 44.481054365733115
+              "games": 644,
+              "wins": 291,
+              "losses": 353,
+              "winRate": 45.18633540372671
             },
             {
               "id": "malians",
-              "games": 1104,
-              "wins": 488,
-              "losses": 616,
-              "winRate": 44.20289855072464
+              "games": 1156,
+              "wins": 519,
+              "losses": 637,
+              "winRate": 44.8961937716263
             },
             {
               "id": "ottomans",
-              "games": 2447,
-              "wins": 1077,
-              "losses": 1370,
-              "winRate": 44.01307723743359
+              "games": 2567,
+              "wins": 1133,
+              "losses": 1434,
+              "winRate": 44.137125048694976
             },
             {
               "id": "chinese",
-              "games": 2147,
-              "wins": 938,
-              "losses": 1209,
-              "winRate": 43.688868188169536
+              "games": 2255,
+              "wins": 988,
+              "losses": 1267,
+              "winRate": 43.813747228381374
             },
             {
               "id": "byzantines",
-              "games": 1024,
-              "wins": 447,
-              "losses": 577,
-              "winRate": 43.65234375
+              "games": 1051,
+              "wins": 457,
+              "losses": 594,
+              "winRate": 43.48239771646051
             }
           ]
         },
@@ -4736,178 +4736,178 @@
           "rows": [
             {
               "id": "vikings",
-              "games": 34574,
-              "wins": 20102,
-              "losses": 14472,
-              "winRate": 58.1419563834095
+              "games": 35923,
+              "wins": 20902,
+              "losses": 15021,
+              "winRate": 58.185563566517274
             },
             {
               "id": "jin_dynasty",
-              "games": 3176,
-              "wins": 1818,
-              "losses": 1358,
-              "winRate": 57.241813602015114
+              "games": 3388,
+              "wins": 1938,
+              "losses": 1450,
+              "winRate": 57.20188902007084
             },
             {
               "id": "macedonian_dynasty",
-              "games": 3558,
-              "wins": 1936,
-              "losses": 1622,
-              "winRate": 54.412591343451375
+              "games": 3752,
+              "wins": 2036,
+              "losses": 1716,
+              "winRate": 54.26439232409382
             },
             {
               "id": "zhu_xis_legacy",
-              "games": 5129,
-              "wins": 2686,
-              "losses": 2443,
-              "winRate": 52.36888282316241
+              "games": 5388,
+              "wins": 2809,
+              "losses": 2579,
+              "winRate": 52.1343726800297
             },
             {
               "id": "order_of_the_dragon",
-              "games": 6817,
-              "wins": 3535,
-              "losses": 3282,
-              "winRate": 51.85565498019657
+              "games": 7118,
+              "wins": 3683,
+              "losses": 3435,
+              "winRate": 51.74206237707221
             },
             {
               "id": "golden_horde",
-              "games": 2847,
-              "wins": 1463,
-              "losses": 1384,
-              "winRate": 51.3874253600281
+              "games": 2999,
+              "wins": 1533,
+              "losses": 1466,
+              "winRate": 51.11703901300434
             },
             {
               "id": "knights_templar",
-              "games": 14276,
-              "wins": 7252,
-              "losses": 7024,
-              "winRate": 50.79854300924629
+              "games": 14976,
+              "wins": 7604,
+              "losses": 7372,
+              "winRate": 50.77457264957265
             },
             {
               "id": "house_of_lancaster",
-              "games": 3659,
-              "wins": 1812,
-              "losses": 1847,
-              "winRate": 49.521727247881934
-            },
-            {
-              "id": "french",
-              "games": 17288,
-              "wins": 8556,
-              "losses": 8732,
-              "winRate": 49.4909763998149
+              "games": 3856,
+              "wins": 1918,
+              "losses": 1938,
+              "winRate": 49.74066390041494
             },
             {
               "id": "tughlaq_dynasty",
-              "games": 1901,
-              "wins": 939,
-              "losses": 962,
-              "winRate": 49.39505523408732
+              "games": 1998,
+              "wins": 991,
+              "losses": 1007,
+              "winRate": 49.5995995995996
             },
             {
-              "id": "mongols",
-              "games": 6049,
-              "wins": 2923,
-              "losses": 3126,
-              "winRate": 48.32203670028104
+              "id": "french",
+              "games": 18070,
+              "wins": 8936,
+              "losses": 9134,
+              "winRate": 49.45213060320974
             },
             {
               "id": "holy_roman_empire",
-              "games": 8030,
-              "wins": 3864,
-              "losses": 4166,
-              "winRate": 48.11955168119552
+              "games": 8424,
+              "wins": 4074,
+              "losses": 4350,
+              "winRate": 48.36182336182336
             },
             {
-              "id": "rus",
-              "games": 6141,
-              "wins": 2950,
-              "losses": 3191,
-              "winRate": 48.0377788633773
-            },
-            {
-              "id": "delhi_sultanate",
-              "games": 2752,
-              "wins": 1318,
-              "losses": 1434,
-              "winRate": 47.89244186046512
+              "id": "mongols",
+              "games": 6306,
+              "wins": 3049,
+              "losses": 3257,
+              "winRate": 48.350777037741835
             },
             {
               "id": "japanese",
-              "games": 7039,
-              "wins": 3362,
-              "losses": 3677,
-              "winRate": 47.762466259411845
+              "games": 7404,
+              "wins": 3552,
+              "losses": 3852,
+              "winRate": 47.97406807131281
+            },
+            {
+              "id": "rus",
+              "games": 6468,
+              "wins": 3096,
+              "losses": 3372,
+              "winRate": 47.86641929499072
+            },
+            {
+              "id": "delhi_sultanate",
+              "games": 2856,
+              "wins": 1364,
+              "losses": 1492,
+              "winRate": 47.75910364145658
             },
             {
               "id": "ayyubids",
-              "games": 2088,
-              "wins": 990,
-              "losses": 1098,
-              "winRate": 47.41379310344828
-            },
-            {
-              "id": "scots",
-              "games": 21039,
-              "wins": 9860,
-              "losses": 11179,
-              "winRate": 46.86534531108893
+              "games": 2185,
+              "wins": 1034,
+              "losses": 1151,
+              "winRate": 47.32265446224256
             },
             {
               "id": "jeanne_darc",
-              "games": 1904,
-              "wins": 890,
-              "losses": 1014,
-              "winRate": 46.7436974789916
+              "games": 1995,
+              "wins": 940,
+              "losses": 1055,
+              "winRate": 47.11779448621554
+            },
+            {
+              "id": "scots",
+              "games": 21632,
+              "wins": 10167,
+              "losses": 11465,
+              "winRate": 46.999815088757394
             },
             {
               "id": "byzantines",
-              "games": 3468,
-              "wins": 1586,
-              "losses": 1882,
-              "winRate": 45.732410611303344
-            },
-            {
-              "id": "chinese",
-              "games": 5309,
-              "wins": 2414,
-              "losses": 2895,
-              "winRate": 45.46995667734036
+              "games": 3713,
+              "wins": 1689,
+              "losses": 2024,
+              "winRate": 45.48882305413412
             },
             {
               "id": "english",
-              "games": 21103,
-              "wins": 9582,
-              "losses": 11521,
-              "winRate": 45.40586646448372
+              "games": 22191,
+              "wins": 10076,
+              "losses": 12115,
+              "winRate": 45.40579514217475
             },
             {
               "id": "abbasid_dynasty",
-              "games": 3044,
-              "wins": 1381,
-              "losses": 1663,
-              "winRate": 45.367936925098554
+              "games": 3185,
+              "wins": 1446,
+              "losses": 1739,
+              "winRate": 45.40031397174254
+            },
+            {
+              "id": "chinese",
+              "games": 5550,
+              "wins": 2509,
+              "losses": 3041,
+              "winRate": 45.207207207207205
             },
             {
               "id": "malians",
-              "games": 3045,
-              "wins": 1363,
-              "losses": 1682,
-              "winRate": 44.76190476190476
+              "games": 3167,
+              "wins": 1411,
+              "losses": 1756,
+              "winRate": 44.55320492579728
             },
             {
               "id": "sengoku_daimyo",
-              "games": 1226,
-              "wins": 537,
-              "losses": 689,
-              "winRate": 43.800978792822185
+              "games": 1305,
+              "wins": 572,
+              "losses": 733,
+              "winRate": 43.83141762452107
             },
             {
               "id": "ottomans",
-              "games": 4330,
-              "wins": 1776,
-              "losses": 2554,
-              "winRate": 41.0161662817552
+              "games": 4527,
+              "wins": 1858,
+              "losses": 2669,
+              "winRate": 41.04263309034681
             }
           ]
         },
@@ -4917,178 +4917,178 @@
           "rows": [
             {
               "id": "vikings",
-              "games": 23936,
-              "wins": 13523,
-              "losses": 10413,
-              "winRate": 56.49649064171123
+              "games": 24918,
+              "wins": 14084,
+              "losses": 10834,
+              "winRate": 56.52139015972389
             },
             {
               "id": "jin_dynasty",
-              "games": 3010,
-              "wins": 1650,
-              "losses": 1360,
-              "winRate": 54.817275747508305
+              "games": 3157,
+              "wins": 1736,
+              "losses": 1421,
+              "winRate": 54.988913525498894
             },
             {
               "id": "house_of_lancaster",
-              "games": 2537,
-              "wins": 1324,
-              "losses": 1213,
-              "winRate": 52.187623176980686
+              "games": 2645,
+              "wins": 1382,
+              "losses": 1263,
+              "winRate": 52.24952741020794
             },
             {
               "id": "mongols",
-              "games": 2632,
-              "wins": 1345,
-              "losses": 1287,
-              "winRate": 51.10182370820669
+              "games": 2768,
+              "wins": 1404,
+              "losses": 1364,
+              "winRate": 50.72254335260116
             },
             {
               "id": "golden_horde",
-              "games": 1615,
-              "wins": 820,
-              "losses": 795,
-              "winRate": 50.77399380804953
+              "games": 1712,
+              "wins": 862,
+              "losses": 850,
+              "winRate": 50.350467289719624
             },
             {
               "id": "french",
-              "games": 7480,
-              "wins": 3755,
-              "losses": 3725,
-              "winRate": 50.20053475935829
+              "games": 7822,
+              "wins": 3912,
+              "losses": 3910,
+              "winRate": 50.01278445410381
             },
             {
               "id": "zhu_xis_legacy",
-              "games": 2880,
-              "wins": 1431,
-              "losses": 1449,
-              "winRate": 49.6875
+              "games": 3005,
+              "wins": 1498,
+              "losses": 1507,
+              "winRate": 49.85024958402662
             },
             {
               "id": "order_of_the_dragon",
-              "games": 3618,
-              "wins": 1790,
-              "losses": 1828,
-              "winRate": 49.47484798231067
+              "games": 3785,
+              "wins": 1872,
+              "losses": 1913,
+              "winRate": 49.45838837516513
             },
             {
               "id": "delhi_sultanate",
-              "games": 1490,
-              "wins": 737,
-              "losses": 753,
-              "winRate": 49.46308724832215
+              "games": 1545,
+              "wins": 764,
+              "losses": 781,
+              "winRate": 49.44983818770226
             },
             {
               "id": "abbasid_dynasty",
-              "games": 1914,
-              "wins": 941,
-              "losses": 973,
-              "winRate": 49.164054336468126
+              "games": 1985,
+              "wins": 969,
+              "losses": 1016,
+              "winRate": 48.81612090680101
             },
             {
               "id": "english",
-              "games": 7474,
-              "wins": 3646,
-              "losses": 3828,
-              "winRate": 48.78244581214878
+              "games": 7866,
+              "wins": 3837,
+              "losses": 4029,
+              "winRate": 48.779557589626236
             },
             {
               "id": "knights_templar",
-              "games": 6058,
-              "wins": 2947,
-              "losses": 3111,
-              "winRate": 48.64641795972268
+              "games": 6382,
+              "wins": 3103,
+              "losses": 3279,
+              "winRate": 48.62112190535882
             },
             {
               "id": "macedonian_dynasty",
-              "games": 2202,
-              "wins": 1067,
-              "losses": 1135,
-              "winRate": 48.455949137148046
+              "games": 2309,
+              "wins": 1119,
+              "losses": 1190,
+              "winRate": 48.462537895192725
             },
             {
               "id": "holy_roman_empire",
-              "games": 3902,
-              "wins": 1886,
-              "losses": 2016,
-              "winRate": 48.33418759610456
+              "games": 4072,
+              "wins": 1968,
+              "losses": 2104,
+              "winRate": 48.33005893909627
             },
             {
               "id": "ayyubids",
-              "games": 1419,
-              "wins": 681,
-              "losses": 738,
-              "winRate": 47.99154334038055
-            },
-            {
-              "id": "japanese",
-              "games": 3043,
-              "wins": 1435,
-              "losses": 1608,
-              "winRate": 47.157410450213604
+              "games": 1463,
+              "wins": 703,
+              "losses": 760,
+              "winRate": 48.05194805194805
             },
             {
               "id": "jeanne_darc",
-              "games": 1195,
-              "wins": 561,
-              "losses": 634,
-              "winRate": 46.94560669456067
+              "games": 1266,
+              "wins": 598,
+              "losses": 668,
+              "winRate": 47.23538704581359
+            },
+            {
+              "id": "japanese",
+              "games": 3241,
+              "wins": 1528,
+              "losses": 1713,
+              "winRate": 47.14594261030546
             },
             {
               "id": "tughlaq_dynasty",
-              "games": 1093,
-              "wins": 508,
-              "losses": 585,
-              "winRate": 46.4775846294602
+              "games": 1158,
+              "wins": 543,
+              "losses": 615,
+              "winRate": 46.89119170984456
             },
             {
               "id": "scots",
-              "games": 16225,
-              "wins": 7538,
-              "losses": 8687,
-              "winRate": 46.45916795069338
+              "games": 16772,
+              "wins": 7798,
+              "losses": 8974,
+              "winRate": 46.49415692821369
             },
             {
               "id": "rus",
-              "games": 3097,
-              "wins": 1412,
-              "losses": 1685,
-              "winRate": 45.59250887956087
+              "games": 3248,
+              "wins": 1486,
+              "losses": 1762,
+              "winRate": 45.751231527093594
             },
             {
               "id": "sengoku_daimyo",
-              "games": 734,
-              "wins": 332,
-              "losses": 402,
-              "winRate": 45.23160762942779
+              "games": 766,
+              "wins": 349,
+              "losses": 417,
+              "winRate": 45.561357702349866
             },
             {
               "id": "chinese",
-              "games": 2794,
-              "wins": 1245,
-              "losses": 1549,
-              "winRate": 44.55977093772369
+              "games": 2917,
+              "wins": 1311,
+              "losses": 1606,
+              "winRate": 44.94343503599588
             },
             {
               "id": "ottomans",
-              "games": 1612,
-              "wins": 697,
-              "losses": 915,
-              "winRate": 43.23821339950372
+              "games": 1676,
+              "wins": 730,
+              "losses": 946,
+              "winRate": 43.556085918854414
             },
             {
               "id": "malians",
-              "games": 1937,
-              "wins": 834,
-              "losses": 1103,
-              "winRate": 43.05627258647393
+              "games": 2038,
+              "wins": 877,
+              "losses": 1161,
+              "winRate": 43.03238469087341
             },
             {
               "id": "byzantines",
-              "games": 2011,
-              "wins": 849,
-              "losses": 1162,
-              "winRate": 42.217802088513174
+              "games": 2134,
+              "wins": 892,
+              "losses": 1242,
+              "winRate": 41.79943767572634
             }
           ]
         },
@@ -5098,178 +5098,178 @@
           "rows": [
             {
               "id": "vikings",
-              "games": 12276,
-              "wins": 6882,
-              "losses": 5394,
-              "winRate": 56.06060606060606
+              "games": 12813,
+              "wins": 7175,
+              "losses": 5638,
+              "winRate": 55.997814719425584
             },
             {
               "id": "jin_dynasty",
-              "games": 2301,
-              "wins": 1245,
-              "losses": 1056,
-              "winRate": 54.10691003911343
+              "games": 2443,
+              "wins": 1325,
+              "losses": 1118,
+              "winRate": 54.23659435120753
             },
             {
               "id": "zhu_xis_legacy",
-              "games": 867,
-              "wins": 461,
-              "losses": 406,
-              "winRate": 53.17185697808535
+              "games": 927,
+              "wins": 492,
+              "losses": 435,
+              "winRate": 53.07443365695793
             },
             {
               "id": "ayyubids",
-              "games": 621,
-              "wins": 317,
-              "losses": 304,
-              "winRate": 51.04669887278583
+              "games": 637,
+              "wins": 325,
+              "losses": 312,
+              "winRate": 51.02040816326531
             },
             {
               "id": "mongols",
-              "games": 1540,
-              "wins": 778,
-              "losses": 762,
-              "winRate": 50.51948051948052
-            },
-            {
-              "id": "holy_roman_empire",
-              "games": 2131,
-              "wins": 1068,
-              "losses": 1063,
-              "winRate": 50.117315814171754
-            },
-            {
-              "id": "english",
-              "games": 2990,
-              "wins": 1487,
-              "losses": 1503,
-              "winRate": 49.7324414715719
+              "games": 1580,
+              "wins": 800,
+              "losses": 780,
+              "winRate": 50.63291139240506
             },
             {
               "id": "house_of_lancaster",
-              "games": 1350,
-              "wins": 671,
-              "losses": 679,
-              "winRate": 49.7037037037037
+              "games": 1411,
+              "wins": 706,
+              "losses": 705,
+              "winRate": 50.03543586109142
+            },
+            {
+              "id": "english",
+              "games": 3123,
+              "wins": 1561,
+              "losses": 1562,
+              "winRate": 49.9839897534422
+            },
+            {
+              "id": "holy_roman_empire",
+              "games": 2248,
+              "wins": 1114,
+              "losses": 1134,
+              "winRate": 49.555160142348754
             },
             {
               "id": "sengoku_daimyo",
-              "games": 296,
-              "wins": 147,
-              "losses": 149,
-              "winRate": 49.66216216216216
+              "games": 317,
+              "wins": 157,
+              "losses": 160,
+              "winRate": 49.526813880126184
             },
             {
               "id": "french",
-              "games": 3236,
-              "wins": 1583,
-              "losses": 1653,
-              "winRate": 48.91841779975278
+              "games": 3409,
+              "wins": 1666,
+              "losses": 1743,
+              "winRate": 48.87063655030801
             },
             {
               "id": "knights_templar",
-              "games": 2097,
-              "wins": 1023,
-              "losses": 1074,
-              "winRate": 48.783977110157366
+              "games": 2237,
+              "wins": 1090,
+              "losses": 1147,
+              "winRate": 48.72597228430934
             },
             {
               "id": "order_of_the_dragon",
-              "games": 1429,
-              "wins": 692,
-              "losses": 737,
-              "winRate": 48.42547235829251
-            },
-            {
-              "id": "japanese",
-              "games": 1055,
-              "wins": 508,
-              "losses": 547,
-              "winRate": 48.15165876777251
-            },
-            {
-              "id": "delhi_sultanate",
-              "games": 490,
-              "wins": 235,
-              "losses": 255,
-              "winRate": 47.95918367346939
+              "games": 1496,
+              "wins": 725,
+              "losses": 771,
+              "winRate": 48.462566844919785
             },
             {
               "id": "jeanne_darc",
-              "games": 440,
-              "wins": 211,
-              "losses": 229,
-              "winRate": 47.95454545454545
+              "games": 500,
+              "wins": 240,
+              "losses": 260,
+              "winRate": 48
             },
             {
-              "id": "chinese",
-              "games": 1102,
-              "wins": 525,
-              "losses": 577,
-              "winRate": 47.64065335753176
+              "id": "japanese",
+              "games": 1091,
+              "wins": 523,
+              "losses": 568,
+              "winRate": 47.93767186067828
             },
             {
-              "id": "malians",
-              "games": 897,
-              "wins": 423,
-              "losses": 474,
-              "winRate": 47.15719063545151
+              "id": "delhi_sultanate",
+              "games": 509,
+              "wins": 242,
+              "losses": 267,
+              "winRate": 47.54420432220039
             },
             {
               "id": "macedonian_dynasty",
-              "games": 1044,
-              "wins": 487,
-              "losses": 557,
-              "winRate": 46.64750957854406
+              "games": 1082,
+              "wins": 511,
+              "losses": 571,
+              "winRate": 47.22735674676525
+            },
+            {
+              "id": "chinese",
+              "games": 1195,
+              "wins": 560,
+              "losses": 635,
+              "winRate": 46.86192468619247
             },
             {
               "id": "rus",
-              "games": 1469,
-              "wins": 677,
-              "losses": 792,
-              "winRate": 46.0857726344452
+              "games": 1534,
+              "wins": 715,
+              "losses": 819,
+              "winRate": 46.610169491525426
+            },
+            {
+              "id": "malians",
+              "games": 921,
+              "wins": 429,
+              "losses": 492,
+              "winRate": 46.579804560260584
             },
             {
               "id": "golden_horde",
-              "games": 735,
-              "wins": 338,
-              "losses": 397,
-              "winRate": 45.98639455782313
+              "games": 755,
+              "wins": 348,
+              "losses": 407,
+              "winRate": 46.09271523178808
             },
             {
               "id": "scots",
-              "games": 7917,
-              "wins": 3610,
-              "losses": 4307,
-              "winRate": 45.5980800808387
+              "games": 8150,
+              "wins": 3718,
+              "losses": 4432,
+              "winRate": 45.61963190184049
             },
             {
               "id": "abbasid_dynasty",
-              "games": 944,
-              "wins": 419,
-              "losses": 525,
-              "winRate": 44.38559322033898
+              "games": 981,
+              "wins": 438,
+              "losses": 543,
+              "winRate": 44.64831804281346
             },
             {
               "id": "tughlaq_dynasty",
-              "games": 479,
-              "wins": 208,
-              "losses": 271,
-              "winRate": 43.42379958246347
+              "games": 504,
+              "wins": 223,
+              "losses": 281,
+              "winRate": 44.24603174603175
             },
             {
               "id": "byzantines",
-              "games": 845,
-              "wins": 366,
-              "losses": 479,
-              "winRate": 43.31360946745562
+              "games": 886,
+              "wins": 384,
+              "losses": 502,
+              "winRate": 43.340857787810386
             },
             {
               "id": "ottomans",
-              "games": 535,
-              "wins": 182,
-              "losses": 353,
-              "winRate": 34.018691588785046
+              "games": 575,
+              "wins": 195,
+              "losses": 380,
+              "winRate": 33.91304347826087
             }
           ]
         },
@@ -5279,178 +5279,178 @@
           "rows": [
             {
               "id": "mongols",
-              "games": 1214,
-              "wins": 698,
-              "losses": 516,
-              "winRate": 57.49588138385502
+              "games": 1257,
+              "wins": 720,
+              "losses": 537,
+              "winRate": 57.279236276849645
             },
             {
               "id": "zhu_xis_legacy",
-              "games": 708,
-              "wins": 393,
-              "losses": 315,
-              "winRate": 55.50847457627118
+              "games": 748,
+              "wins": 413,
+              "losses": 335,
+              "winRate": 55.213903743315505
             },
             {
               "id": "vikings",
-              "games": 8249,
-              "wins": 4351,
-              "losses": 3898,
-              "winRate": 52.745787368165836
+              "games": 8572,
+              "wins": 4516,
+              "losses": 4056,
+              "winRate": 52.68315445636958
             },
             {
               "id": "french",
-              "games": 1898,
-              "wins": 980,
-              "losses": 918,
-              "winRate": 51.633298208640674
-            },
-            {
-              "id": "knights_templar",
-              "games": 1065,
-              "wins": 548,
-              "losses": 517,
-              "winRate": 51.455399061032864
-            },
-            {
-              "id": "house_of_lancaster",
-              "games": 759,
-              "wins": 390,
-              "losses": 369,
-              "winRate": 51.383399209486164
-            },
-            {
-              "id": "english",
-              "games": 1613,
-              "wins": 828,
-              "losses": 785,
-              "winRate": 51.33292002479851
+              "games": 2061,
+              "wins": 1076,
+              "losses": 985,
+              "winRate": 52.20766618146531
             },
             {
               "id": "rus",
-              "games": 869,
-              "wins": 442,
-              "losses": 427,
-              "winRate": 50.863060989643266
+              "games": 926,
+              "wins": 477,
+              "losses": 449,
+              "winRate": 51.511879049676025
+            },
+            {
+              "id": "english",
+              "games": 1707,
+              "wins": 874,
+              "losses": 833,
+              "winRate": 51.200937316930286
+            },
+            {
+              "id": "house_of_lancaster",
+              "games": 802,
+              "wins": 409,
+              "losses": 393,
+              "winRate": 50.99750623441396
+            },
+            {
+              "id": "knights_templar",
+              "games": 1126,
+              "wins": 574,
+              "losses": 552,
+              "winRate": 50.97690941385435
             },
             {
               "id": "jin_dynasty",
-              "games": 1847,
-              "wins": 936,
-              "losses": 911,
-              "winRate": 50.67677314564158
-            },
-            {
-              "id": "chinese",
-              "games": 893,
-              "wins": 452,
-              "losses": 441,
-              "winRate": 50.61590145576708
+              "games": 1932,
+              "wins": 983,
+              "losses": 949,
+              "winRate": 50.87991718426501
             },
             {
               "id": "delhi_sultanate",
-              "games": 256,
-              "wins": 127,
-              "losses": 129,
-              "winRate": 49.609375
+              "games": 263,
+              "wins": 133,
+              "losses": 130,
+              "winRate": 50.57034220532319
             },
             {
-              "id": "holy_roman_empire",
-              "games": 1454,
-              "wins": 720,
-              "losses": 734,
-              "winRate": 49.51856946354883
-            },
-            {
-              "id": "macedonian_dynasty",
-              "games": 609,
-              "wins": 299,
-              "losses": 310,
-              "winRate": 49.09688013136289
+              "id": "chinese",
+              "games": 934,
+              "wins": 468,
+              "losses": 466,
+              "winRate": 50.107066381156315
             },
             {
               "id": "tughlaq_dynasty",
-              "games": 260,
-              "wins": 127,
-              "losses": 133,
-              "winRate": 48.84615384615385
+              "games": 283,
+              "wins": 141,
+              "losses": 142,
+              "winRate": 49.82332155477032
+            },
+            {
+              "id": "holy_roman_empire",
+              "games": 1544,
+              "wins": 759,
+              "losses": 785,
+              "winRate": 49.1580310880829
+            },
+            {
+              "id": "macedonian_dynasty",
+              "games": 649,
+              "wins": 314,
+              "losses": 335,
+              "winRate": 48.38212634822804
             },
             {
               "id": "jeanne_darc",
-              "games": 224,
-              "wins": 108,
-              "losses": 116,
-              "winRate": 48.214285714285715
+              "games": 246,
+              "wins": 118,
+              "losses": 128,
+              "winRate": 47.96747967479675
             },
             {
               "id": "japanese",
-              "games": 658,
-              "wins": 316,
-              "losses": 342,
-              "winRate": 48.02431610942249
+              "games": 721,
+              "wins": 345,
+              "losses": 376,
+              "winRate": 47.8502080443828
             },
             {
               "id": "scots",
-              "games": 6289,
-              "wins": 2983,
-              "losses": 3306,
-              "winRate": 47.43202416918429
+              "games": 6547,
+              "wins": 3114,
+              "losses": 3433,
+              "winRate": 47.56376966549565
             },
             {
               "id": "ayyubids",
-              "games": 323,
-              "wins": 150,
-              "losses": 173,
-              "winRate": 46.43962848297214
-            },
-            {
-              "id": "malians",
-              "games": 724,
-              "wins": 327,
-              "losses": 397,
-              "winRate": 45.16574585635359
+              "games": 339,
+              "wins": 161,
+              "losses": 178,
+              "winRate": 47.49262536873157
             },
             {
               "id": "abbasid_dynasty",
-              "games": 421,
-              "wins": 188,
-              "losses": 233,
-              "winRate": 44.65558194774347
+              "games": 437,
+              "wins": 199,
+              "losses": 238,
+              "winRate": 45.53775743707094
+            },
+            {
+              "id": "malians",
+              "games": 759,
+              "wins": 338,
+              "losses": 421,
+              "winRate": 44.53227931488801
             },
             {
               "id": "golden_horde",
-              "games": 472,
-              "wins": 210,
-              "losses": 262,
-              "winRate": 44.49152542372882
+              "games": 484,
+              "wins": 215,
+              "losses": 269,
+              "winRate": 44.421487603305785
             },
             {
               "id": "byzantines",
-              "games": 563,
-              "wins": 235,
-              "losses": 328,
-              "winRate": 41.740674955595026
-            },
-            {
-              "id": "sengoku_daimyo",
-              "games": 314,
-              "wins": 131,
-              "losses": 183,
-              "winRate": 41.71974522292994
+              "games": 586,
+              "wins": 248,
+              "losses": 338,
+              "winRate": 42.32081911262799
             },
             {
               "id": "ottomans",
-              "games": 502,
-              "wins": 206,
-              "losses": 296,
-              "winRate": 41.03585657370518
+              "games": 526,
+              "wins": 219,
+              "losses": 307,
+              "winRate": 41.634980988593156
+            },
+            {
+              "id": "sengoku_daimyo",
+              "games": 328,
+              "wins": 136,
+              "losses": 192,
+              "winRate": 41.46341463414634
             },
             {
               "id": "order_of_the_dragon",
-              "games": 538,
-              "wins": 216,
-              "losses": 322,
-              "winRate": 40.14869888475837
+              "games": 589,
+              "wins": 233,
+              "losses": 356,
+              "winRate": 39.55857385398981
             }
           ]
         }
@@ -5460,10 +5460,10 @@
         "Partidas usa player_games_count: participações com a civilização, a mesma base das vitórias e do winrate da fonte.",
         "Espelhos seguem o agregado do provedor. Contagens por liga descrevem o recorte da API e não devem ser somadas para reconstruir o total."
       ],
-      "fetchedAt": "2026-11-18T18:06:53.133Z",
-      "lastAttemptAt": "2026-11-18T18:06:53.133Z",
+      "fetchedAt": "2026-11-19T18:19:00.733Z",
+      "lastAttemptAt": "2026-11-19T18:19:00.733Z",
       "fetchError": null
     }
   },
-  "lastAttemptAt": "2026-11-18T18:06:53.133Z"
+  "lastAttemptAt": "2026-11-19T18:19:00.733Z"
 }
