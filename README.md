@@ -97,3 +97,11 @@ Amostras do Age II cuja geração tem mais de sete dias aparecem como histórica
 A apresentação e a prévia acompanham o app 0.9.0. A demonstração oferece partida e pós-partida com vitórias, derrotas e empates fictícios, faixa de sessão em todos os jogos, compacto SC2 de 400 px e layouts horizontal/vertical do Age IV. O seletor preserva o layout de cada jogo e o formato de equipes do Age II. O enquadramento considera o overlay completo, incluindo a faixa de sessão.
 
 Os componentes originais, o helper de demonstração e seus imports são sincronizados sem edição, com commit e hashes no manifesto de origem. A interface da prévia continua estática, sem carregar o runtime React no navegador. Estatísticas públicas de civilizações continuam exclusivamente em Age II e Age IV. A página diferencia essas estatísticas dos perfis e sessões pessoais disponíveis no app.
+
+## Unidades e counters
+
+A página `/unidades/` oferece uma consulta editorial dos três jogos: 19 fichas de linhas terrestres do Age II, 14 do Age IV e 48 do multiplayer SC2, incluindo suporte. O escopo aparece em cada jogo; não é uma enciclopédia completa das variantes. A busca aceita nomes em português/inglês e filtros por tipo. No SC2, a raça do jogador filtra as respostas, preservando a lista de alvos adversários.
+
+As fichas mostram função, acesso, alvos, respostas condicionais, limitações e dicas de controle. Links `?jogo=sc2&unidade=marine&raca=Protoss` permitem compartilhar uma seleção. Os botões de jogo aceitam setas, Home e End; todas as fichas continuam legíveis sem JavaScript. Não há consultas externas de visitantes para montar o guia.
+
+O catálogo é mantido em `src/features/units/catalog.ts`, com fontes por jogo e data de revisão. Counters são relações direcionais com justificativa; não inferir a relação inversa automaticamente. Ao alterar uma ficha, conferir as referências e o balanceamento, preservar as ressalvas e atualizar a data de revisão. O teste valida referências dentro do mesmo jogo, busca, filtro por raça e links. Custos/dano numéricos não são simulados nem atualizados pela rotina diária das estatísticas.
