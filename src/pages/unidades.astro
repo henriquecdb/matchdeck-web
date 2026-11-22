@@ -1,0 +1,339 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+import SiteHeader from '../components/SiteHeader.astro';
+import { asset } from '../config/site';
+import { games, units, reviewedAt } from '../features/units/catalog';
+import { counterOptions } from '../features/units/model';
+import UnitPortrait from '../features/units/UnitPortrait.astro';
+import '../features/units/units.css';
+const categories = [...new Set(units.map((unit) => unit.category))];
+---
+
+<BaseLayout
+  title="Unidades e counters — MatchDeck"
+  description="Consulte counters, funções e dicas de combate para unidades de Age of Empires II, Age of Empires IV e StarCraft II. Respostas com contexto e filtro por raça no SC2."
+>
+  <SiteHeader units />
+  <main id="conteudo" class="wrap units-page">
+    <div class="units-heading">
+      <div>
+        <span class="eyebrow">RECONHEÇA. RESPONDA. ADAPTE.</span>
+        <h1>Qual é a <span class="accent">resposta?</span></h1>
+        <p>
+          Encontre a unidade adversária. Veja o que usar, por que funciona e o
+          que observar na luta.
+        </p>
+      </div>
+      <a href={asset('estatisticas/')} class="text-link"
+        >Estatísticas de civilizações ↗</a
+      >
+    </div>
+    <div id="unit-guide">
+      <div class="unit-controls" hidden>
+        <div class="unit-tabs" role="tablist" aria-label="Jogo">
+          {
+            Object.entries(games).map(([id, game], index) => (
+              <button
+                type="button"
+                id={`unit-tab-${id}`}
+                role="tab"
+                aria-selected={index === 0 ? 'true' : 'false'}
+                aria-controls="unit-browser"
+                tabindex={index === 0 ? 0 : -1}
+                data-unit-game={id}
+              >
+                {game.short}
+              </button>
+            ))
+          }
+        </div>
+        <div class="unit-filters">
+          <label class="unit-search"
+            >Unidade adversária<input
+              id="unit-search"
+              type="search"
+              placeholder="Nome em português ou inglês…"
+              autocomplete="off"
+              aria-controls="unit-list"
+            /></label
+          >
+          <label
+            >Tipo<select id="unit-category"
+              ><option value="all">Todos os tipos</option>{
+                categories.map((category) => (
+                  <option value={category}>{category}</option>
+                ))
+              }</select
+            ></label
+          >
+          <label id="unit-race-control" hidden
+            >Minha raça · respostas<select id="unit-race"
+              ><option value="all">Todas as raças</option>{
+                ['Terran', 'Protoss', 'Zerg'].map((race) => (
+                  <option value={race}>{race}</option>
+                ))
+              }</select
+            ></label
+          >
+          <button type="button" id="unit-reset" class="button button-small"
+            >Limpar busca</button
+          >
+        </div>
+        <p class="unit-context" id="unit-scope">{games.aoe2.scope}</p>
+      </div>
+      <noscript
+        ><p class="unit-callout">
+          JavaScript está desativado. Todas as fichas estão disponíveis abaixo;
+          use a busca do navegador para localizar uma unidade.
+        </p></noscript
+      >
+      <div
+        class="unit-browser"
+        id="unit-browser"
+        role="region"
+        aria-label="Consulta de unidades"
+      >
+        <aside class="unit-directory" hidden>
+          <div class="unit-directory-heading">
+            <h2>Escolha o alvo</h2><span
+              id="unit-count"
+              role="status"
+              aria-live="polite"></span>
+          </div>
+          <ul id="unit-list" aria-label="Unidades adversárias">
+            {
+              units.map((unit) => (
+                <li data-unit-row={`${unit.game}:${unit.id}`}>
+                  <button
+                    type="button"
+                    data-unit-select={`${unit.game}:${unit.id}`}
+                    aria-pressed="false"
+                    aria-controls={`unit-${unit.game}-${unit.id}`}
+                  >
+                    <>
+                      <UnitPortrait unit={unit} />
+                      <span class="unit-list-copy">
+                        <>
+                          <span>{unit.name}</span>
+                          <small>
+                            {unit.faction} · {unit.category}
+                          </small>
+                        </>
+                      </span>
+                    </>
+                  </button>
+                </li>
+              ))
+            }
+          </ul>
+          <p id="unit-empty" hidden>
+            Nenhuma unidade encontrada. Tente o nome em inglês ou remova o
+            filtro.
+          </p>
+        </aside>
+        <div class="unit-detail">
+          <p id="unit-no-selection" class="unit-callout" hidden>
+            Sem resultados para esta busca. Limpe os filtros para voltar às
+            unidades.
+          </p>
+          {
+            units.map((unit) => (
+              <article
+                class="unit-card"
+                id={`unit-${unit.game}-${unit.id}`}
+                data-unit-panel={`${unit.game}:${unit.id}`}
+                aria-labelledby={`unit-title-${unit.game}-${unit.id}`}
+              >
+                <header>
+                  <>
+                    <div class="unit-identity">
+                      <>
+                        <UnitPortrait unit={unit} large />
+                        <div>
+                          <>
+                            <span class="eyebrow">
+                              {games[unit.game].short} / {unit.faction}
+                            </span>
+                            <h2 id={`unit-title-${unit.game}-${unit.id}`}>
+                              {unit.name}
+                            </h2>
+                            <p class="unit-aliases">{unit.aliases}</p>
+                          </>
+                        </div>
+                      </>
+                    </div>
+                    <span class="unit-type">{unit.category}</span>
+                  </>
+                </header>
+                <p class="unit-role">{unit.role}</p>
+                <dl class="unit-facts">
+                  <>
+                    <div>
+                      <>
+                        <dt>Alvos</dt>
+                        <dd>{unit.targets}</dd>
+                      </>
+                    </div>
+                    <div>
+                      <>
+                        <dt>Acesso</dt>
+                        <dd>{unit.stage}</dd>
+                      </>
+                    </div>
+                  </>
+                </dl>
+                <section
+                  class="unit-answers"
+                  aria-label={`Respostas contra ${unit.name}`}
+                >
+                  <>
+                    <h3>Fraco contra</h3>
+                    <p class="unit-answers-intro">
+                      Respostas recomendadas contra {unit.name}. Use com a
+                      escolta adequada.
+                    </p>
+                  </>
+                  <ul>
+                    {counterOptions(unit, units).map((counter) => (
+                      <li data-counter-faction={counter.unit.faction}>
+                        <a
+                          data-unit-link
+                          href={`${asset('unidades/')}?jogo=${unit.game}&unidade=${counter.unit.id}`}
+                        >
+                          <UnitPortrait unit={counter.unit} />
+                          <strong>{counter.unit.name}</strong>
+                          <span aria-hidden="true">↗</span>
+                        </a>
+                        <small>{counter.unit.faction}</small>
+                        <p>{counter.reason}</p>
+                      </li>
+                    ))}
+                  </ul>
+                  <p class="unit-no-counter" hidden>
+                    Não há resposta desta raça nesta ficha. Isso não significa
+                    que a unidade não tenha counter: consulte todas as raças e
+                    combine dano, controle e posicionamento.
+                  </p>
+                </section>
+                <div class="unit-reading">
+                  <>
+                    <section class="unit-strengths">
+                      <>
+                        <h3>
+                          <span class="unit-dot good" />
+                          Forte contra
+                        </h3>
+                        <p>{unit.strong}</p>
+                      </>
+                    </section>
+                    <section class="unit-weaknesses">
+                      <>
+                        <h3>
+                          <span class="unit-dot caution" />
+                          Limitações
+                        </h3>
+                        <p>{unit.caution}</p>
+                      </>
+                    </section>
+                  </>
+                </div>
+                <section class="unit-tip">
+                  <>
+                    <h3>Na prática</h3>
+                    <p>{unit.tip}</p>
+                  </>
+                </section>
+                <footer>
+                  <>
+                    <span>Guia de combate · seleção editorial</span>
+                    <a
+                      class="text-link unit-permalink"
+                      href={`${asset('unidades/')}?jogo=${unit.game}&unidade=${unit.id}`}
+                    >
+                      Link desta unidade ↗
+                    </a>
+                  </>
+                </footer>
+              </article>
+            ))
+          }
+        </div>
+      </div>
+      <section class="unit-method" aria-labelledby="unit-method-title">
+        <div>
+          <span class="eyebrow">ANTES DE TROCAR O EXÉRCITO</span><h2
+            id="unit-method-title"
+          >
+            Counter precisa de contexto.
+          </h2><p>
+            Ter vantagem contra uma unidade não garante vencer a composição
+            inteira. Compare investimento, melhorias, alcance e posição.
+          </p>
+        </div>
+        <ol>
+          <li>
+            <strong>Veja a escolta.</strong> Elimine a proteção antes de alcançar
+            o alvo principal.
+          </li><li>
+            <strong>Compare recursos.</strong> Uma unidade barata pode precisar de
+            várias cópias para responder a uma cara.
+          </li><li>
+            <strong>Confira as melhorias.</strong> Alcance, armadura, velocidade e
+            habilidades mudam o confronto.
+          </li><li>
+            <strong>Escolha onde lutar.</strong> Use visão, flancos, dispersão e terreno
+            a seu favor.
+          </li>
+        </ol>
+      </section>
+      <section class="unit-sources" aria-labelledby="unit-sources-title">
+        <h2 id="unit-sources-title">Fontes e cobertura</h2><p>
+          Orientações qualitativas do MatchDeck, apoiadas nas funções e
+          mecânicas das unidades. Não são resultados de simulador nem
+          estatísticas de vitória. Custos e dano exatos devem ser consultados
+          nas referências; variantes e atualizações de balanceamento podem mudar
+          a resposta.
+        </p>
+        {
+          Object.entries(games).map(([id, game]) => (
+            <div data-unit-sources={id}>
+              <>
+                <h3>{game.name}</h3>
+                <p>{game.scope}</p>
+                <ul>
+                  {game.sources.map((source) => (
+                    <li>
+                      <a href={source.url}>{source.name} ↗</a>
+                    </li>
+                  ))}
+                </ul>
+              </>
+            </div>
+          ))
+        }
+        <p>
+          Retratos originais dos jogos; em linhas agrupadas, a imagem representa
+          uma das unidades. <a
+            class="text-link"
+            href={asset('unit-guide/NOTICE.md')}>Créditos das imagens ↗</a
+          >
+        </p>
+        <p class="unit-review">
+          Revisão editorial: {reviewedAt} · Atualização manual deste guia, independente
+          da consulta diária das estatísticas.
+        </p>
+      </section>
+    </div>
+    <footer class="unit-page-footer">
+      <a href={import.meta.env.BASE_URL} class="text-link"
+        >← Voltar ao MatchDeck</a
+      ><span
+        >Projeto independente. Sem afiliação com Microsoft, World's Edge ou
+        Blizzard.</span
+      >
+    </footer>
+  </main>
+</BaseLayout>
+<script>
+  import '../features/units/client';
+</script>

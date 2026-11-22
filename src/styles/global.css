@@ -991,6 +991,30 @@ p {
 .mobile-statistics {
   display: none;
 }
+.mobile-resources {
+  display: none;
+}
+.unit-crosslink {
+  margin: 0 0 28px;
+  font-size: 13px;
+  line-height: 1.7;
+}
+@media (max-width: 1000px) {
+  .site-header nav {
+    display: none;
+  }
+  .mobile-resources {
+    display: flex;
+    justify-content: flex-end;
+    gap: 24px;
+    padding-block: 16px;
+    font-size: 12px;
+    border-bottom: 1px solid var(--line);
+  }
+  .mobile-resources a[aria-current='page'] {
+    color: var(--accent);
+  }
+}
 .site-header nav {
   gap: 26px;
 }

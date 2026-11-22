@@ -1,0 +1,588 @@
+{
+  "sources": {
+    "aoe2": {
+      "repo": "denniske/aoe2companion",
+      "revision": "797538c97f3cd957bf700b23b90cdaf808e4fa80",
+      "directory": "assets/units"
+    },
+    "aoe4": {
+      "repo": "aoe4world/data",
+      "revision": "e89f01e598998bf76bdddfbf2afce1659fee00cf",
+      "directory": "images/units"
+    },
+    "sc2": {
+      "repo": "BurnySc2/sc2-planner",
+      "revision": "96fb45afef85c558b84cd1753dac5f2ece57dc0a",
+      "directory": "src/icons/png"
+    }
+  },
+  "files": [
+    {
+      "game": "aoe2",
+      "id": "archer",
+      "path": "aoe2/archer.png",
+      "sourcePath": "assets/units/Archer.png",
+      "sha256": "0ff122858ebc5f95df6d86637da3d2ff246de7907ccd035c74320785fe19897f"
+    },
+    {
+      "game": "aoe2",
+      "id": "bombard",
+      "path": "aoe2/bombard.png",
+      "sourcePath": "assets/units/BombardCannon.png",
+      "sha256": "fb1f3b8f01518cba3a1f4d7aaf7f5ce0d5854fe56017da7349ba458bed3d4df0"
+    },
+    {
+      "game": "aoe2",
+      "id": "camel",
+      "path": "aoe2/camel.png",
+      "sourcePath": "assets/units/CamelRider.png",
+      "sha256": "3788151cdc9839e2192468bc9ac0596fc7ca352d5a2f74fe160a0497ba29e56e"
+    },
+    {
+      "game": "aoe2",
+      "id": "cav-archer",
+      "path": "aoe2/cav-archer.png",
+      "sourcePath": "assets/units/CavalryArcher.png",
+      "sha256": "33d74937e887b8b69df25aadaa37ba461b2449a095bcea948c44add83007e0ec"
+    },
+    {
+      "game": "aoe2",
+      "id": "eagle",
+      "path": "aoe2/eagle.png",
+      "sourcePath": "assets/units/EagleWarrior.png",
+      "sha256": "5cc30aabfe5fd4cf96f39affda91f6bb8e7ef61b293c73f210f738c0a26d6266"
+    },
+    {
+      "game": "aoe2",
+      "id": "elephant",
+      "path": "aoe2/elephant.png",
+      "sourcePath": "assets/units/BattleElephant.png",
+      "sha256": "0dad529b3a1cb07bc43a39039b614b03d879d213f3899144d2ac46f681e6f872"
+    },
+    {
+      "game": "aoe2",
+      "id": "hand-cannon",
+      "path": "aoe2/hand-cannon.png",
+      "sourcePath": "assets/units/HandCannoneer.png",
+      "sha256": "835618585cc5665866e4b5e2cebe8f23187ceb257f76adafbcaf4bf28e30a7f9"
+    },
+    {
+      "game": "aoe2",
+      "id": "huskarl",
+      "path": "aoe2/huskarl.png",
+      "sourcePath": "assets/units/Huskarl.png",
+      "sha256": "dd1cda945cb58cff3af8475884c948f4edb0c4858134d5197f0dbb73665c07d6"
+    },
+    {
+      "game": "aoe2",
+      "id": "knight",
+      "path": "aoe2/knight.png",
+      "sourcePath": "assets/units/Knight.png",
+      "sha256": "93ffd98ae1d199a8f4833691c5a0936bfaea7494431ca47aadd5768d3d227808"
+    },
+    {
+      "game": "aoe2",
+      "id": "mangonel",
+      "path": "aoe2/mangonel.png",
+      "sourcePath": "assets/units/Mangonel.png",
+      "sha256": "833715ca87a549c10d818b022c682608264b850c466763523497fbb3216d1e7a"
+    },
+    {
+      "game": "aoe2",
+      "id": "mangudai",
+      "path": "aoe2/mangudai.png",
+      "sourcePath": "assets/units/Mangudai.png",
+      "sha256": "eff5d2a3ec23585224001d200dbdaa179b01b9f7f0b75a9870d78da8b0d7ab79"
+    },
+    {
+      "game": "aoe2",
+      "id": "militia",
+      "path": "aoe2/militia.png",
+      "sourcePath": "assets/units/Militia.png",
+      "sha256": "45821cb1224ed341e5479b430d1775f81a21f3ea5dcbf7ad39cd28a2f0b0b441"
+    },
+    {
+      "game": "aoe2",
+      "id": "monk",
+      "path": "aoe2/monk.png",
+      "sourcePath": "assets/units/Monk.png",
+      "sha256": "fa1dfbde1048519446e991dfbeaf261d224cea6449e9593831c813d22f956ce6"
+    },
+    {
+      "game": "aoe2",
+      "id": "ram",
+      "path": "aoe2/ram.png",
+      "sourcePath": "assets/units/BatteringRam.png",
+      "sha256": "86b536950467c739d98815774b6d01edbd207b7baf2bf220a4ee98fcf0c754e4"
+    },
+    {
+      "game": "aoe2",
+      "id": "scorpion",
+      "path": "aoe2/scorpion.png",
+      "sourcePath": "assets/units/Scorpion.png",
+      "sha256": "4bd599631d46b0961464fe01c75bf3d712e61a8d38d2c6f6776a62bbb01c62c2"
+    },
+    {
+      "game": "aoe2",
+      "id": "scout",
+      "path": "aoe2/scout.png",
+      "sourcePath": "assets/units/ScoutCavalry.png",
+      "sha256": "168813c7cff09494b04581effaa329af17cca025a36206ed0276cbc088bacf22"
+    },
+    {
+      "game": "aoe2",
+      "id": "skirmisher",
+      "path": "aoe2/skirmisher.png",
+      "sourcePath": "assets/units/Skirmisher.png",
+      "sha256": "7a17944384a0a69ca876c066069be14d99430cd861770101e9025396a4777576"
+    },
+    {
+      "game": "aoe2",
+      "id": "spear",
+      "path": "aoe2/spear.png",
+      "sourcePath": "assets/units/Spearman.png",
+      "sha256": "0bf9e3aa23d4311b34a9fae8395b857ba78d37376135ab03964459acbaa53f32"
+    },
+    {
+      "game": "aoe2",
+      "id": "trebuchet",
+      "path": "aoe2/trebuchet.png",
+      "sourcePath": "assets/units/Trebuchet.png",
+      "sha256": "be4a682c3a4dd8ab461f1144b9c03053a135b2b7c9dde9006102277d7cf38c9b"
+    },
+    {
+      "game": "aoe4",
+      "id": "archer",
+      "path": "aoe4/archer.png",
+      "sourcePath": "images/units/archer-2.png",
+      "sha256": "bfa93ca8851b7592f83bde03ec809ba1f9b0cf77e13174ed9714202dda5f314a"
+    },
+    {
+      "game": "aoe4",
+      "id": "bombard",
+      "path": "aoe4/bombard.png",
+      "sourcePath": "images/units/bombard-4.png",
+      "sha256": "452ef33bfdf74ba3f63844d84629674b9b3736b249ac850d685895fb542ab731"
+    },
+    {
+      "game": "aoe4",
+      "id": "camel",
+      "path": "aoe4/camel.png",
+      "sourcePath": "images/units/camel-rider-3.png",
+      "sha256": "63fa53710762c868ea326824161a3782af22a31a03fc4b3e8bb34a58b8d57f31"
+    },
+    {
+      "game": "aoe4",
+      "id": "crossbow",
+      "path": "aoe4/crossbow.png",
+      "sourcePath": "images/units/crossbowman-3.png",
+      "sha256": "bd6b3f472e2f849f231ae9dead345ee5a8dbd1f004c1a6a6d2ada4d23c39e258"
+    },
+    {
+      "game": "aoe4",
+      "id": "hand-cannon",
+      "path": "aoe4/hand-cannon.png",
+      "sourcePath": "images/units/handcannoneer-4.png",
+      "sha256": "17b6acd47a1ce10217e6e04b172c3778c033c1f710465625b089fa5f3876b02e"
+    },
+    {
+      "game": "aoe4",
+      "id": "horseman",
+      "path": "aoe4/horseman.png",
+      "sourcePath": "images/units/horseman-2.png",
+      "sha256": "e083f2528b18d8baea256e2fe0e71a431746fdcc741bdc56eeace3becb1321ec"
+    },
+    {
+      "game": "aoe4",
+      "id": "knight",
+      "path": "aoe4/knight.png",
+      "sourcePath": "images/units/knight-3.png",
+      "sha256": "6dd601e04431ffe3aa93ff18926fec9191e6b5be49a7e4df58b1294774451b66"
+    },
+    {
+      "game": "aoe4",
+      "id": "longbow",
+      "path": "aoe4/longbow.png",
+      "sourcePath": "images/units/longbowman-2.png",
+      "sha256": "c61fab897cc57ecffb5f22acc96d68355e5a92edb4faceca55272fd008ba7129"
+    },
+    {
+      "game": "aoe4",
+      "id": "maa",
+      "path": "aoe4/maa.png",
+      "sourcePath": "images/units/man-at-arms-3.png",
+      "sha256": "cc67d125c0ff7ce916b99b6933aba07de4d745bee2478cff2fb3e9d0824ddfb5"
+    },
+    {
+      "game": "aoe4",
+      "id": "mangonel",
+      "path": "aoe4/mangonel.png",
+      "sourcePath": "images/units/mangonel-3.png",
+      "sha256": "b7bfe9688e689724d8288963af7f3b599f327d876dddf416f11f3939983bec48"
+    },
+    {
+      "game": "aoe4",
+      "id": "monk",
+      "path": "aoe4/monk.png",
+      "sourcePath": "images/units/monk-3.png",
+      "sha256": "7856874540ae71e60ee446367f6f0d82bf6fff78b068b34c30b7da57258b8081"
+    },
+    {
+      "game": "aoe4",
+      "id": "ram",
+      "path": "aoe4/ram.png",
+      "sourcePath": "images/units/battering-ram-2.png",
+      "sha256": "20f83855b557aabf8a8ca8619a1e5e3ef4942bd7f124cb441cc7aba98ad3c1b7"
+    },
+    {
+      "game": "aoe4",
+      "id": "spear",
+      "path": "aoe4/spear.png",
+      "sourcePath": "images/units/spearman-1.png",
+      "sha256": "dc41d447509e8823ca816b4a60c1d52693280cbec6e9a936c4941e6f38dae08c"
+    },
+    {
+      "game": "aoe4",
+      "id": "trebuchet",
+      "path": "aoe4/trebuchet.png",
+      "sourcePath": "images/units/counterweight-trebuchet-3.png",
+      "sha256": "681cdc1cb6ce2ef607744f4beb93e2cf53a0fd8f980a7f662d75c8b098b24889"
+    },
+    {
+      "game": "sc2",
+      "id": "adept",
+      "path": "sc2/adept.png",
+      "sourcePath": "src/icons/png/btn-unit-protoss-adept.png",
+      "sha256": "bc4fba6ee60acffdd6d438a3f06a3971fc5f5b05acedc9aa77beceba1181319e"
+    },
+    {
+      "game": "sc2",
+      "id": "archon",
+      "path": "sc2/archon.png",
+      "sourcePath": "src/icons/png/btn-unit-protoss-archon.png",
+      "sha256": "95b66f3982ad6ca443e1a83c335e687f525cc39af4fdaa751fb8c29498e14c14"
+    },
+    {
+      "game": "sc2",
+      "id": "baneling",
+      "path": "sc2/baneling.png",
+      "sourcePath": "src/icons/png/btn-unit-zerg-baneling.png",
+      "sha256": "f7b5f2db4e10c6c94d7c3442e2448ce40afdd9938a79532e99231364a005c0e3"
+    },
+    {
+      "game": "sc2",
+      "id": "banshee",
+      "path": "sc2/banshee.png",
+      "sourcePath": "src/icons/png/btn-unit-terran-banshee.png",
+      "sha256": "930ffc1df2bc0febe814b46ae95b0817f8894ead6aa1af52b3f6c600965acfbd"
+    },
+    {
+      "game": "sc2",
+      "id": "battlecruiser",
+      "path": "sc2/battlecruiser.png",
+      "sourcePath": "src/icons/png/btn-unit-terran-battlecruiser.png",
+      "sha256": "2c1640a0908c843b4f723546883e41209460224d8cf2dc9a32283762a9bdd809"
+    },
+    {
+      "game": "sc2",
+      "id": "brood-lord",
+      "path": "sc2/brood-lord.png",
+      "sourcePath": "src/icons/png/btn-unit-zerg-broodlord.png",
+      "sha256": "ee5386df0249e39d60cce24230135b95c2a5a1ee368b171a80cc3ae2e2438ff0"
+    },
+    {
+      "game": "sc2",
+      "id": "carrier",
+      "path": "sc2/carrier.png",
+      "sourcePath": "src/icons/png/btn-unit-protoss-carrier.png",
+      "sha256": "7029eaccd6154489411c2a47e07808653efbda6e303a63a76847c2f24a1be8c0"
+    },
+    {
+      "game": "sc2",
+      "id": "colossus",
+      "path": "sc2/colossus.png",
+      "sourcePath": "src/icons/png/btn-unit-protoss-colossus.png",
+      "sha256": "8a25c88066f3e9abcda66bfd5be9bc2374a8897294756a45f7d2d89b2ebaec19"
+    },
+    {
+      "game": "sc2",
+      "id": "corruptor",
+      "path": "sc2/corruptor.png",
+      "sourcePath": "src/icons/png/btn-unit-zerg-corruptor.png",
+      "sha256": "c1dfd71d4c64ac0345e4406ee7407f0fb6a54668b2b361d34729fdae2f4a6f47"
+    },
+    {
+      "game": "sc2",
+      "id": "cyclone",
+      "path": "sc2/cyclone.png",
+      "sourcePath": "src/icons/png/btn-unit-terran-cyclone.png",
+      "sha256": "98f7a0a2e157dfd8947a9fc480b27faeb53a8975f0c2f79d92c4393e3d6ac44d"
+    },
+    {
+      "game": "sc2",
+      "id": "dark-templar",
+      "path": "sc2/dark-templar.png",
+      "sourcePath": "src/icons/png/btn-unit-protoss-darktemplar.png",
+      "sha256": "2aaaceb054abf36b0a0e48fc90ef74b56b7c2598ad08fabe92af51417b0fbfab"
+    },
+    {
+      "game": "sc2",
+      "id": "disruptor",
+      "path": "sc2/disruptor.png",
+      "sourcePath": "src/icons/png/btn-unit-protoss-disruptor.png",
+      "sha256": "e9775c8ef4e085cc43af6498512778165b8cb53c4750a3b4f23a061d665409d0"
+    },
+    {
+      "game": "sc2",
+      "id": "ghost",
+      "path": "sc2/ghost.png",
+      "sourcePath": "src/icons/png/btn-unit-terran-ghost.png",
+      "sha256": "664ffc836990c8b140be43e7a9313013a691552efd27b46fd26ff411d99b3387"
+    },
+    {
+      "game": "sc2",
+      "id": "hellion",
+      "path": "sc2/hellion.png",
+      "sourcePath": "src/icons/png/btn-unit-terran-hellion.png",
+      "sha256": "0203c349366eb4afa14d2dc362f4b0b0bff31c393206782c1dc97e59f011529b"
+    },
+    {
+      "game": "sc2",
+      "id": "high-templar",
+      "path": "sc2/high-templar.png",
+      "sourcePath": "src/icons/png/btn-unit-protoss-hightemplar.png",
+      "sha256": "f1d958c9aa759cbbd4f6e8d7e68d9dfff0d45419c29c48bc9baba6a15490060c"
+    },
+    {
+      "game": "sc2",
+      "id": "hydra",
+      "path": "sc2/hydra.png",
+      "sourcePath": "src/icons/png/btn-unit-zerg-hydralisk.png",
+      "sha256": "34724e958e6307096c0abc88771ef2438934d11179c345ea6ceccca67b984e84"
+    },
+    {
+      "game": "sc2",
+      "id": "immortal",
+      "path": "sc2/immortal.png",
+      "sourcePath": "src/icons/png/btn-unit-protoss-immortal.png",
+      "sha256": "23c9b8332e9da714bc2565b476527a1c02380acafe1a0143f11ff9225e00e006"
+    },
+    {
+      "game": "sc2",
+      "id": "infestor",
+      "path": "sc2/infestor.png",
+      "sourcePath": "src/icons/png/btn-unit-zerg-infestor.png",
+      "sha256": "fb2590f51e2110deed07a12811638b57de9e56b7a340ddd4494cc3ada259a7c6"
+    },
+    {
+      "game": "sc2",
+      "id": "liberator",
+      "path": "sc2/liberator.png",
+      "sourcePath": "src/icons/png/btn-unit-terran-liberator.png",
+      "sha256": "415f464bce848673a9eab1b45288ac584d5436b94b1a553554c06c208d92ad5c"
+    },
+    {
+      "game": "sc2",
+      "id": "lurker",
+      "path": "sc2/lurker.png",
+      "sourcePath": "src/icons/png/btn-unit-zerg-lurker.png",
+      "sha256": "345d3da9a05e311f345b1479d6297929b87470d96fa5eeef28a00f17e4e143ce"
+    },
+    {
+      "game": "sc2",
+      "id": "marauder",
+      "path": "sc2/marauder.png",
+      "sourcePath": "src/icons/png/btn-unit-terran-marauder.png",
+      "sha256": "fc156351ef4dd3a29f1c8e13c752c044dbc5fd62e2fe9c0c11fda246e1d54e6a"
+    },
+    {
+      "game": "sc2",
+      "id": "marine",
+      "path": "sc2/marine.png",
+      "sourcePath": "src/icons/png/btn-unit-terran-marine.png",
+      "sha256": "0e8bd559f9f2926b75f3dbe7eadbe144163ad25662f34e2d3ed70d472d7567be"
+    },
+    {
+      "game": "sc2",
+      "id": "medivac",
+      "path": "sc2/medivac.png",
+      "sourcePath": "src/icons/png/btn-unit-terran-medivac.png",
+      "sha256": "98a3ac34e905b07a22981b7e7aee8e1a1ca186384b527061cb099f5b0da65c54"
+    },
+    {
+      "game": "sc2",
+      "id": "mine",
+      "path": "sc2/mine.png",
+      "sourcePath": "src/icons/png/btn-unit-terran-widowmine.png",
+      "sha256": "cb5ce620454d19c7cbfef8eaa9c82e145dda1b7cc940b4199de530cbcd0b7b62"
+    },
+    {
+      "game": "sc2",
+      "id": "mothership",
+      "path": "sc2/mothership.png",
+      "sourcePath": "src/icons/png/btn-unit-protoss-mothership.png",
+      "sha256": "e6b8df3befb82581a324ba4dab570ee41c43538461f076cfdb9f3929487cf88e"
+    },
+    {
+      "game": "sc2",
+      "id": "mutalisk",
+      "path": "sc2/mutalisk.png",
+      "sourcePath": "src/icons/png/btn-unit-zerg-mutalisk.png",
+      "sha256": "bc26c5b81ee4d2e180115a0328b09f1d6c842708919b0217e9fb40aa64f30a9d"
+    },
+    {
+      "game": "sc2",
+      "id": "observer",
+      "path": "sc2/observer.png",
+      "sourcePath": "src/icons/png/btn-unit-protoss-observer.png",
+      "sha256": "5f9fb6e0685ccd0f4e6028a9d41fa6504f623cacc1437b71bd3d16defac594ed"
+    },
+    {
+      "game": "sc2",
+      "id": "oracle",
+      "path": "sc2/oracle.png",
+      "sourcePath": "src/icons/png/btn-unit-protoss-oracle.png",
+      "sha256": "b251c2d09ee7d2dccf308742d90eefbce1019757fd7284e1765aee98530b635a"
+    },
+    {
+      "game": "sc2",
+      "id": "overseer",
+      "path": "sc2/overseer.png",
+      "sourcePath": "src/icons/png/btn-unit-zerg-overseer.png",
+      "sha256": "083d3ed259e9039aa81a5a118ef7643a6c098d61e72fcc1e4adb4d7111d3070d"
+    },
+    {
+      "game": "sc2",
+      "id": "phoenix",
+      "path": "sc2/phoenix.png",
+      "sourcePath": "src/icons/png/btn-unit-protoss-phoenix.png",
+      "sha256": "dd928675566b5b7b5e41065bc441ff2355c9a703ad19c8fe6a7394540bec3c52"
+    },
+    {
+      "game": "sc2",
+      "id": "prism",
+      "path": "sc2/prism.png",
+      "sourcePath": "src/icons/png/btn-unit-protoss-warpprism.png",
+      "sha256": "5d0c34fb415e1a1ddaa788f271bca39b1549734d546cd1ba57ee17e5c5a5af02"
+    },
+    {
+      "game": "sc2",
+      "id": "queen",
+      "path": "sc2/queen.png",
+      "sourcePath": "src/icons/png/btn-unit-zerg-queen.png",
+      "sha256": "58d503d2880bfcffa4a0c3754488d30e5129b9ab3f9e083fc0e8398b6bb250d1"
+    },
+    {
+      "game": "sc2",
+      "id": "ravager",
+      "path": "sc2/ravager.png",
+      "sourcePath": "src/icons/png/btn-unit-zerg-ravager.png",
+      "sha256": "945ff928c2f19615e61054e3f33af10bc3f50b931d23ba39cfe6206e66571014"
+    },
+    {
+      "game": "sc2",
+      "id": "raven",
+      "path": "sc2/raven.png",
+      "sourcePath": "src/icons/png/btn-unit-terran-raven.png",
+      "sha256": "ad18afc9c378ec1e78925e7a41e2e717ee5274c22992ba8f0d151c4a2baf1b51"
+    },
+    {
+      "game": "sc2",
+      "id": "reaper",
+      "path": "sc2/reaper.png",
+      "sourcePath": "src/icons/png/btn-unit-terran-reaper.png",
+      "sha256": "c403e0887ec8234487ae35ec863aedcbdcd50e4af9e20f4b5568405508d90213"
+    },
+    {
+      "game": "sc2",
+      "id": "roach",
+      "path": "sc2/roach.png",
+      "sourcePath": "src/icons/png/btn-unit-zerg-roach.png",
+      "sha256": "897b12bfcb6cba4eccd668fadb74f8dae9fc10ae9c3875b9493e323d26ac3f38"
+    },
+    {
+      "game": "sc2",
+      "id": "sentry",
+      "path": "sc2/sentry.png",
+      "sourcePath": "src/icons/png/btn-unit-protoss-sentry.png",
+      "sha256": "0b2aa10137f1e860f9e606a714e7c898ff9aa29c0e21e746c8dbf0fbeb69b950"
+    },
+    {
+      "game": "sc2",
+      "id": "stalker",
+      "path": "sc2/stalker.png",
+      "sourcePath": "src/icons/png/btn-unit-protoss-stalker.png",
+      "sha256": "982707d022d282d0f11193ab497cfb4226452c84a12bcf24a6fd0333608e11e5"
+    },
+    {
+      "game": "sc2",
+      "id": "swarm-host",
+      "path": "sc2/swarm-host.png",
+      "sourcePath": "src/icons/png/btn-unit-zerg-swarmhost.png",
+      "sha256": "ff6b38eb5239e69e5376d2c8f63b2cf5f640d6a8b068af0366e75924220e153d"
+    },
+    {
+      "game": "sc2",
+      "id": "tank",
+      "path": "sc2/tank.png",
+      "sourcePath": "src/icons/png/btn-unit-terran-siegetank.png",
+      "sha256": "af2c17a4be1992580f00dccc5f4c63c71881b0b98938d23f75b9d569284deaa5"
+    },
+    {
+      "game": "sc2",
+      "id": "tempest",
+      "path": "sc2/tempest.png",
+      "sourcePath": "src/icons/png/btn-unit-protoss-tempest.png",
+      "sha256": "524c744b7ca0ffb1aaec7c86dfceb74db3d0458af765c3fba14a553c773e2453"
+    },
+    {
+      "game": "sc2",
+      "id": "thor",
+      "path": "sc2/thor.png",
+      "sourcePath": "src/icons/png/btn-unit-terran-thor.png",
+      "sha256": "2b8a45351663d65a72bfb85089494b1ba3d5e15af67f2297bb32e646fbaf2451"
+    },
+    {
+      "game": "sc2",
+      "id": "ultra",
+      "path": "sc2/ultra.png",
+      "sourcePath": "src/icons/png/btn-unit-zerg-ultralisk.png",
+      "sha256": "659fe746a55c17f08e7b22b2bb348b75b4642500361033969f2ef6fd35ecf103"
+    },
+    {
+      "game": "sc2",
+      "id": "viking",
+      "path": "sc2/viking.png",
+      "sourcePath": "src/icons/png/btn-unit-terran-vikingfighter.png",
+      "sha256": "3e61917444bc4803b4b6bd05dc2693ed780e29e88e2faf5c8c11eba3b3997e0d"
+    },
+    {
+      "game": "sc2",
+      "id": "viper",
+      "path": "sc2/viper.png",
+      "sourcePath": "src/icons/png/btn-unit-zerg-viper.png",
+      "sha256": "0acf36e6901d1eb66751e35a945a218d034ae7005c952913a4a879c51d12b260"
+    },
+    {
+      "game": "sc2",
+      "id": "void-ray",
+      "path": "sc2/void-ray.png",
+      "sourcePath": "src/icons/png/btn-unit-protoss-warpray.png",
+      "sha256": "6df74b8dea4afe0103c551a59c98093f1bd03e9a68449abb2f686b5c041a1f7c"
+    },
+    {
+      "game": "sc2",
+      "id": "zealot",
+      "path": "sc2/zealot.png",
+      "sourcePath": "src/icons/png/btn-unit-protoss-zealot.png",
+      "sha256": "04645e9e70ad1d8acad2f3209baa8378390ef1dc6b6cbe4d3271c516924f350d"
+    },
+    {
+      "game": "sc2",
+      "id": "zergling",
+      "path": "sc2/zergling.png",
+      "sourcePath": "src/icons/png/btn-unit-zerg-zergling.png",
+      "sha256": "001bcc3a1e2374e3c1c361d184a62dc8099e7d396cf20a73f91c74c6a0d1649f"
+    }
+  ]
+}

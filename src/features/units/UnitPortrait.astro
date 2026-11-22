@@ -1,0 +1,19 @@
+---
+import { asset } from '../../config/site';
+import type { Unit } from './model';
+interface Props {
+  unit: Pick<Unit, 'game' | 'id'>;
+  large?: boolean;
+}
+const { unit, large = false } = Astro.props;
+---
+
+<img
+  class:list={['unit-portrait', { 'unit-portrait-large': large }]}
+  src={asset(`unit-guide/${unit.game}/${unit.id}.png`)}
+  alt=""
+  width={large ? 96 : 40}
+  height={large ? 96 : 40}
+  loading="lazy"
+  decoding="async"
+/>
