@@ -4,6 +4,7 @@ import SiteHeader from '../components/SiteHeader.astro';
 import { asset } from '../config/site';
 import { games, units, reviewedAt } from '../features/units/catalog';
 import { counterOptions } from '../features/units/model';
+import UnitPortrait from '../features/units/UnitPortrait.astro';
 import '../features/units/units.css';
 const categories = [...new Set(units.map((unit) => unit.category))];
 ---
@@ -110,10 +111,15 @@ const categories = [...new Set(units.map((unit) => unit.category))];
                     aria-controls={`unit-${unit.game}-${unit.id}`}
                   >
                     <>
-                      <span>{unit.name}</span>
-                      <small>
-                        {unit.faction} · {unit.category}
-                      </small>
+                      <UnitPortrait unit={unit} />
+                      <span class="unit-list-copy">
+                        <>
+                          <span>{unit.name}</span>
+                          <small>
+                            {unit.faction} · {unit.category}
+                          </small>
+                        </>
+                      </span>
                     </>
                   </button>
                 </li>
@@ -140,15 +146,20 @@ const categories = [...new Set(units.map((unit) => unit.category))];
               >
                 <header>
                   <>
-                    <div>
+                    <div class="unit-identity">
                       <>
-                        <span class="eyebrow">
-                          {games[unit.game].short} / {unit.faction}
-                        </span>
-                        <h2 id={`unit-title-${unit.game}-${unit.id}`}>
-                          {unit.name}
-                        </h2>
-                        <p class="unit-aliases">{unit.aliases}</p>
+                        <UnitPortrait unit={unit} large />
+                        <div>
+                          <>
+                            <span class="eyebrow">
+                              {games[unit.game].short} / {unit.faction}
+                            </span>
+                            <h2 id={`unit-title-${unit.game}-${unit.id}`}>
+                              {unit.name}
+                            </h2>
+                            <p class="unit-aliases">{unit.aliases}</p>
+                          </>
+                        </div>
                       </>
                     </div>
                     <span class="unit-type">{unit.category}</span>
@@ -176,10 +187,10 @@ const categories = [...new Set(units.map((unit) => unit.category))];
                   aria-label={`Respostas contra ${unit.name}`}
                 >
                   <>
-                    <h3>Contra essa unidade, use</h3>
+                    <h3>Fraco contra</h3>
                     <p class="unit-answers-intro">
-                      Opções condicionais. Combine a resposta com uma escolta
-                      adequada.
+                      Respostas recomendadas contra {unit.name}. Use com a
+                      escolta adequada.
                     </p>
                   </>
                   <ul>
@@ -189,6 +200,7 @@ const categories = [...new Set(units.map((unit) => unit.category))];
                           data-unit-link
                           href={`${asset('unidades/')}?jogo=${unit.game}&unidade=${counter.unit.id}`}
                         >
+                          <UnitPortrait unit={counter.unit} />
                           <strong>{counter.unit.name}</strong>
                           <span aria-hidden="true">↗</span>
                         </a>
@@ -205,16 +217,16 @@ const categories = [...new Set(units.map((unit) => unit.category))];
                 </section>
                 <div class="unit-reading">
                   <>
-                    <section>
+                    <section class="unit-strengths">
                       <>
                         <h3>
                           <span class="unit-dot good" />
-                          Funciona bem contra
+                          Forte contra
                         </h3>
                         <p>{unit.strong}</p>
                       </>
                     </section>
-                    <section>
+                    <section class="unit-weaknesses">
                       <>
                         <h3>
                           <span class="unit-dot caution" />
@@ -299,6 +311,13 @@ const categories = [...new Set(units.map((unit) => unit.category))];
             </div>
           ))
         }
+        <p>
+          Retratos originais dos jogos; em linhas agrupadas, a imagem representa
+          uma das unidades. <a
+            class="text-link"
+            href={asset('unit-guide/NOTICE.md')}>Créditos das imagens ↗</a
+          >
+        </p>
         <p class="unit-review">
           Revisão editorial: {reviewedAt} · Atualização manual deste guia, independente
           da consulta diária das estatísticas.

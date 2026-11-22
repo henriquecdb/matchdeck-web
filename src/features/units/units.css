@@ -135,7 +135,7 @@
 }
 #unit-list button {
   display: flex;
-  flex-direction: column;
+  align-items: center;
   text-align: left;
   width: 100%;
   padding: 14px 12px;
@@ -144,9 +144,42 @@
   background: transparent;
   color: var(--ink);
   cursor: pointer;
-  gap: 6px;
+  gap: 12px;
   font-size: 13px;
   line-height: 1.5;
+}
+.unit-list-copy {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  min-width: 0;
+}
+.unit-portrait {
+  display: block;
+  flex-shrink: 0;
+  width: 40px;
+  height: 40px;
+  max-width: none;
+  object-fit: contain;
+  padding: 3px;
+  border: 1px solid #3b4c5e;
+  border-radius: 6px;
+  background: radial-gradient(ellipse at center, #2b3e50, #111a26);
+}
+.unit-portrait-large {
+  width: 96px;
+  height: 96px;
+  padding: 7px;
+  border-radius: 10px;
+}
+.unit-identity {
+  display: flex;
+  gap: 20px;
+  align-items: center;
+  min-width: 0;
+}
+.unit-identity > div {
+  min-width: 0;
 }
 #unit-list button small {
   font-size: 10px;
@@ -257,8 +290,8 @@
   gap: 10px;
 }
 .unit-answers li {
-  background: #1b2b33;
-  border: 1px solid #324951;
+  background: #2b2029;
+  border: 1px solid #68404b;
   border-radius: 6px;
   padding: 16px;
 }
@@ -266,10 +299,23 @@
   display: flex;
   justify-content: space-between;
   gap: 6px;
-  align-items: flex-start;
-  color: #9cddd5;
+  align-items: center;
+  color: #ffacb4;
   line-height: 1.5;
   font-size: 13px;
+}
+.unit-answers h3 {
+  color: #ffacb4;
+}
+.unit-answers li > a strong {
+  flex: 1;
+}
+.unit-answers li > a > span {
+  align-self: flex-start;
+}
+.unit-answers li > a .unit-portrait {
+  width: 36px;
+  height: 36px;
 }
 .unit-answers small {
   color: var(--muted);
@@ -287,8 +333,27 @@
 .unit-reading {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  gap: 26px;
+  gap: 14px;
   margin: 28px 0;
+}
+.unit-reading section {
+  border: 1px solid;
+  border-radius: 6px;
+  padding: 18px;
+}
+.unit-reading .unit-strengths {
+  background: #192d26;
+  border-color: #365e49;
+}
+.unit-strengths h3 {
+  color: #9be4b4;
+}
+.unit-reading .unit-weaknesses {
+  background: #2b2029;
+  border-color: #68404b;
+}
+.unit-weaknesses h3 {
+  color: #ffacb4;
 }
 .unit-reading p,
 .unit-tip p {
@@ -306,10 +371,10 @@
   vertical-align: middle;
 }
 .unit-dot.good {
-  background: #7dc9ac;
+  background: #9be4b4;
 }
 .unit-dot.caution {
-  background: #e2b57e;
+  background: #ffacb4;
 }
 .unit-tip {
   padding: 18px;
@@ -459,6 +524,18 @@
   .unit-card header {
     flex-direction: column;
     gap: 12px;
+  }
+  .unit-identity {
+    gap: 14px;
+    align-items: flex-start;
+  }
+  .unit-portrait-large {
+    width: 72px;
+    height: 72px;
+  }
+  .unit-identity h2 {
+    font-size: 23px;
+    overflow-wrap: anywhere;
   }
   .unit-type {
     order: -1;
